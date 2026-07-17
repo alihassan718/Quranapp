@@ -1,0 +1,24 @@
+{
+  "translator": {
+    "id": "pickthall",
+    "name": "The Meaning of the Glorious Koran",
+    "translator": "Marmaduke Pickthall",
+    "year": "1930",
+    "language": "en",
+    "direction": "ltr",
+    "license": "Public-domain English translation (as distributed by the Tanzil Project). If sourced from Tanzil, include Tanzil's translation licence notice and a link to tanzil.net.",
+    "licenseStatus": "public-domain",
+    "attribution": "Marmaduke Pickthall, The Meaning of the Glorious Koran (New York: Alfred A. Knopf, 1930).",
+    "enabled": true,
+    "note": "SAMPLE renderings — verify against an authoritative source file (e.g. Tanzil) before shipping the full Qur'an."
+  },
+  "verses": {
+    "1:1": "In the name of Allah, the Beneficent, the Merciful.",
+    "1:2": "Praise be to Allah, Lord of the Worlds,",
+    "1:3": "The Beneficent, the Merciful.",
+    "1:4": "Owner of the Day of Judgment,",
+    "1:5": "Thee (alone) we worship; Thee (alone) we ask for help.",
+    "1:6": "Show us the straight path,",
+    "1:7": "The path of those whom Thou hast favoured; Not (the path) of those who earn Thine anger nor of those who go astray."
+  }
+}

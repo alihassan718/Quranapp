@@ -1,0 +1,914 @@
+[
+  {
+    "number": 1,
+    "nameArabic": "الفاتحة",
+    "nameEnglish": "The Opening",
+    "nameTransliteration": "Al-Fātiḥah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 7
+  },
+  {
+    "number": 2,
+    "nameArabic": "البقرة",
+    "nameEnglish": "The Cow",
+    "nameTransliteration": "Al-Baqarah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 286
+  },
+  {
+    "number": 3,
+    "nameArabic": "آل عمران",
+    "nameEnglish": "The Family of Imran",
+    "nameTransliteration": "Āl ʿImrān",
+    "revelationPlace": "Medinan",
+    "ayahCount": 200
+  },
+  {
+    "number": 4,
+    "nameArabic": "النساء",
+    "nameEnglish": "The Women",
+    "nameTransliteration": "An-Nisāʾ",
+    "revelationPlace": "Medinan",
+    "ayahCount": 176
+  },
+  {
+    "number": 5,
+    "nameArabic": "المائدة",
+    "nameEnglish": "The Table Spread",
+    "nameTransliteration": "Al-Māʾidah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 120
+  },
+  {
+    "number": 6,
+    "nameArabic": "الأنعام",
+    "nameEnglish": "The Cattle",
+    "nameTransliteration": "Al-Anʿām",
+    "revelationPlace": "Meccan",
+    "ayahCount": 165
+  },
+  {
+    "number": 7,
+    "nameArabic": "الأعراف",
+    "nameEnglish": "The Heights",
+    "nameTransliteration": "Al-Aʿrāf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 206
+  },
+  {
+    "number": 8,
+    "nameArabic": "الأنفال",
+    "nameEnglish": "The Spoils of War",
+    "nameTransliteration": "Al-Anfāl",
+    "revelationPlace": "Medinan",
+    "ayahCount": 75
+  },
+  {
+    "number": 9,
+    "nameArabic": "التوبة",
+    "nameEnglish": "The Repentance",
+    "nameTransliteration": "At-Tawbah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 129
+  },
+  {
+    "number": 10,
+    "nameArabic": "يونس",
+    "nameEnglish": "Jonah",
+    "nameTransliteration": "Yūnus",
+    "revelationPlace": "Meccan",
+    "ayahCount": 109
+  },
+  {
+    "number": 11,
+    "nameArabic": "هود",
+    "nameEnglish": "Hud",
+    "nameTransliteration": "Hūd",
+    "revelationPlace": "Meccan",
+    "ayahCount": 123
+  },
+  {
+    "number": 12,
+    "nameArabic": "يوسف",
+    "nameEnglish": "Joseph",
+    "nameTransliteration": "Yūsuf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 111
+  },
+  {
+    "number": 13,
+    "nameArabic": "الرعد",
+    "nameEnglish": "The Thunder",
+    "nameTransliteration": "Ar-Raʿd",
+    "revelationPlace": "Medinan",
+    "ayahCount": 43
+  },
+  {
+    "number": 14,
+    "nameArabic": "ابراهيم",
+    "nameEnglish": "Abraham",
+    "nameTransliteration": "Ibrāhīm",
+    "revelationPlace": "Meccan",
+    "ayahCount": 52
+  },
+  {
+    "number": 15,
+    "nameArabic": "الحجر",
+    "nameEnglish": "The Rocky Tract",
+    "nameTransliteration": "Al-Ḥijr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 99
+  },
+  {
+    "number": 16,
+    "nameArabic": "النحل",
+    "nameEnglish": "The Bee",
+    "nameTransliteration": "An-Naḥl",
+    "revelationPlace": "Meccan",
+    "ayahCount": 128
+  },
+  {
+    "number": 17,
+    "nameArabic": "الإسراء",
+    "nameEnglish": "The Night Journey",
+    "nameTransliteration": "Al-Isrāʾ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 111
+  },
+  {
+    "number": 18,
+    "nameArabic": "الكهف",
+    "nameEnglish": "The Cave",
+    "nameTransliteration": "Al-Kahf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 110
+  },
+  {
+    "number": 19,
+    "nameArabic": "مريم",
+    "nameEnglish": "Mary",
+    "nameTransliteration": "Maryam",
+    "revelationPlace": "Meccan",
+    "ayahCount": 98
+  },
+  {
+    "number": 20,
+    "nameArabic": "طه",
+    "nameEnglish": "Ta-Ha",
+    "nameTransliteration": "Ṭāhā",
+    "revelationPlace": "Meccan",
+    "ayahCount": 135
+  },
+  {
+    "number": 21,
+    "nameArabic": "الأنبياء",
+    "nameEnglish": "The Prophets",
+    "nameTransliteration": "Al-Anbiyāʾ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 112
+  },
+  {
+    "number": 22,
+    "nameArabic": "الحج",
+    "nameEnglish": "The Pilgrimage",
+    "nameTransliteration": "Al-Ḥajj",
+    "revelationPlace": "Medinan",
+    "ayahCount": 78
+  },
+  {
+    "number": 23,
+    "nameArabic": "المؤمنون",
+    "nameEnglish": "The Believers",
+    "nameTransliteration": "Al-Muʾminūn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 118
+  },
+  {
+    "number": 24,
+    "nameArabic": "النور",
+    "nameEnglish": "The Light",
+    "nameTransliteration": "An-Nūr",
+    "revelationPlace": "Medinan",
+    "ayahCount": 64
+  },
+  {
+    "number": 25,
+    "nameArabic": "الفرقان",
+    "nameEnglish": "The Criterion",
+    "nameTransliteration": "Al-Furqān",
+    "revelationPlace": "Meccan",
+    "ayahCount": 77
+  },
+  {
+    "number": 26,
+    "nameArabic": "الشعراء",
+    "nameEnglish": "The Poets",
+    "nameTransliteration": "Ash-Shuʿarāʾ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 227
+  },
+  {
+    "number": 27,
+    "nameArabic": "النمل",
+    "nameEnglish": "The Ant",
+    "nameTransliteration": "An-Naml",
+    "revelationPlace": "Meccan",
+    "ayahCount": 93
+  },
+  {
+    "number": 28,
+    "nameArabic": "القصص",
+    "nameEnglish": "The Stories",
+    "nameTransliteration": "Al-Qaṣaṣ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 88
+  },
+  {
+    "number": 29,
+    "nameArabic": "العنكبوت",
+    "nameEnglish": "The Spider",
+    "nameTransliteration": "Al-ʿAnkabūt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 69
+  },
+  {
+    "number": 30,
+    "nameArabic": "الروم",
+    "nameEnglish": "The Romans",
+    "nameTransliteration": "Ar-Rūm",
+    "revelationPlace": "Meccan",
+    "ayahCount": 60
+  },
+  {
+    "number": 31,
+    "nameArabic": "لقمان",
+    "nameEnglish": "Luqman",
+    "nameTransliteration": "Luqmān",
+    "revelationPlace": "Meccan",
+    "ayahCount": 34
+  },
+  {
+    "number": 32,
+    "nameArabic": "السجدة",
+    "nameEnglish": "The Prostration",
+    "nameTransliteration": "As-Sajdah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 30
+  },
+  {
+    "number": 33,
+    "nameArabic": "الأحزاب",
+    "nameEnglish": "The Combined Forces",
+    "nameTransliteration": "Al-Aḥzāb",
+    "revelationPlace": "Medinan",
+    "ayahCount": 73
+  },
+  {
+    "number": 34,
+    "nameArabic": "سبإ",
+    "nameEnglish": "Sheba",
+    "nameTransliteration": "Sabaʾ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 54
+  },
+  {
+    "number": 35,
+    "nameArabic": "فاطر",
+    "nameEnglish": "The Originator",
+    "nameTransliteration": "Fāṭir",
+    "revelationPlace": "Meccan",
+    "ayahCount": 45
+  },
+  {
+    "number": 36,
+    "nameArabic": "يس",
+    "nameEnglish": "Ya-Sin",
+    "nameTransliteration": "Yāsīn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 83
+  },
+  {
+    "number": 37,
+    "nameArabic": "الصافات",
+    "nameEnglish": "Those Who Set the Ranks",
+    "nameTransliteration": "Aṣ-Ṣāffāt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 182
+  },
+  {
+    "number": 38,
+    "nameArabic": "ص",
+    "nameEnglish": "Sad",
+    "nameTransliteration": "Ṣād",
+    "revelationPlace": "Meccan",
+    "ayahCount": 88
+  },
+  {
+    "number": 39,
+    "nameArabic": "الزمر",
+    "nameEnglish": "The Troops",
+    "nameTransliteration": "Az-Zumar",
+    "revelationPlace": "Meccan",
+    "ayahCount": 75
+  },
+  {
+    "number": 40,
+    "nameArabic": "غافر",
+    "nameEnglish": "The Forgiver",
+    "nameTransliteration": "Ghāfir",
+    "revelationPlace": "Meccan",
+    "ayahCount": 85
+  },
+  {
+    "number": 41,
+    "nameArabic": "فصلت",
+    "nameEnglish": "Explained in Detail",
+    "nameTransliteration": "Fuṣṣilat",
+    "revelationPlace": "Meccan",
+    "ayahCount": 54
+  },
+  {
+    "number": 42,
+    "nameArabic": "الشورى",
+    "nameEnglish": "The Consultation",
+    "nameTransliteration": "Ash-Shūrā",
+    "revelationPlace": "Meccan",
+    "ayahCount": 53
+  },
+  {
+    "number": 43,
+    "nameArabic": "الزخرف",
+    "nameEnglish": "The Ornaments of Gold",
+    "nameTransliteration": "Az-Zukhruf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 89
+  },
+  {
+    "number": 44,
+    "nameArabic": "الدخان",
+    "nameEnglish": "The Smoke",
+    "nameTransliteration": "Ad-Dukhān",
+    "revelationPlace": "Meccan",
+    "ayahCount": 59
+  },
+  {
+    "number": 45,
+    "nameArabic": "الجاثية",
+    "nameEnglish": "The Crouching",
+    "nameTransliteration": "Al-Jāthiyah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 37
+  },
+  {
+    "number": 46,
+    "nameArabic": "الأحقاف",
+    "nameEnglish": "The Sand Dunes",
+    "nameTransliteration": "Al-Aḥqāf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 35
+  },
+  {
+    "number": 47,
+    "nameArabic": "محمد",
+    "nameEnglish": "Muhammad",
+    "nameTransliteration": "Muḥammad",
+    "revelationPlace": "Medinan",
+    "ayahCount": 38
+  },
+  {
+    "number": 48,
+    "nameArabic": "الفتح",
+    "nameEnglish": "The Victory",
+    "nameTransliteration": "Al-Fatḥ",
+    "revelationPlace": "Medinan",
+    "ayahCount": 29
+  },
+  {
+    "number": 49,
+    "nameArabic": "الحجرات",
+    "nameEnglish": "The Rooms",
+    "nameTransliteration": "Al-Ḥujurāt",
+    "revelationPlace": "Medinan",
+    "ayahCount": 18
+  },
+  {
+    "number": 50,
+    "nameArabic": "ق",
+    "nameEnglish": "Qaf",
+    "nameTransliteration": "Qāf",
+    "revelationPlace": "Meccan",
+    "ayahCount": 45
+  },
+  {
+    "number": 51,
+    "nameArabic": "الذاريات",
+    "nameEnglish": "The Winnowing Winds",
+    "nameTransliteration": "Adh-Dhāriyāt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 60
+  },
+  {
+    "number": 52,
+    "nameArabic": "الطور",
+    "nameEnglish": "The Mount",
+    "nameTransliteration": "Aṭ-Ṭūr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 49
+  },
+  {
+    "number": 53,
+    "nameArabic": "النجم",
+    "nameEnglish": "The Star",
+    "nameTransliteration": "An-Najm",
+    "revelationPlace": "Meccan",
+    "ayahCount": 62
+  },
+  {
+    "number": 54,
+    "nameArabic": "القمر",
+    "nameEnglish": "The Moon",
+    "nameTransliteration": "Al-Qamar",
+    "revelationPlace": "Meccan",
+    "ayahCount": 55
+  },
+  {
+    "number": 55,
+    "nameArabic": "الرحمن",
+    "nameEnglish": "The Most Merciful",
+    "nameTransliteration": "Ar-Raḥmān",
+    "revelationPlace": "Medinan",
+    "ayahCount": 78
+  },
+  {
+    "number": 56,
+    "nameArabic": "الواقعة",
+    "nameEnglish": "The Inevitable",
+    "nameTransliteration": "Al-Wāqiʿah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 96
+  },
+  {
+    "number": 57,
+    "nameArabic": "الحديد",
+    "nameEnglish": "The Iron",
+    "nameTransliteration": "Al-Ḥadīd",
+    "revelationPlace": "Medinan",
+    "ayahCount": 29
+  },
+  {
+    "number": 58,
+    "nameArabic": "المجادلة",
+    "nameEnglish": "The Pleading Woman",
+    "nameTransliteration": "Al-Mujādilah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 22
+  },
+  {
+    "number": 59,
+    "nameArabic": "الحشر",
+    "nameEnglish": "The Exile",
+    "nameTransliteration": "Al-Ḥashr",
+    "revelationPlace": "Medinan",
+    "ayahCount": 24
+  },
+  {
+    "number": 60,
+    "nameArabic": "الممتحنة",
+    "nameEnglish": "The Examined Woman",
+    "nameTransliteration": "Al-Mumtaḥanah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 13
+  },
+  {
+    "number": 61,
+    "nameArabic": "الصف",
+    "nameEnglish": "The Ranks",
+    "nameTransliteration": "Aṣ-Ṣaff",
+    "revelationPlace": "Medinan",
+    "ayahCount": 14
+  },
+  {
+    "number": 62,
+    "nameArabic": "الجمعة",
+    "nameEnglish": "Friday",
+    "nameTransliteration": "Al-Jumuʿah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 11
+  },
+  {
+    "number": 63,
+    "nameArabic": "المنافقون",
+    "nameEnglish": "The Hypocrites",
+    "nameTransliteration": "Al-Munāfiqūn",
+    "revelationPlace": "Medinan",
+    "ayahCount": 11
+  },
+  {
+    "number": 64,
+    "nameArabic": "التغابن",
+    "nameEnglish": "Mutual Disillusion",
+    "nameTransliteration": "At-Taghābun",
+    "revelationPlace": "Medinan",
+    "ayahCount": 18
+  },
+  {
+    "number": 65,
+    "nameArabic": "الطلاق",
+    "nameEnglish": "Divorce",
+    "nameTransliteration": "Aṭ-Ṭalāq",
+    "revelationPlace": "Medinan",
+    "ayahCount": 12
+  },
+  {
+    "number": 66,
+    "nameArabic": "التحريم",
+    "nameEnglish": "The Prohibition",
+    "nameTransliteration": "At-Taḥrīm",
+    "revelationPlace": "Medinan",
+    "ayahCount": 12
+  },
+  {
+    "number": 67,
+    "nameArabic": "الملك",
+    "nameEnglish": "The Sovereignty",
+    "nameTransliteration": "Al-Mulk",
+    "revelationPlace": "Meccan",
+    "ayahCount": 30
+  },
+  {
+    "number": 68,
+    "nameArabic": "القلم",
+    "nameEnglish": "The Pen",
+    "nameTransliteration": "Al-Qalam",
+    "revelationPlace": "Meccan",
+    "ayahCount": 52
+  },
+  {
+    "number": 69,
+    "nameArabic": "الحاقة",
+    "nameEnglish": "The Reality",
+    "nameTransliteration": "Al-Ḥāqqah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 52
+  },
+  {
+    "number": 70,
+    "nameArabic": "المعارج",
+    "nameEnglish": "The Ascending Stairways",
+    "nameTransliteration": "Al-Maʿārij",
+    "revelationPlace": "Meccan",
+    "ayahCount": 44
+  },
+  {
+    "number": 71,
+    "nameArabic": "نوح",
+    "nameEnglish": "Noah",
+    "nameTransliteration": "Nūḥ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 28
+  },
+  {
+    "number": 72,
+    "nameArabic": "الجن",
+    "nameEnglish": "The Jinn",
+    "nameTransliteration": "Al-Jinn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 28
+  },
+  {
+    "number": 73,
+    "nameArabic": "المزمل",
+    "nameEnglish": "The Enshrouded One",
+    "nameTransliteration": "Al-Muzzammil",
+    "revelationPlace": "Meccan",
+    "ayahCount": 20
+  },
+  {
+    "number": 74,
+    "nameArabic": "المدثر",
+    "nameEnglish": "The Cloaked One",
+    "nameTransliteration": "Al-Muddaththir",
+    "revelationPlace": "Meccan",
+    "ayahCount": 56
+  },
+  {
+    "number": 75,
+    "nameArabic": "القيامة",
+    "nameEnglish": "The Resurrection",
+    "nameTransliteration": "Al-Qiyāmah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 40
+  },
+  {
+    "number": 76,
+    "nameArabic": "الانسان",
+    "nameEnglish": "The Man",
+    "nameTransliteration": "Al-Insān",
+    "revelationPlace": "Medinan",
+    "ayahCount": 31
+  },
+  {
+    "number": 77,
+    "nameArabic": "المرسلات",
+    "nameEnglish": "The Emissaries",
+    "nameTransliteration": "Al-Mursalāt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 50
+  },
+  {
+    "number": 78,
+    "nameArabic": "النبإ",
+    "nameEnglish": "The Tidings",
+    "nameTransliteration": "An-Nabaʾ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 40
+  },
+  {
+    "number": 79,
+    "nameArabic": "النازعات",
+    "nameEnglish": "Those Who Drag Forth",
+    "nameTransliteration": "An-Nāziʿāt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 46
+  },
+  {
+    "number": 80,
+    "nameArabic": "عبس",
+    "nameEnglish": "He Frowned",
+    "nameTransliteration": "ʿAbasa",
+    "revelationPlace": "Meccan",
+    "ayahCount": 42
+  },
+  {
+    "number": 81,
+    "nameArabic": "التكوير",
+    "nameEnglish": "The Overthrowing",
+    "nameTransliteration": "At-Takwīr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 29
+  },
+  {
+    "number": 82,
+    "nameArabic": "الإنفطار",
+    "nameEnglish": "The Cleaving",
+    "nameTransliteration": "Al-Infiṭār",
+    "revelationPlace": "Meccan",
+    "ayahCount": 19
+  },
+  {
+    "number": 83,
+    "nameArabic": "المطففين",
+    "nameEnglish": "The Defrauders",
+    "nameTransliteration": "Al-Muṭaffifīn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 36
+  },
+  {
+    "number": 84,
+    "nameArabic": "الإنشقاق",
+    "nameEnglish": "The Splitting Open",
+    "nameTransliteration": "Al-Inshiqāq",
+    "revelationPlace": "Meccan",
+    "ayahCount": 25
+  },
+  {
+    "number": 85,
+    "nameArabic": "البروج",
+    "nameEnglish": "The Constellations",
+    "nameTransliteration": "Al-Burūj",
+    "revelationPlace": "Meccan",
+    "ayahCount": 22
+  },
+  {
+    "number": 86,
+    "nameArabic": "الطارق",
+    "nameEnglish": "The Morning Star",
+    "nameTransliteration": "Aṭ-Ṭāriq",
+    "revelationPlace": "Meccan",
+    "ayahCount": 17
+  },
+  {
+    "number": 87,
+    "nameArabic": "الأعلى",
+    "nameEnglish": "The Most High",
+    "nameTransliteration": "Al-Aʿlā",
+    "revelationPlace": "Meccan",
+    "ayahCount": 19
+  },
+  {
+    "number": 88,
+    "nameArabic": "الغاشية",
+    "nameEnglish": "The Overwhelming",
+    "nameTransliteration": "Al-Ghāshiyah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 26
+  },
+  {
+    "number": 89,
+    "nameArabic": "الفجر",
+    "nameEnglish": "The Dawn",
+    "nameTransliteration": "Al-Fajr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 30
+  },
+  {
+    "number": 90,
+    "nameArabic": "البلد",
+    "nameEnglish": "The City",
+    "nameTransliteration": "Al-Balad",
+    "revelationPlace": "Meccan",
+    "ayahCount": 20
+  },
+  {
+    "number": 91,
+    "nameArabic": "الشمس",
+    "nameEnglish": "The Sun",
+    "nameTransliteration": "Ash-Shams",
+    "revelationPlace": "Meccan",
+    "ayahCount": 15
+  },
+  {
+    "number": 92,
+    "nameArabic": "الليل",
+    "nameEnglish": "The Night",
+    "nameTransliteration": "Al-Layl",
+    "revelationPlace": "Meccan",
+    "ayahCount": 21
+  },
+  {
+    "number": 93,
+    "nameArabic": "الضحى",
+    "nameEnglish": "The Morning Hours",
+    "nameTransliteration": "Aḍ-Ḍuḥā",
+    "revelationPlace": "Meccan",
+    "ayahCount": 11
+  },
+  {
+    "number": 94,
+    "nameArabic": "الشرح",
+    "nameEnglish": "The Relief",
+    "nameTransliteration": "Ash-Sharḥ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 8
+  },
+  {
+    "number": 95,
+    "nameArabic": "التين",
+    "nameEnglish": "The Fig",
+    "nameTransliteration": "At-Tīn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 8
+  },
+  {
+    "number": 96,
+    "nameArabic": "العلق",
+    "nameEnglish": "The Clot",
+    "nameTransliteration": "Al-ʿAlaq",
+    "revelationPlace": "Meccan",
+    "ayahCount": 19
+  },
+  {
+    "number": 97,
+    "nameArabic": "القدر",
+    "nameEnglish": "The Power",
+    "nameTransliteration": "Al-Qadr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 5
+  },
+  {
+    "number": 98,
+    "nameArabic": "البينة",
+    "nameEnglish": "The Clear Proof",
+    "nameTransliteration": "Al-Bayyinah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 8
+  },
+  {
+    "number": 99,
+    "nameArabic": "الزلزلة",
+    "nameEnglish": "The Earthquake",
+    "nameTransliteration": "Az-Zalzalah",
+    "revelationPlace": "Medinan",
+    "ayahCount": 8
+  },
+  {
+    "number": 100,
+    "nameArabic": "العاديات",
+    "nameEnglish": "The Chargers",
+    "nameTransliteration": "Al-ʿĀdiyāt",
+    "revelationPlace": "Meccan",
+    "ayahCount": 11
+  },
+  {
+    "number": 101,
+    "nameArabic": "القارعة",
+    "nameEnglish": "The Calamity",
+    "nameTransliteration": "Al-Qāriʿah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 11
+  },
+  {
+    "number": 102,
+    "nameArabic": "التكاثر",
+    "nameEnglish": "Rivalry in Worldly Increase",
+    "nameTransliteration": "At-Takāthur",
+    "revelationPlace": "Meccan",
+    "ayahCount": 8
+  },
+  {
+    "number": 103,
+    "nameArabic": "العصر",
+    "nameEnglish": "The Declining Day",
+    "nameTransliteration": "Al-ʿAṣr",
+    "revelationPlace": "Meccan",
+    "ayahCount": 3
+  },
+  {
+    "number": 104,
+    "nameArabic": "الهمزة",
+    "nameEnglish": "The Traducer",
+    "nameTransliteration": "Al-Humazah",
+    "revelationPlace": "Meccan",
+    "ayahCount": 9
+  },
+  {
+    "number": 105,
+    "nameArabic": "الفيل",
+    "nameEnglish": "The Elephant",
+    "nameTransliteration": "Al-Fīl",
+    "revelationPlace": "Meccan",
+    "ayahCount": 5
+  },
+  {
+    "number": 106,
+    "nameArabic": "قريش",
+    "nameEnglish": "Quraysh",
+    "nameTransliteration": "Quraysh",
+    "revelationPlace": "Meccan",
+    "ayahCount": 4
+  },
+  {
+    "number": 107,
+    "nameArabic": "الماعون",
+    "nameEnglish": "The Small Kindnesses",
+    "nameTransliteration": "Al-Māʿūn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 7
+  },
+  {
+    "number": 108,
+    "nameArabic": "الكوثر",
+    "nameEnglish": "The Abundance",
+    "nameTransliteration": "Al-Kawthar",
+    "revelationPlace": "Meccan",
+    "ayahCount": 3
+  },
+  {
+    "number": 109,
+    "nameArabic": "الكافرون",
+    "nameEnglish": "The Disbelievers",
+    "nameTransliteration": "Al-Kāfirūn",
+    "revelationPlace": "Meccan",
+    "ayahCount": 6
+  },
+  {
+    "number": 110,
+    "nameArabic": "النصر",
+    "nameEnglish": "The Divine Support",
+    "nameTransliteration": "An-Naṣr",
+    "revelationPlace": "Medinan",
+    "ayahCount": 3
+  },
+  {
+    "number": 111,
+    "nameArabic": "المسد",
+    "nameEnglish": "The Palm Fiber",
+    "nameTransliteration": "Al-Masad",
+    "revelationPlace": "Meccan",
+    "ayahCount": 5
+  },
+  {
+    "number": 112,
+    "nameArabic": "الإخلاص",
+    "nameEnglish": "Sincerity",
+    "nameTransliteration": "Al-Ikhlāṣ",
+    "revelationPlace": "Meccan",
+    "ayahCount": 4
+  },
+  {
+    "number": 113,
+    "nameArabic": "الفلق",
+    "nameEnglish": "The Daybreak",
+    "nameTransliteration": "Al-Falaq",
+    "revelationPlace": "Meccan",
+    "ayahCount": 5
+  },
+  {
+    "number": 114,
+    "nameArabic": "الناس",
+    "nameEnglish": "Mankind",
+    "nameTransliteration": "An-Nās",
+    "revelationPlace": "Meccan",
+    "ayahCount": 6
+  }
+]

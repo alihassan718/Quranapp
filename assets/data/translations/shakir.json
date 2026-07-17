@@ -1,0 +1,16 @@
+{
+  "translator": {
+    "id": "shakir",
+    "name": "The Holy Qur'an (Shakir)",
+    "translator": "M. H. Shakir",
+    "year": "1982",
+    "language": "en",
+    "direction": "ltr",
+    "license": "CONTESTED — copyright claimed by Tahrike Tarsile Qur'an, Inc. (Elmhurst, NY); reportedly a derivative of Muhammad Ali's 1917 translation. NOT safely public domain.",
+    "licenseStatus": "contested",
+    "attribution": "M. H. Shakir, The Holy Qur'an (© Tahrike Tarsile Qur'an, Inc.).",
+    "enabled": false,
+    "note": "Text intentionally NOT bundled. This entry is a placeholder demonstrating how a translator plugs in. Supply verified verse data here ONLY if you have confirmed the rights, then set enabled: true."
+  },
+  "verses": {}
+}

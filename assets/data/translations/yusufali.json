@@ -1,0 +1,24 @@
+{
+  "translator": {
+    "id": "yusufali",
+    "name": "The Holy Qur'an",
+    "translator": "Abdullah Yusuf Ali",
+    "year": "1934",
+    "language": "en",
+    "direction": "ltr",
+    "license": "Public-domain English translation (as distributed by the Tanzil Project). If sourced from Tanzil, include Tanzil's translation licence notice and a link to tanzil.net.",
+    "licenseStatus": "public-domain",
+    "attribution": "Abdullah Yusuf Ali, The Holy Qur'an: Text, Translation and Commentary (1934).",
+    "enabled": true,
+    "note": "SAMPLE renderings — verify against an authoritative source file (e.g. Tanzil) before shipping the full Qur'an."
+  },
+  "verses": {
+    "1:1": "In the name of Allah, Most Gracious, Most Merciful.",
+    "1:2": "Praise be to Allah, the Cherisher and Sustainer of the Worlds;",
+    "1:3": "Most Gracious, Most Merciful;",
+    "1:4": "Master of the Day of Judgment.",
+    "1:5": "Thee do we worship, and Thine aid we seek.",
+    "1:6": "Show us the straight way,",
+    "1:7": "The way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not wrath, and who go not astray."
+  }
+}

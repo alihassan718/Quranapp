@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "description": "Bayān bundled reference-data manifest. 'version' is bumped whenever bundled reference data changes; the app rebuilds its read-only SQLite database when the stored version differs. Translator and lexicon catalogues are derived from the data files registered in src/data/registry.ts.",
+  "availableSurahs": [1]
+}

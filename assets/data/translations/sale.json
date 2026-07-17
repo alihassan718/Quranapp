@@ -1,0 +1,24 @@
+{
+  "translator": {
+    "id": "sale",
+    "name": "The Koran (Alcoran of Mohammed)",
+    "translator": "George Sale",
+    "year": "1734",
+    "language": "en",
+    "direction": "ltr",
+    "license": "Public domain worldwide (published 1734).",
+    "licenseStatus": "public-domain",
+    "attribution": "George Sale, The Koran, Commonly Called the Alcoran of Mohammed (London, 1734).",
+    "enabled": true,
+    "note": "SAMPLE renderings of Sale's archaic English (included to demonstrate interpretive divergence and as an unambiguously public-domain third translation). Verify against a scanned source before shipping."
+  },
+  "verses": {
+    "1:1": "In the name of the most merciful God.",
+    "1:2": "Praise be to God, the Lord of all creatures;",
+    "1:3": "the most merciful,",
+    "1:4": "the King of the day of judgment.",
+    "1:5": "Thee do we worship, and of thee do we beg assistance.",
+    "1:6": "Direct us in the right way,",
+    "1:7": "in the way of those to whom thou hast been gracious; not of those against whom thou art incensed, nor of those who go astray."
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "source": {
+    "id": "lane",
+    "name": "Lane's Arabic-English Lexicon",
+    "author": "Edward William Lane",
+    "year": "1863–1893",
+    "license": "The original work is public domain worldwide. IMPORTANT: the entries below are SAMPLE paraphrases of the classical meaning-range, NOT verbatim text from Lane's Lexicon. Replace with verified Lane's text (or OCR of the public-domain scans). If you reuse a digitised dataset (e.g. Perseus), honour that dataset's added licence (Perseus = CC BY-SA 3.0 US).",
+    "licenseStatus": "public-domain",
+    "attribution": "Edward William Lane, An Arabic-English Lexicon (London & Edinburgh: Williams & Norgate, 1863–1893).",
+    "isSample": true
+  },
+  "entries": {
+    "ر ح م": {
+      "root": "ر ح م",
+      "rootTranslit": "r-ḥ-m",
+      "senses": [
+        { "definitionEn": "Mercy, compassion, tenderness — a pity or softness of heart that calls for the showing of kindness to its object.", "definitionAr": "رِقّة في القلب تقتضي الإحسان والعطف", "notes": null },
+        { "definitionEn": "The womb (raḥim); hence the tie of kinship and blood-relationship (ṣilat al-raḥim).", "definitionAr": "الرَّحِم: موضع تكوين الولد، ومنه صلة الرحم", "notes": null },
+        { "definitionEn": "raḥmān: an intense, all-embracing mercy (a form denoting fullness); raḥīm: mercy that is continual and enacted toward its objects.", "definitionAr": "الرحمن: الواسع الرحمة، والرحيم: الدائم الإحسان", "notes": "Distinction commonly drawn by the lexicographers." }
+      ]
+    },
+    "ح م د": {
+      "root": "ح م د",
+      "rootTranslit": "ḥ-m-d",
+      "senses": [
+        { "definitionEn": "Praise; commendation of a person for excellence or beauty, offered willingly and joined with love and reverence.", "definitionAr": "الثناء بالجميل على وجه التعظيم والمحبّة", "notes": null },
+        { "definitionEn": "Broader than shukr (thankfulness for a benefit received): ḥamd may be for intrinsic excellence, not only for a favour.", "definitionAr": "الحمد أعمّ من الشكر", "notes": null },
+        { "definitionEn": "maḥmūd: praiseworthy; one whose outcome and conduct are praised.", "definitionAr": "المحمود: المستحقّ للثناء", "notes": null }
+      ]
+    },
+    "أ ل ه": {
+      "root": "أ ل ه",
+      "rootTranslit": "ʾ-l-h",
+      "senses": [
+        { "definitionEn": "To worship, to serve with devotion; to turn to in reverent adoration.", "definitionAr": "عبَد وتنسّك وأطاع", "notes": null },
+        { "definitionEn": "To be bewildered or awe-struck; the mind's turning in wonder toward the divine.", "definitionAr": "تحيّر ودُهش تعظيمًا", "notes": null },
+        { "definitionEn": "ilāh: an object of worship; al-ilāh, contracted to 'Allāh' — the One truly deserving of worship. 'Allāh' functions as the proper name of God.", "definitionAr": "الإله: المعبود، والله عَلَم على المعبود بحقّ", "notes": null }
+      ]
+    },
+    "س م و": {
+      "root": "س م و",
+      "rootTranslit": "s-m-w",
+      "senses": [
+        { "definitionEn": "To be high, elevated, lofty; to rise and be raised up.", "definitionAr": "علا وارتفع", "notes": null },
+        { "definitionEn": "samāʾ: the sky, heaven — that which is above and overarches.", "definitionAr": "السماء: ما علاك فأظلّك", "notes": null },
+        { "definitionEn": "ism (a name): the mark or sign by which a thing is known and brought to notice — derived from this root on one classical view.", "definitionAr": "الاسم: ما دلّ على المسمّى وعُرف به", "notes": "Others derive ism from و س م (a mark)." }
+      ]
+    },
+    "ر ب ب": {
+      "root": "ر ب ب",
+      "rootTranslit": "r-b-b",
+      "senses": [
+        { "definitionEn": "To nurture and foster; to rear a thing stage by stage until it is complete.", "definitionAr": "ربّى الشيء: أنشأه حالًا فحالًا إلى التمام", "notes": null },
+        { "definitionEn": "rabb: lord, master, owner — one who has authority, ownership, and the care of a thing.", "definitionAr": "الرَّبّ: المالك والسيّد المدبّر", "notes": "Used absolutely (al-Rabb) only of God." },
+        { "definitionEn": "To gather, to have charge over, to possess and set in order.", "definitionAr": "جمع وساس وأصلح", "notes": null }
+      ]
+    },
+    "ع ل م": {
+      "root": "ع ل م",
+      "rootTranslit": "ʿ-l-m",
+      "senses": [
+        { "definitionEn": "To know; to apprehend a thing as it truly is, with certainty.", "definitionAr": "أدرك الشيء على حقيقته", "notes": null },
+        { "definitionEn": "ʿalam: a mark, sign, or landmark by which a way or thing is known.", "definitionAr": "العَلَم: العلامة والمنار يُهتدى به", "notes": null },
+        { "definitionEn": "ʿālam: the world, the creation — all created things by which the Creator is known; ʿālamīn: all the worlds / all peoples.", "definitionAr": "العالَم: الخلق كلّه، والعالمون: أصناف الخلق", "notes": null }
+      ]
+    },
+    "م ل ك": {
+      "root": "م ل ك",
+      "rootTranslit": "m-l-k",
+      "senses": [
+        { "definitionEn": "To possess, own, and have command over; to hold with authority to dispose of.", "definitionAr": "حاز الشيء وقدر على التصرّف فيه", "notes": null },
+        { "definitionEn": "mālik: an owner/possessor; malik: a king, sovereign; mulk: kingship and dominion.", "definitionAr": "المالك: ذو الملك، والمَلِك: السلطان، والمُلك: العظمة والسلطان", "notes": "Both readings Mālik and Malik occur at Q 1:4." },
+        { "definitionEn": "Firmness and strength; to knead and strengthen a thing.", "definitionAr": "الشدّة والقوّة", "notes": null }
+      ]
+    },
+    "ي و م": {
+      "root": "ي و م",
+      "rootTranslit": "y-w-m",
+      "senses": [
+        { "definitionEn": "A day: the period from the rising of dawn to sunset; also a full day-and-night.", "definitionAr": "اليوم: من طلوع الفجر إلى الغروب، أو مطلق الزمان", "notes": null },
+        { "definitionEn": "A time, an epoch, or a momentous occasion or event.", "definitionAr": "الوقت والحين والشأن العظيم", "notes": null },
+        { "definitionEn": "yawm al-dīn: the Day of Judgement / Recompense.", "definitionAr": "يوم الدين: يوم الجزاء والحساب", "notes": null }
+      ]
+    },
+    "د ي ن": {
+      "root": "د ي ن",
+      "rootTranslit": "d-y-n",
+      "senses": [
+        { "definitionEn": "Requital, recompense, judgement — 'as you deal, so you are dealt with' (kamā tadīnu tudānu).", "definitionAr": "الجزاء والحساب؛ كما تَدين تُدان", "notes": null },
+        { "definitionEn": "Obedience, submission, and humble service.", "definitionAr": "الطاعة والانقياد والذلّ", "notes": null },
+        { "definitionEn": "Religion, way, custom, or law that one follows; also dayn: a debt or obligation.", "definitionAr": "الدِّين: الملّة والعادة، والدَّين: القرض والالتزام", "notes": "A notably wide range: judgement / obedience / religion / debt." }
+      ]
+    },
+    "ع ب د": {
+      "root": "ع ب د",
+      "rootTranslit": "ʿ-b-d",
+      "senses": [
+        { "definitionEn": "To worship; to serve and obey with the utmost humility and submission.", "definitionAr": "خضع وذلّ وأطاع غاية الطاعة", "notes": null },
+        { "definitionEn": "ʿabd: a servant, bondsman, worshipper; one owned and devoted.", "definitionAr": "العبد: المملوك والمطيع", "notes": null },
+        { "definitionEn": "A road made smooth and level by treading (ṭarīq muʿabbad) — humbled and made even.", "definitionAr": "طريق مُعبَّد: مذلَّل موطَّأ", "notes": null }
+      ]
+    },
+    "ع و ن": {
+      "root": "ع و ن",
+      "rootTranslit": "ʿ-w-n",
+      "senses": [
+        { "definitionEn": "To help, aid, and assist; to support in a task.", "definitionAr": "ساعد وأمدّ وأغاث", "notes": null },
+        { "definitionEn": "ʿawn: help, aid, assistance; muʿīn: a helper.", "definitionAr": "العون: المساعدة، والمعين: المساعد", "notes": null },
+        { "definitionEn": "istaʿāna (Form X): to seek help or assistance.", "definitionAr": "استعان: طلب العون", "notes": "The verb at Q 1:5 (nastaʿīn) is Form X." }
+      ]
+    },
+    "ه د ي": {
+      "root": "ه د ي",
+      "rootTranslit": "h-d-y",
+      "senses": [
+        { "definitionEn": "To guide; to lead and direct rightly, to show the way with gentleness.", "definitionAr": "أرشد ودلّ برفق", "notes": null },
+        { "definitionEn": "hudā: right guidance and direction; the opposite of straying.", "definitionAr": "الهُدى: الرشاد، ضدّ الضلال", "notes": null },
+        { "definitionEn": "hadiyya: a gift — that which is sent forward and directed to someone.", "definitionAr": "الهديّة: ما يُوجَّه إلى الغير إكرامًا", "notes": null }
+      ]
+    },
+    "ص ر ط": {
+      "root": "ص ر ط",
+      "rootTranslit": "ṣ-r-ṭ",
+      "senses": [
+        { "definitionEn": "A road or way; especially a wide, clear, well-trodden path.", "definitionAr": "الطريق الواضح الواسع", "notes": null },
+        { "definitionEn": "ṣirāṭ: the highway or open way that is travelled.", "definitionAr": "الصراط: الجادّة والسبيل", "notes": null },
+        { "definitionEn": "Related to sarṭ (to swallow): a road that 'swallows' those who travel it.", "definitionAr": "من السَّرْط؛ كأنّ الطريق يبتلع سالكيه", "notes": "Also spelled with sīn (sirāṭ)." }
+      ]
+    },
+    "ق و م": {
+      "root": "ق و م",
+      "rootTranslit": "q-w-m",
+      "senses": [
+        { "definitionEn": "To stand, to rise up, to be established and erect.", "definitionAr": "انتصب ووقف وثبت", "notes": null },
+        { "definitionEn": "To be straight and right; istaqāma (Form X): to be upright/straight; mustaqīm: straight, without crookedness.", "definitionAr": "استقام: اعتدل، والمستقيم: ما لا اعوجاج فيه", "notes": "mustaqīm at Q 1:6 is a Form-X active participle." },
+        { "definitionEn": "qawm: a people (who rise together in an affair); qiyām: standing, subsistence.", "definitionAr": "القوم: الجماعة، والقيام: الانتصاب والدوام", "notes": null }
+      ]
+    },
+    "ن ع م": {
+      "root": "ن ع م",
+      "rootTranslit": "n-ʿ-m",
+      "senses": [
+        { "definitionEn": "To be soft, pleasant, and agreeable; ease, comfort, and a good manner of living.", "definitionAr": "لان وطاب؛ سعة العيش ورغده", "notes": null },
+        { "definitionEn": "niʿma: a favour, blessing, or bounty; anʿama (Form IV): to bestow a favour.", "definitionAr": "النِّعمة: ما يُنعَم به، وأنعم: أفضل وأحسن", "notes": "anʿamta at Q 1:7 is Form IV." },
+        { "definitionEn": "naʿam: 'yes', an expression of assent; also al-naʿam: pasturing cattle as bestowed wealth.", "definitionAr": "نَعَمْ: حرف تصديق، والنَّعَم: الإبل والماشية", "notes": null }
+      ]
+    },
+    "غ ي ر": {
+      "root": "غ ي ر",
+      "rootTranslit": "gh-y-r",
+      "senses": [
+        { "definitionEn": "Otherness, difference; ghayr: other than, different from — used also for exception or negation ('not').", "definitionAr": "الاختلاف؛ غَيْر: سوى وخلاف، وتفيد الاستثناء والنفي", "notes": null },
+        { "definitionEn": "To change or alter a thing (ghayyara).", "definitionAr": "غيَّر الشيء: بدّله وحوّله", "notes": null },
+        { "definitionEn": "ghayra: protective jealousy, zeal for what one holds dear.", "definitionAr": "الغَيْرة: الأنَفة والحميّة", "notes": null }
+      ]
+    },
+    "غ ض ب": {
+      "root": "غ ض ب",
+      "rootTranslit": "gh-ḍ-b",
+      "senses": [
+        { "definitionEn": "Anger, wrath; the opposite of riḍā (good pleasure).", "definitionAr": "السخط والغيظ، ضدّ الرضا", "notes": null },
+        { "definitionEn": "To be angry with someone; maghḍūb: one against whom anger is directed.", "definitionAr": "غضب عليه، والمغضوب: من وقع عليه الغضب", "notes": "maghḍūb at Q 1:7 is a passive participle." },
+        { "definitionEn": "Intensity and severity; a reddening (as of the face in anger); ghaḍūb: quick to anger.", "definitionAr": "الشدّة والاحمرار، والغَضوب: السريع الغضب", "notes": null }
+      ]
+    },
+    "ض ل ل": {
+      "root": "ض ل ل",
+      "rootTranslit": "ḍ-l-l",
+      "senses": [
+        { "definitionEn": "To go astray; to lose or miss the way; to err.", "definitionAr": "ضاع عن الطريق وأخطأه", "notes": null },
+        { "definitionEn": "To be lost, to vanish or perish; ḍalāl: error, straying, being lost (opposite of guidance).", "definitionAr": "غاب وهلك، والضلال: ضدّ الرشاد", "notes": null },
+        { "definitionEn": "ḍāll: one who strays or is misguided; also confusion and perplexity.", "definitionAr": "الضالّ: التائه، والحيرة", "notes": "ḍāllīn at Q 1:7 is the sound-plural active participle." }
+      ]
+    }
+  }
+}
