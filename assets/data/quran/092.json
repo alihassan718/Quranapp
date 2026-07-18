@@ -1,0 +1,1062 @@
+{
+  "surah": {
+    "number": 92,
+    "nameArabic": "الليل",
+    "nameEnglish": "The Night",
+    "nameTransliteration": "Al-Layl",
+    "revelationPlace": "Meccan",
+    "ayahCount": 21
+  },
+  "_note": "Layer 1 (Arabic, verbatim): Tanzil Project Uthmani text, tanzil.net, CC BY 3.0 — attribution required. Layer 2 (morphology): NOT YET IMPORTED — all word fields are null pending the Quranic Arabic Corpus import; do not hand-fill.",
+  "ayahs": [
+    {
+      "number": 1,
+      "textUthmani": "وَٱلَّيْلِ إِذَا يَغْشَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَٱلَّيْلِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "إِذَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "يَغْشَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "textUthmani": "وَٱلنَّهَارِ إِذَا تَجَلَّىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَٱلنَّهَارِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "إِذَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "تَجَلَّىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "textUthmani": "وَمَا خَلَقَ ٱلذَّكَرَ وَٱلْأُنثَىٰٓ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَمَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "خَلَقَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "ٱلذَّكَرَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "وَٱلْأُنثَىٰٓ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "textUthmani": "إِنَّ سَعْيَكُمْ لَشَتَّىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "إِنَّ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "سَعْيَكُمْ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "لَشَتَّىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "textUthmani": "فَأَمَّا مَنْ أَعْطَىٰ وَٱتَّقَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "فَأَمَّا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "مَنْ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "أَعْطَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "وَٱتَّقَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "textUthmani": "وَصَدَّقَ بِٱلْحُسْنَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَصَدَّقَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "بِٱلْحُسْنَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "textUthmani": "فَسَنُيَسِّرُهُۥ لِلْيُسْرَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "فَسَنُيَسِّرُهُۥ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "لِلْيُسْرَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "textUthmani": "وَأَمَّا مَنۢ بَخِلَ وَٱسْتَغْنَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَأَمَّا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "مَنۢ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "بَخِلَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "وَٱسْتَغْنَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "textUthmani": "وَكَذَّبَ بِٱلْحُسْنَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَكَذَّبَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "بِٱلْحُسْنَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "textUthmani": "فَسَنُيَسِّرُهُۥ لِلْعُسْرَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "فَسَنُيَسِّرُهُۥ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "لِلْعُسْرَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "textUthmani": "وَمَا يُغْنِى عَنْهُ مَالُهُۥٓ إِذَا تَرَدَّىٰٓ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَمَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "يُغْنِى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "عَنْهُ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "مَالُهُۥٓ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 5,
+          "textUthmani": "إِذَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 6,
+          "textUthmani": "تَرَدَّىٰٓ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "textUthmani": "إِنَّ عَلَيْنَا لَلْهُدَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "إِنَّ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "عَلَيْنَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "لَلْهُدَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "textUthmani": "وَإِنَّ لَنَا لَلْـَٔاخِرَةَ وَٱلْأُولَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَإِنَّ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "لَنَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "لَلْـَٔاخِرَةَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "وَٱلْأُولَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "textUthmani": "فَأَنذَرْتُكُمْ نَارًا تَلَظَّىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "فَأَنذَرْتُكُمْ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "نَارًا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "تَلَظَّىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "textUthmani": "لَا يَصْلَىٰهَآ إِلَّا ٱلْأَشْقَى",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "لَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "يَصْلَىٰهَآ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "إِلَّا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "ٱلْأَشْقَى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "textUthmani": "ٱلَّذِى كَذَّبَ وَتَوَلَّىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "ٱلَّذِى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "كَذَّبَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "وَتَوَلَّىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "textUthmani": "وَسَيُجَنَّبُهَا ٱلْأَتْقَى",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَسَيُجَنَّبُهَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "ٱلْأَتْقَى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "textUthmani": "ٱلَّذِى يُؤْتِى مَالَهُۥ يَتَزَكَّىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "ٱلَّذِى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "يُؤْتِى",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "مَالَهُۥ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "يَتَزَكَّىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "textUthmani": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعْمَةٍ تُجْزَىٰٓ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَمَا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "لِأَحَدٍ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "عِندَهُۥ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "مِن",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 5,
+          "textUthmani": "نِّعْمَةٍ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 6,
+          "textUthmani": "تُجْزَىٰٓ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "textUthmani": "إِلَّا ٱبْتِغَآءَ وَجْهِ رَبِّهِ ٱلْأَعْلَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "إِلَّا",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "ٱبْتِغَآءَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 3,
+          "textUthmani": "وَجْهِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 4,
+          "textUthmani": "رَبِّهِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 5,
+          "textUthmani": "ٱلْأَعْلَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "textUthmani": "وَلَسَوْفَ يَرْضَىٰ",
+      "words": [
+        {
+          "position": 1,
+          "textUthmani": "وَلَسَوْفَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        },
+        {
+          "position": 2,
+          "textUthmani": "يَرْضَىٰ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
+        }
+      ]
+    }
+  ]
+}

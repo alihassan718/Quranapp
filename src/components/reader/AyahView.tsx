@@ -6,7 +6,7 @@ import { AyahWithWords, Word } from '../../domain/models';
 import { useAnnotations } from '../../state/AnnotationsContext';
 import { useSettings } from '../../state/SettingsContext';
 import { useTheme } from '../../theme/ThemeProvider';
-import { ayahMarker } from '../../utils/arabic';
+import { ayahMarker, hasArabicLetters } from '../../utils/arabic';
 import { haptics } from '../../utils/haptics';
 import { ArabicText } from '../ArabicText';
 import { Icon, IconName } from '../ui/Icon';
@@ -85,15 +85,22 @@ export const AyahView = React.memo(function AyahView({
             justifyContent: 'flex-start',
           }}
         >
-          {ayah.words.map((w) => (
-            <WordChip
-              key={w.position}
-              word={w}
-              size={VERSE_BASE_SIZE}
-              highlight={getWordHighlight(ayah.surah, ayah.ayah, w.position)}
-              onPress={onWordPress}
-            />
-          ))}
+          {ayah.words.map((w) =>
+            hasArabicLetters(w.textUthmani) ? (
+              <WordChip
+                key={w.position}
+                word={w}
+                size={VERSE_BASE_SIZE}
+                highlight={getWordHighlight(ayah.surah, ayah.ayah, w.position)}
+                onPress={onWordPress}
+              />
+            ) : (
+              // Standalone pause/sajdah/rub-el-hizb sign: ornament, not a word.
+              <View key={w.position} style={{ paddingHorizontal: 3 }}>
+                <ArabicText text={w.textUthmani} size={VERSE_BASE_SIZE - 6} color={theme.colors.gold} />
+              </View>
+            ),
+          )}
           <View style={{ paddingHorizontal: 4 }}>
             <ArabicText
               text={ayahMarker(ayah.ayah)}

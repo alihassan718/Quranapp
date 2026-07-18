@@ -436,7 +436,8 @@ function main(): void {
     const n = String(i + 1).padStart(3, '0');
     return `import surah${n} from '../../assets/data/quran/${n}.json';`;
   }).join('\n');
-  const importBlockRe = /(?:^import surah\d{3} from '\.\.\/\.\.\/assets\/data\/quran\/\d{3}\.json';\n)+/m;
+  // \r?\n: the file may carry CRLF endings on Windows checkouts.
+  const importBlockRe = /(?:^import surah\d{3} from '\.\.\/\.\.\/assets\/data\/quran\/\d{3}\.json';\r?\n)+/m;
   assertOrFail(importBlockRe.test(registry), 'registry.ts: surah import block not found — file changed shape');
   registry = registry.replace(importBlockRe, importLines + '\n');
 

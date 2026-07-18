@@ -8,533 +8,424 @@
     "ayahCount": 7,
     "bismillahIsFirstAyah": true
   },
-  "_note": "SAMPLE DATA. Arabic text is Uthmani (source: Tanzil.net — verify against the exact Tanzil version you bundle). Morphology follows the Quranic Arabic Corpus model (root/lemma/POS/features) — ATTRIBUTION REQUIRED. Word tokens here are whitespace-delimited; the full QAC data segments clitic prefixes (bi-, li-, wa-, al-) as separate segments, which this schema can also represent via the features[] array.",
+  "_note": "Layer 1 (Arabic, verbatim): Tanzil Project Uthmani text, tanzil.net, CC BY 3.0 — attribution required. Layer 2 (morphology): NOT YET IMPORTED — all word fields are null pending the Quranic Arabic Corpus import; do not hand-fill.",
   "ayahs": [
     {
       "number": 1,
-      "textUthmani": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "textUthmani": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
       "words": [
         {
           "position": 1,
           "textUthmani": "بِسْمِ",
-          "transliteration": "bis-mi",
-          "root": "س م و",
-          "rootTranslit": "s-m-w",
-          "lemma": "ٱسْم",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "ٱسْم (ism)",
-          "features": [
-            { "label": "Prefix", "value": "bi- (in / with)" },
-            { "label": "Part of speech", "value": "Noun" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "PREFIX|bi+ STEM|POS:N|LEM:{som|ROOT:smw|M|GEN"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
-          "textUthmani": "ٱللَّهِ",
-          "transliteration": "al-lāhi",
-          "root": "أ ل ه",
-          "rootTranslit": "ʾ-l-h",
-          "lemma": "ٱللَّه",
-          "pos": "PN",
-          "posLabel": "Proper noun",
-          "pattern": "the divine name",
-          "features": [
-            { "label": "Part of speech", "value": "Proper noun (the divine name)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:PN|LEM:{ll~ah|ROOT:Alh|GEN"
+          "textUthmani": "ٱللَّهِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
-          "textUthmani": "ٱلرَّحْمَٰنِ",
-          "transliteration": "ar-raḥmāni",
-          "root": "ر ح م",
-          "rootTranslit": "r-ḥ-m",
-          "lemma": "رَحْمَٰن",
-          "pos": "ADJ",
-          "posLabel": "Adjective (intensive)",
-          "pattern": "فَعْلَان (faʿlān)",
-          "features": [
-            { "label": "Part of speech", "value": "Adjective — intensive form (constant, all-embracing)" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:ADJ|LEM:{r~aHoma`n|ROOT:rHm|MS|GEN"
+          "textUthmani": "ٱلرَّحْمَـٰنِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 4,
-          "textUthmani": "ٱلرَّحِيمِ",
-          "transliteration": "ar-raḥīmi",
-          "root": "ر ح م",
-          "rootTranslit": "r-ḥ-m",
-          "lemma": "رَحِيم",
-          "pos": "ADJ",
-          "posLabel": "Adjective",
-          "pattern": "فَعِيل (faʿīl)",
-          "features": [
-            { "label": "Part of speech", "value": "Adjective — continual (merciful in act)" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:ADJ|LEM:{r~aHiym|ROOT:rHm|MS|GEN"
+          "textUthmani": "ٱلرَّحِيمِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 2,
-      "textUthmani": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "textUthmani": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
       "words": [
         {
           "position": 1,
           "textUthmani": "ٱلْحَمْدُ",
-          "transliteration": "al-ḥamdu",
-          "root": "ح م د",
-          "rootTranslit": "ḥ-m-d",
-          "lemma": "حَمْد",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فَعْل (faʿl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Nominative" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:{loHamod|ROOT:Hmd|M|NOM"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
-          "textUthmani": "لِلَّهِ",
-          "transliteration": "lil-lāhi",
-          "root": "أ ل ه",
-          "rootTranslit": "ʾ-l-h",
-          "lemma": "ٱللَّه",
-          "pos": "PN",
-          "posLabel": "Proper noun",
-          "pattern": "the divine name",
-          "features": [
-            { "label": "Prefix", "value": "li- (to / for)" },
-            { "label": "Part of speech", "value": "Proper noun (the divine name)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "PREFIX|l:P+ STEM|POS:PN|LEM:{ll~ah|ROOT:Alh|GEN"
+          "textUthmani": "لِلَّهِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
-          "textUthmani": "رَبِّ",
-          "transliteration": "rabbi",
-          "root": "ر ب ب",
-          "rootTranslit": "r-b-b",
-          "lemma": "رَبّ",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فَعْل (faʿl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun" },
-            { "label": "Case", "value": "Genitive (possessive construction)" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:{r~ab~|ROOT:rbb|M|GEN"
+          "textUthmani": "رَبِّ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 4,
-          "textUthmani": "ٱلْعَٰلَمِينَ",
-          "transliteration": "al-ʿālamīna",
-          "root": "ع ل م",
-          "rootTranslit": "ʿ-l-m",
-          "lemma": "عَالَم",
-          "pos": "N",
-          "posLabel": "Noun (plural)",
-          "pattern": "plural of عَالَم (ʿālam)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun" },
-            { "label": "Number", "value": "Plural (sound masculine)" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:{loEa`lam|ROOT:Elm|MP|GEN"
+          "textUthmani": "ٱلْعَـٰلَمِينَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 3,
-      "textUthmani": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "textUthmani": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
       "words": [
         {
           "position": 1,
-          "textUthmani": "ٱلرَّحْمَٰنِ",
-          "transliteration": "ar-raḥmāni",
-          "root": "ر ح م",
-          "rootTranslit": "r-ḥ-m",
-          "lemma": "رَحْمَٰن",
-          "pos": "ADJ",
-          "posLabel": "Adjective (intensive)",
-          "pattern": "فَعْلَان (faʿlān)",
-          "features": [
-            { "label": "Part of speech", "value": "Adjective — intensive form" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:ADJ|LEM:{r~aHoma`n|ROOT:rHm|MS|GEN"
+          "textUthmani": "ٱلرَّحْمَـٰنِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
-          "textUthmani": "ٱلرَّحِيمِ",
-          "transliteration": "ar-raḥīmi",
-          "root": "ر ح م",
-          "rootTranslit": "r-ḥ-m",
-          "lemma": "رَحِيم",
-          "pos": "ADJ",
-          "posLabel": "Adjective",
-          "pattern": "فَعِيل (faʿīl)",
-          "features": [
-            { "label": "Part of speech", "value": "Adjective — continual" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:ADJ|LEM:{r~aHiym|ROOT:rHm|MS|GEN"
+          "textUthmani": "ٱلرَّحِيمِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 4,
-      "textUthmani": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "textUthmani": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
       "words": [
         {
           "position": 1,
-          "textUthmani": "مَٰلِكِ",
-          "transliteration": "māliki",
-          "root": "م ل ك",
-          "rootTranslit": "m-l-k",
-          "lemma": "مَالِك",
-          "pos": "N",
-          "posLabel": "Active participle",
-          "pattern": "فَاعِل (fāʿil)",
-          "features": [
-            { "label": "Part of speech", "value": "Active participle — 'owner / master of'" },
-            { "label": "Case", "value": "Genitive" },
-            { "label": "Variant reading", "value": "مَلِكِ (maliki) — 'King of' (reading of ʿĀṣim via Ḥafṣ has Mālik)" }
-          ],
-          "featuresRaw": "STEM|POS:N|ACT PCPL|LEM:{ma`lik|ROOT:mlk|M|GEN"
+          "textUthmani": "مَـٰلِكِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
           "textUthmani": "يَوْمِ",
-          "transliteration": "yawmi",
-          "root": "ي و م",
-          "rootTranslit": "y-w-m",
-          "lemma": "يَوْم",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فَعْل (faʿl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun" },
-            { "label": "Case", "value": "Genitive (possessive construction)" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:{yawom|ROOT:ywm|M|GEN"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
-          "textUthmani": "ٱلدِّينِ",
-          "transliteration": "ad-dīni",
-          "root": "د ي ن",
-          "rootTranslit": "d-y-n",
-          "lemma": "دِين",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فِعْل (fiʿl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun — 'judgement / recompense / religion'" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:{d~iyn|ROOT:dyn|M|GEN"
+          "textUthmani": "ٱلدِّينِ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 5,
-      "textUthmani": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "textUthmani": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
       "words": [
         {
           "position": 1,
-          "textUthmani": "إِيَّاكَ",
-          "transliteration": "iyyāka",
+          "textUthmani": "إِيَّاكَ",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "إِيَّا",
-          "pos": "PRON",
-          "posLabel": "Pronoun (object)",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Part of speech", "value": "Object pronoun — 'You (alone)'" },
-            { "label": "Person", "value": "2nd person masculine singular" },
-            { "label": "Word order", "value": "Fronted before the verb for exclusivity ('You alone we worship')" }
-          ],
-          "featuresRaw": "STEM|POS:PRON|LEM:{iy~aY|2MS"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
           "textUthmani": "نَعْبُدُ",
-          "transliteration": "naʿbudu",
-          "root": "ع ب د",
-          "rootTranslit": "ʿ-b-d",
-          "lemma": "عَبَدَ",
-          "pos": "V",
-          "posLabel": "Verb",
-          "pattern": "Form I — نَفْعُلُ (nafʿulu)",
-          "features": [
-            { "label": "Part of speech", "value": "Verb (imperfect)" },
-            { "label": "Person", "value": "1st person plural — 'we worship'" },
-            { "label": "Mood", "value": "Indicative" }
-          ],
-          "featuresRaw": "STEM|POS:V|IMPF|LEM:Eabada|ROOT:Ebd|1P|IND"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
-          "textUthmani": "وَإِيَّاكَ",
-          "transliteration": "wa-iyyāka",
+          "textUthmani": "وَإِيَّاكَ",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "إِيَّا",
-          "pos": "PRON",
-          "posLabel": "Pronoun (object)",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Prefix", "value": "wa- (and)" },
-            { "label": "Part of speech", "value": "Object pronoun — 'You (alone)'" },
-            { "label": "Person", "value": "2nd person masculine singular" }
-          ],
-          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:PRON|LEM:{iy~aY|2MS"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 4,
           "textUthmani": "نَسْتَعِينُ",
-          "transliteration": "nastaʿīnu",
-          "root": "ع و ن",
-          "rootTranslit": "ʿ-w-n",
-          "lemma": "ٱسْتَعَانَ",
-          "pos": "V",
-          "posLabel": "Verb",
-          "pattern": "Form X — ٱسْتَفْعَلَ (istafʿala)",
-          "features": [
-            { "label": "Part of speech", "value": "Verb (imperfect), Form X — 'to seek help'" },
-            { "label": "Person", "value": "1st person plural — 'we seek help'" },
-            { "label": "Mood", "value": "Indicative" }
-          ],
-          "featuresRaw": "STEM|POS:V|IMPF|(X)|LEM:{isotaEa`n|ROOT:Ewn|1P|IND"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 6,
-      "textUthmani": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "textUthmani": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
       "words": [
         {
           "position": 1,
           "textUthmani": "ٱهْدِنَا",
-          "transliteration": "ihdinā",
-          "root": "ه د ي",
-          "rootTranslit": "h-d-y",
-          "lemma": "هَدَىٰ",
-          "pos": "V",
-          "posLabel": "Verb",
-          "pattern": "Form I — imperative",
-          "features": [
-            { "label": "Part of speech", "value": "Verb (imperative) — 'guide'" },
-            { "label": "Person", "value": "2nd person masculine singular (addressing Allah)" },
-            { "label": "Object pronoun", "value": "-nā (us) → 'guide us'" }
-          ],
-          "featuresRaw": "STEM|POS:V|IMPV|LEM:hadaY|ROOT:hdy|2MS + SUFFIX|PRON:1P"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
-          "textUthmani": "ٱلصِّرَٰطَ",
-          "transliteration": "aṣ-ṣirāṭa",
-          "root": "ص ر ط",
-          "rootTranslit": "ṣ-r-ṭ",
-          "lemma": "صِرَاط",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فِعَال (fiʿāl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun — 'the path / way'" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Accusative (direct object)" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:Sira`T|ROOT:SrT|M|ACC"
+          "textUthmani": "ٱلصِّرَٰطَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
           "textUthmani": "ٱلْمُسْتَقِيمَ",
-          "transliteration": "al-mustaqīma",
-          "root": "ق و م",
-          "rootTranslit": "q-w-m",
-          "lemma": "مُسْتَقِيم",
-          "pos": "ADJ",
-          "posLabel": "Active participle (Form X)",
-          "pattern": "مُسْتَفْعِل (mustafʿil)",
-          "features": [
-            { "label": "Part of speech", "value": "Adjective / active participle — 'straight, upright'" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Accusative" }
-          ],
-          "featuresRaw": "STEM|POS:ADJ|ACT PCPL|(X)|LEM:musotaqiym|ROOT:qwm|MS|ACC"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     },
     {
       "number": 7,
-      "textUthmani": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "textUthmani": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
       "words": [
         {
           "position": 1,
           "textUthmani": "صِرَٰطَ",
-          "transliteration": "ṣirāṭa",
-          "root": "ص ر ط",
-          "rootTranslit": "ṣ-r-ṭ",
-          "lemma": "صِرَاط",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فِعَال (fiʿāl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun — 'path of' (in apposition to the previous verse)" },
-            { "label": "Case", "value": "Accusative" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:Sira`T|ROOT:SrT|M|ACC"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 2,
-          "textUthmani": "ٱلَّذِينَ",
-          "transliteration": "alladhīna",
+          "textUthmani": "ٱلَّذِينَ",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "ٱلَّذِينَ",
-          "pos": "REL",
-          "posLabel": "Relative pronoun",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Part of speech", "value": "Relative pronoun — 'those who'" },
-            { "label": "Number / gender", "value": "Masculine plural" }
-          ],
-          "featuresRaw": "STEM|POS:REL|LEM:{l~a*iyn|MP"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 3,
           "textUthmani": "أَنْعَمْتَ",
-          "transliteration": "anʿamta",
-          "root": "ن ع م",
-          "rootTranslit": "n-ʿ-m",
-          "lemma": "أَنْعَمَ",
-          "pos": "V",
-          "posLabel": "Verb (Form IV)",
-          "pattern": "Form IV — أَفْعَلَ (afʿala)",
-          "features": [
-            { "label": "Part of speech", "value": "Verb (perfect), Form IV — 'to bestow favour'" },
-            { "label": "Person", "value": "2nd person masculine singular — 'You bestowed favour'" },
-            { "label": "Object pronoun", "value": "implied 'upon them' via the following preposition" }
-          ],
-          "featuresRaw": "STEM|POS:V|PERF|(IV)|LEM:>anoEama|ROOT:nEm|2MS"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 4,
           "textUthmani": "عَلَيْهِمْ",
-          "transliteration": "ʿalayhim",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "عَلَىٰ",
-          "pos": "P",
-          "posLabel": "Preposition + pronoun",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Preposition", "value": "ʿalā (upon / on)" },
-            { "label": "Object pronoun", "value": "-him (them) → 'upon them'" }
-          ],
-          "featuresRaw": "STEM|POS:P|LEM:Ealay` + SUFFIX|PRON:3MP"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 5,
           "textUthmani": "غَيْرِ",
-          "transliteration": "ghayri",
-          "root": "غ ي ر",
-          "rootTranslit": "gh-y-r",
-          "lemma": "غَيْر",
-          "pos": "N",
-          "posLabel": "Noun",
-          "pattern": "فَعْل (faʿl)",
-          "features": [
-            { "label": "Part of speech", "value": "Noun of exception — 'other than / not'" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:N|LEM:gayor|ROOT:gyr|M|GEN"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 6,
           "textUthmani": "ٱلْمَغْضُوبِ",
-          "transliteration": "al-maghḍūbi",
-          "root": "غ ض ب",
-          "rootTranslit": "gh-ḍ-b",
-          "lemma": "مَغْضُوب",
-          "pos": "N",
-          "posLabel": "Passive participle",
-          "pattern": "مَفْعُول (mafʿūl)",
-          "features": [
-            { "label": "Part of speech", "value": "Passive participle — 'those brought under wrath'" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:N|PASS PCPL|LEM:magoDuwb|ROOT:gDb|M|GEN"
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 7,
           "textUthmani": "عَلَيْهِمْ",
-          "transliteration": "ʿalayhim",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "عَلَىٰ",
-          "pos": "P",
-          "posLabel": "Preposition + pronoun",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Preposition", "value": "ʿalā (upon / on)" },
-            { "label": "Object pronoun", "value": "-him (them)" }
-          ],
-          "featuresRaw": "STEM|POS:P|LEM:Ealay` + SUFFIX|PRON:3MP"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 8,
           "textUthmani": "وَلَا",
-          "transliteration": "wa-lā",
+          "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": "لَا",
-          "pos": "NEG",
-          "posLabel": "Negation particle",
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
           "pattern": null,
-          "features": [
-            { "label": "Prefix", "value": "wa- (and)" },
-            { "label": "Part of speech", "value": "Negation — lā (nor / not)" }
-          ],
-          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:NEG|LEM:laA"
+          "features": [],
+          "featuresRaw": null
         },
         {
           "position": 9,
-          "textUthmani": "ٱلضَّآلِّينَ",
-          "transliteration": "aḍ-ḍāllīna",
-          "root": "ض ل ل",
-          "rootTranslit": "ḍ-l-l",
-          "lemma": "ضَالّ",
-          "pos": "N",
-          "posLabel": "Active participle (plural)",
-          "pattern": "فَاعِل (fāʿil), sound masculine plural",
-          "features": [
-            { "label": "Part of speech", "value": "Active participle — 'those who go astray'" },
-            { "label": "Number", "value": "Plural (sound masculine)" },
-            { "label": "Definiteness", "value": "Definite (al-)" },
-            { "label": "Case", "value": "Genitive" }
-          ],
-          "featuresRaw": "STEM|POS:N|ACT PCPL|LEM:Da`l~|ROOT:Dll|MP|GEN"
+          "textUthmani": "ٱلضَّآلِّينَ",
+          "transliteration": null,
+          "root": null,
+          "rootTranslit": null,
+          "lemma": null,
+          "pos": null,
+          "posLabel": null,
+          "pattern": null,
+          "features": [],
+          "featuresRaw": null
         }
       ]
     }

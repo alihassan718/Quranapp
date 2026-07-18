@@ -37,3 +37,13 @@ export function parseVerseRef(input: string): { surah: number; ayah: number } | 
 export function isArabic(text: string): boolean {
   return /[؀-ۿ]/.test(text);
 }
+
+/**
+ * True if the token contains at least one Arabic LETTER. Standalone Qur'anic
+ * annotation signs (pause marks ۖ ۗ ۛ …, sajdah ۩, rub-el-hizb ۞) tokenize as
+ * their own "words" in Tanzil text downloaded with those options — they are
+ * paratextual ornaments, not words, so the Reader must not make them tappable.
+ */
+export function hasArabicLetters(token: string): boolean {
+  return /[ء-يٱ-ۓۺ-ۿ]/u.test(token);
+}

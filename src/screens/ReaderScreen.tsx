@@ -86,17 +86,26 @@ export function ReaderScreen() {
     navigation.setOptions({ title: surah?.nameTransliteration ?? `Surah ${surahNum}` });
   }, [navigation, surah, surahNum]);
 
-  // Scroll to a requested ayah once data is present.
+  // Scroll to a requested ayah once data is present. Rows have variable,
+  // unmeasured heights, so a distant scrollToIndex can no-op (web) or fail
+  // (native): approach by estimated offset first — which makes the list
+  // render/measure that range — then land exactly on the index.
   useEffect(() => {
-    if (!loading && targetAyah && ayahs.length) {
-      const index = ayahs.findIndex((a) => a.ayah === targetAyah);
-      if (index > 0) {
-        const t = setTimeout(() => {
-          listRef.current?.scrollToIndex({ index, animated: true, viewPosition: 0.1 });
-        }, 350);
-        return () => clearTimeout(t);
-      }
-    }
+    if (loading || !targetAyah || !ayahs.length) return;
+    const index = ayahs.findIndex((a) => a.ayah === targetAyah);
+    if (index <= 0) return;
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    timers.push(
+      setTimeout(() => {
+        listRef.current?.scrollToOffset({ offset: index * 300, animated: false });
+        timers.push(
+          setTimeout(() => {
+            listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0.1 });
+          }, 400),
+        );
+      }, 350),
+    );
+    return () => timers.forEach(clearTimeout);
   }, [loading, targetAyah, ayahs]);
 
   const viewPairs = useRef([
@@ -141,8 +150,11 @@ export function ReaderScreen() {
           contentContainerStyle={{ paddingBottom: insets.bottom + theme.spacing.huge }}
           initialNumToRender={8}
           windowSize={11}
-          onScrollToIndexFailed={({ index }) => {
-            setTimeout(() => listRef.current?.scrollToIndex({ index, animated: true, viewPosition: 0.1 }), 400);
+          onScrollToIndexFailed={({ index, averageItemLength }) => {
+            // Rows have variable heights, so a far-away index isn't measured
+            // yet: jump near it by estimated offset first, then land exactly.
+            listRef.current?.scrollToOffset({ offset: averageItemLength * index, animated: false });
+            setTimeout(() => listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0.1 }), 300);
           }}
           ListHeaderComponent={
             surah ? (
