@@ -7,7 +7,7 @@
     "revelationPlace": "Meccan",
     "ayahCount": 29
   },
-  "_note": "Layer 1 (Arabic, verbatim): Tanzil Project Uthmani text, tanzil.net, CC BY 3.0 — attribution required. Layer 2 (morphology): NOT YET IMPORTED — all word fields are null pending the Quranic Arabic Corpus import; do not hand-fill.",
+  "_note": "Layer 1 (Arabic, verbatim): Tanzil Uthmani v1.1, tanzil.net, CC BY 3.0. Layer 2 (morphology): Quranic Arabic Corpus v0.4 (Kais Dukes, 2011), GNU GPL — attribute \"Quranic Arabic Corpus\" with a link to corpus.quran.com. Per-word glosses intentionally null (no clean-licensed source). DATA UNDER TEST — not yet scholar-reviewed.",
   "ayahs": [
     {
       "number": 1,
@@ -19,38 +19,76 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلشَّمْسُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ش م س",
+          "rootTranslit": "sh-m-s",
+          "lemma": "شَمْس",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:$amos|ROOT:$ms|F|NOM"
         },
         {
           "position": 3,
           "textUthmani": "كُوِّرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ك و ر",
+          "rootTranslit": "k-w-r",
+          "lemma": "كُوِّرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:kuw~irato|ROOT:kwr|3FS"
         }
       ]
     },
@@ -64,38 +102,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلنُّجُومُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ن ج م",
+          "rootTranslit": "n-j-m",
+          "lemma": "نَّجْم",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:n~ajom|ROOT:njm|MP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "ٱنكَدَرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ك د ر",
+          "rootTranslit": "k-d-r",
+          "lemma": "ٱنكَدَرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Verb form",
+              "value": "VII"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|(VII)|LEM:{nkadarato|ROOT:kdr|3FS"
         }
       ]
     },
@@ -109,38 +190,85 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْجِبَالُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ج ب ل",
+          "rootTranslit": "j-b-l",
+          "lemma": "جَبَل",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:jabal|ROOT:jbl|MP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "سُيِّرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "س ي ر",
+          "rootTranslit": "s-y-r",
+          "lemma": "سُيِّرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:suy~irato|ROOT:syr|3FS"
         }
       ]
     },
@@ -154,38 +282,85 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْعِشَارُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ش ر",
+          "rootTranslit": "ʿ-sh-r",
+          "lemma": "عِشَار",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:Ei$aAr|ROOT:E$r|MP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "عُطِّلَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ط ل",
+          "rootTranslit": "ʿ-ṭ-l",
+          "lemma": "عُطِّلَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:EuT~ilato|ROOT:ETl|3FS"
         }
       ]
     },
@@ -199,38 +374,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْوُحُوشُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "و ح ش",
+          "rootTranslit": "w-ḥ-sh",
+          "lemma": "وُحُوش",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:wuHuw$|ROOT:wH$|MP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "حُشِرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ح ش ر",
+          "rootTranslit": "ḥ-sh-r",
+          "lemma": "حَشَرَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|LEM:Ha$ara|ROOT:H$r|3FS"
         }
       ]
     },
@@ -244,38 +462,85 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْبِحَارُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ب ح ر",
+          "rootTranslit": "b-ḥ-r",
+          "lemma": "بَحْر",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:baHor|ROOT:bHr|MP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "سُجِّرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "س ج ر",
+          "rootTranslit": "s-j-r",
+          "lemma": "سُجِّرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:suj~irato|ROOT:sjr|3FS"
         }
       ]
     },
@@ -289,38 +554,85 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلنُّفُوسُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ن ف س",
+          "rootTranslit": "n-f-s",
+          "lemma": "نَفْس",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:nafos|ROOT:nfs|FP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "زُوِّجَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ز و ج",
+          "rootTranslit": "z-w-j",
+          "lemma": "زُوِّجَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:zuw~ijato|ROOT:zwj|3FS"
         }
       ]
     },
@@ -334,38 +646,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْمَوْءُۥدَةُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "و ا د",
+          "rootTranslit": "w-ā-d",
+          "lemma": "مَوْءُدَة",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|PASS|PCPL|LEM:mawo'udap|ROOT:wAd|F|NOM"
         },
         {
           "position": 3,
           "textUthmani": "سُئِلَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "س ا ل",
+          "rootTranslit": "s-ā-l",
+          "lemma": "سَأَلَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|LEM:sa>ala|ROOT:sAl|3FS"
         }
       ]
     },
@@ -379,38 +734,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "أَىّ",
+          "pos": "INTG",
+          "posLabel": "Interrogative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ STEM|POS:INTG|LEM:>aY~|GEN"
         },
         {
           "position": 2,
           "textUthmani": "ذَنۢبٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ذ ن ب",
+          "rootTranslit": "dh-n-b",
+          "lemma": "ذَنب",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:*anb|ROOT:*nb|M|INDEF|GEN"
         },
         {
           "position": 3,
           "textUthmani": "قُتِلَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق ت ل",
+          "rootTranslit": "q-t-l",
+          "lemma": "قَتَلَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|LEM:qatala|ROOT:qtl|3FS"
         }
       ]
     },
@@ -424,38 +822,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلصُّحُفُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ص ح ف",
+          "rootTranslit": "ṣ-ḥ-f",
+          "lemma": "صُحُف",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:SuHuf|ROOT:SHf|FP|NOM"
         },
         {
           "position": 3,
           "textUthmani": "نُشِرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ن ش ر",
+          "rootTranslit": "n-sh-r",
+          "lemma": "نُشِرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|LEM:nu$irato|ROOT:n$r|3FS"
         }
       ]
     },
@@ -469,38 +910,77 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلسَّمَآءُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "س م و",
+          "rootTranslit": "s-m-w",
+          "lemma": "سَمَا^ء",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:samaA^'|ROOT:smw|F|NOM"
         },
         {
           "position": 3,
           "textUthmani": "كُشِطَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ك ش ط",
+          "rootTranslit": "k-sh-ṭ",
+          "lemma": "كُشِطَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|LEM:ku$iTato|ROOT:k$T|3FS"
         }
       ]
     },
@@ -514,38 +994,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْجَحِيمُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ج ح م",
+          "rootTranslit": "j-ḥ-m",
+          "lemma": "جَحِيم",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:jaHiym|ROOT:jHm|F|NOM"
         },
         {
           "position": 3,
           "textUthmani": "سُعِّرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "س ع ر",
+          "rootTranslit": "s-ʿ-r",
+          "lemma": "سُعِّرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "II"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(II)|LEM:suE~irato|ROOT:sEr|3FS"
         }
       ]
     },
@@ -559,38 +1082,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْجَنَّةُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ج ن ن",
+          "rootTranslit": "j-n-n",
+          "lemma": "جَنَّة",
+          "pos": "PN",
+          "posLabel": "Proper noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:PN|LEM:jan~ap|ROOT:jnn|F|NOM"
         },
         {
           "position": 3,
           "textUthmani": "أُزْلِفَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ز ل ف",
+          "rootTranslit": "z-l-f",
+          "lemma": "أُزْلِفَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "IV"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|PASS|(IV)|LEM:>uzolifato|ROOT:zlf|3FS"
         }
       ]
     },
@@ -602,27 +1168,61 @@
           "position": 1,
           "textUthmani": "عَلِمَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ل م",
+          "rootTranslit": "ʿ-l-m",
+          "lemma": "عَلِمَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|LEM:Ealima|ROOT:Elm|3FS"
         },
         {
           "position": 2,
           "textUthmani": "نَفْسٌ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ن ف س",
+          "rootTranslit": "n-f-s",
+          "lemma": "نَفْس",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:nafos|ROOT:nfs|FS|INDEF|NOM"
         },
         {
           "position": 3,
@@ -630,25 +1230,46 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَا",
+          "pos": "REL",
+          "posLabel": "Relative pronoun",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:REL|LEM:maA"
         },
         {
           "position": 4,
           "textUthmani": "أَحْضَرَتْ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ح ض ر",
+          "rootTranslit": "ḥ-ḍ-r",
+          "lemma": "أَحْضَرَتْ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Verb form",
+              "value": "IV"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|(IV)|LEM:>aHoDarato|ROOT:HDr|3FS"
         }
       ]
     },
@@ -662,38 +1283,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "لَا",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "fa- (conjunction \"then/so\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|f:REM+ STEM|POS:NEG|LEM:laA"
         },
         {
           "position": 2,
           "textUthmani": "أُقْسِمُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق س م",
+          "rootTranslit": "q-s-m",
+          "lemma": "أَقْسَمُ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Imperfect"
+            },
+            {
+              "label": "Verb form",
+              "value": "IV"
+            },
+            {
+              "label": "Person",
+              "value": "1st person"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|IMPF|(IV)|LEM:>aqosamu|ROOT:qsm|1S"
         },
         {
           "position": 3,
           "textUthmani": "بِٱلْخُنَّسِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "خ ن س",
+          "rootTranslit": "kh-n-s",
+          "lemma": "خُنَّس",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ PREFIX|Al+ STEM|POS:N|LEM:xun~as|ROOT:xns|MP|GEN"
         }
       ]
     },
@@ -705,27 +1369,65 @@
           "position": 1,
           "textUthmani": "ٱلْجَوَارِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ج ر ي",
+          "rootTranslit": "j-r-y",
+          "lemma": "جَوَار",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Voice",
+              "value": "Active"
+            },
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:ADJ|ACT|PCPL|LEM:jawaAr|ROOT:jry|FP|GEN"
         },
         {
           "position": 2,
           "textUthmani": "ٱلْكُنَّسِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ك ن س",
+          "rootTranslit": "k-n-s",
+          "lemma": "كُنَّس",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:ADJ|LEM:kun~as|ROOT:kns|MP|GEN"
         }
       ]
     },
@@ -737,14 +1439,31 @@
           "position": 1,
           "textUthmani": "وَٱلَّيْلِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ل ي ل",
+          "rootTranslit": "l-y-l",
+          "lemma": "لَيْل",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ PREFIX|Al+ STEM|POS:N|LEM:layol|ROOT:lyl|M|GEN"
         },
         {
           "position": 2,
@@ -752,25 +1471,42 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 3,
           "textUthmani": "عَسْعَسَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع س ع س",
+          "rootTranslit": "ʿ-s-ʿ-s",
+          "lemma": "عَسْعَسَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|LEM:EasoEasa|ROOT:EsEs|3MS"
         }
       ]
     },
@@ -782,14 +1518,31 @@
           "position": 1,
           "textUthmani": "وَٱلصُّبْحِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ص ب ح",
+          "rootTranslit": "ṣ-b-ḥ",
+          "lemma": "صُبْح",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ PREFIX|Al+ STEM|POS:N|LEM:SuboH|ROOT:SbH|M|GEN"
         },
         {
           "position": 2,
@@ -797,25 +1550,46 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِذَا",
+          "pos": "T",
+          "posLabel": "Time adverb",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:T|LEM:<i*aA"
         },
         {
           "position": 3,
           "textUthmani": "تَنَفَّسَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ن ف س",
+          "rootTranslit": "n-f-s",
+          "lemma": "تَنَفَّسَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Verb form",
+              "value": "V"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|(V)|LEM:tanaf~asa|ROOT:nfs|3MS"
         }
       ]
     },
@@ -829,51 +1603,103 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِنّ",
+          "pos": "ACC",
+          "posLabel": "Accusative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ACC|LEM:<in~|SP:<in~ SUFFIX|PRON:3MS"
         },
         {
           "position": 2,
           "textUthmani": "لَقَوْلُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق و ل",
+          "rootTranslit": "q-w-l",
+          "lemma": "قَوْل",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "li- (preposition/particle \"to/for\")"
+            },
+            {
+              "label": "Derivation",
+              "value": "Verbal noun"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "PREFIX|l:EMPH+ STEM|POS:N|VN|LEM:qawol|ROOT:qwl|M|NOM"
         },
         {
           "position": 3,
           "textUthmani": "رَسُولٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ر س ل",
+          "rootTranslit": "r-s-l",
+          "lemma": "رَسُول",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:rasuwl|ROOT:rsl|M|INDEF|GEN"
         },
         {
           "position": 4,
           "textUthmani": "كَرِيمٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ك ر م",
+          "rootTranslit": "k-r-m",
+          "lemma": "كَرِيم",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ADJ|LEM:kariym|ROOT:krm|MS|INDEF|GEN"
         }
       ]
     },
@@ -887,38 +1713,69 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "ذُو",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:*uw|MS|GEN"
         },
         {
           "position": 2,
           "textUthmani": "قُوَّةٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق و ي",
+          "rootTranslit": "q-w-y",
+          "lemma": "قُوَّة",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Feminine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:quw~ap|ROOT:qwy|F|INDEF|GEN"
         },
         {
           "position": 3,
           "textUthmani": "عِندَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ن د",
+          "rootTranslit": "ʿ-n-d",
+          "lemma": "عِند",
+          "pos": "LOC",
+          "posLabel": "Location adverb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Case",
+              "value": "Accusative"
+            }
+          ],
+          "featuresRaw": "STEM|POS:LOC|LEM:Eind|ROOT:End|ACC"
         },
         {
           "position": 4,
@@ -926,38 +1783,81 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "ذُو",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:*uw|MS|GEN"
         },
         {
           "position": 5,
           "textUthmani": "ٱلْعَرْشِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ر ش",
+          "rootTranslit": "ʿ-r-sh",
+          "lemma": "عَرْش",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:Earo$|ROOT:Er$|M|GEN"
         },
         {
           "position": 6,
           "textUthmani": "مَكِينٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "م ك ن",
+          "rootTranslit": "m-k-n",
+          "lemma": "مَّكِين",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ADJ|LEM:m~akiyn|ROOT:mkn|MS|INDEF|GEN"
         }
       ]
     },
@@ -969,14 +1869,35 @@
           "position": 1,
           "textUthmani": "مُّطَاعٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ط و ع",
+          "rootTranslit": "ṭ-w-ʿ",
+          "lemma": "مُّطَاع",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Verb form",
+              "value": "IV"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ADJ|PASS|PCPL|(IV)|LEM:m~uTaAE|ROOT:TwE|M|INDEF|GEN"
         },
         {
           "position": 2,
@@ -984,25 +1905,42 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "ثَمّ",
+          "pos": "LOC",
+          "posLabel": "Location adverb",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:LOC|LEM:vam~"
         },
         {
           "position": 3,
           "textUthmani": "أَمِينٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ا م ن",
+          "rootTranslit": "ā-m-n",
+          "lemma": "أَمِين",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ADJ|LEM:>amiyn|ROOT:Amn|MS|INDEF|GEN"
         }
       ]
     },
@@ -1016,38 +1954,73 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَا",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:REM+ STEM|POS:NEG|LEM:maA|SP:kaAn"
         },
         {
           "position": 2,
           "textUthmani": "صَاحِبُكُم",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ص ح ب",
+          "rootTranslit": "ṣ-ḥ-b",
+          "lemma": "صَاحِب",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Case",
+              "value": "Nominative"
+            },
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:SaAHib|ROOT:SHb|NOM SUFFIX|PRON:2MP"
         },
         {
           "position": 3,
           "textUthmani": "بِمَجْنُونٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ج ن ن",
+          "rootTranslit": "j-n-n",
+          "lemma": "مَجْنُون",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Voice",
+              "value": "Passive"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ STEM|POS:N|PASS|PCPL|LEM:majonuwn|ROOT:jnn|M|INDEF|GEN"
         }
       ]
     },
@@ -1061,51 +2034,119 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "قَد",
+          "pos": "CERT",
+          "posLabel": "Particle of certainty",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "li- (preposition/particle \"to/for\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:REM+ PREFIX|l:EMPH+ STEM|POS:CERT|LEM:qad"
         },
         {
           "position": 2,
           "textUthmani": "رَءَاهُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ر ا ي",
+          "rootTranslit": "r-ā-y",
+          "lemma": "رَءَا",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|LEM:ra'aA|ROOT:rAy|3MS SUFFIX|PRON:3MS"
         },
         {
           "position": 3,
           "textUthmani": "بِٱلْأُفُقِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ا ف ق",
+          "rootTranslit": "ā-f-q",
+          "lemma": "أُفُق",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ PREFIX|Al+ STEM|POS:N|LEM:>ufuq|ROOT:Afq|M|GEN"
         },
         {
           "position": 4,
           "textUthmani": "ٱلْمُبِينِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ب ي ن",
+          "rootTranslit": "b-y-n",
+          "lemma": "مُّبِين",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Voice",
+              "value": "Active"
+            },
+            {
+              "label": "Verb form",
+              "value": "IV"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:ADJ|ACT|PCPL|(IV)|LEM:m~ubiyn|ROOT:byn|M|GEN"
         }
       ]
     },
@@ -1119,12 +2160,17 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَا",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:NEG|LEM:maA|SP:kaAn"
         },
         {
           "position": 2,
@@ -1133,11 +2179,24 @@
           "root": null,
           "rootTranslit": null,
           "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "pos": "PRON",
+          "posLabel": "Pronoun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:PRON|3MS"
         },
         {
           "position": 3,
@@ -1145,38 +2204,72 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "عَلَىٰ",
+          "pos": "P",
+          "posLabel": "Preposition",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:P|LEM:EalaY`"
         },
         {
           "position": 4,
           "textUthmani": "ٱلْغَيْبِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "غ ي ب",
+          "rootTranslit": "gh-y-b",
+          "lemma": "غَيْب",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:gayob|ROOT:gyb|M|GEN"
         },
         {
           "position": 5,
           "textUthmani": "بِضَنِينٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ض ن ن",
+          "rootTranslit": "ḍ-n-n",
+          "lemma": "ضَنِين",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ STEM|POS:N|LEM:Daniyn|ROOT:Dnn|MS|INDEF|GEN"
         }
       ]
     },
@@ -1190,12 +2283,17 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَا",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:CONJ+ STEM|POS:NEG|LEM:maA|SP:kaAn"
         },
         {
           "position": 2,
@@ -1204,50 +2302,110 @@
           "root": null,
           "rootTranslit": null,
           "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "pos": "PRON",
+          "posLabel": "Pronoun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:PRON|3MS"
         },
         {
           "position": 3,
           "textUthmani": "بِقَوْلِ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق و ل",
+          "rootTranslit": "q-w-l",
+          "lemma": "قَوْل",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "bi- (preposition \"with/in\")"
+            },
+            {
+              "label": "Derivation",
+              "value": "Verbal noun"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|bi+ STEM|POS:N|VN|LEM:qawol|ROOT:qwl|M|GEN"
         },
         {
           "position": 4,
           "textUthmani": "شَيْطَـٰنٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ش ط ن",
+          "rootTranslit": "sh-ṭ-n",
+          "lemma": "شَيْطَٰن",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:$ayoTa`n|ROOT:$Tn|M|INDEF|GEN"
         },
         {
           "position": 5,
           "textUthmani": "رَّجِيمٍ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ر ج م",
+          "rootTranslit": "r-j-m",
+          "lemma": "رَجِيم",
+          "pos": "ADJ",
+          "posLabel": "Adjective",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "STEM|POS:ADJ|LEM:rajiym|ROOT:rjm|MS|INDEF|GEN"
         }
       ]
     },
@@ -1261,25 +2419,51 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "أَيْن",
+          "pos": "INTG",
+          "posLabel": "Interrogative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "fa- (conjunction \"then/so\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|f:REM+ STEM|POS:INTG|LEM:>ayon"
         },
         {
           "position": 2,
           "textUthmani": "تَذْهَبُونَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ذ ه ب",
+          "rootTranslit": "dh-h-b",
+          "lemma": "ذَهَبَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Imperfect"
+            },
+            {
+              "label": "Person",
+              "value": "2nd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|IMPF|LEM:*ahaba|ROOT:*hb|2MP SUFFIX|PRON:2MP"
         }
       ]
     },
@@ -1293,12 +2477,12 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِن",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:NEG|LEM:<in"
         },
         {
           "position": 2,
@@ -1307,11 +2491,24 @@
           "root": null,
           "rootTranslit": null,
           "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "pos": "PRON",
+          "posLabel": "Pronoun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:PRON|3MS"
         },
         {
           "position": 3,
@@ -1319,38 +2516,76 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِلَّا",
+          "pos": "RES",
+          "posLabel": "Restriction particle",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:RES|LEM:<il~aA"
         },
         {
           "position": 4,
           "textUthmani": "ذِكْرٌ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ذ ك ر",
+          "rootTranslit": "dh-k-r",
+          "lemma": "ذِكْر",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Derivation",
+              "value": "Verbal noun"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "State",
+              "value": "Indefinite"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|VN|LEM:*ikor|ROOT:*kr|M|INDEF|NOM"
         },
         {
           "position": 5,
           "textUthmani": "لِّلْعَـٰلَمِينَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ل م",
+          "rootTranslit": "ʿ-l-m",
+          "lemma": "عَٰلَمِين",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "li- (preposition/particle \"to/for\")"
+            },
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|l:P+ PREFIX|Al+ STEM|POS:N|LEM:Ea`lamiyn|ROOT:Elm|MP|GEN"
         }
       ]
     },
@@ -1364,25 +2599,47 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَن",
+          "pos": "REL",
+          "posLabel": "Relative pronoun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "li- (preposition/particle \"to/for\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|l:P+ STEM|POS:REL|LEM:man"
         },
         {
           "position": 2,
           "textUthmani": "شَآءَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ش ي ا",
+          "rootTranslit": "sh-y-ā",
+          "lemma": "شَا^ءَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Perfect"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|PERF|LEM:$aA^'a|ROOT:$yA|3MS"
         },
         {
           "position": 3,
@@ -1390,12 +2647,17 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مِن",
+          "pos": "P",
+          "posLabel": "Preposition",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:P|LEM:min SUFFIX|PRON:2MP"
         },
         {
           "position": 4,
@@ -1403,25 +2665,46 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "أَن",
+          "pos": "SUB",
+          "posLabel": "Subordinating conjunction",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:SUB|LEM:>an"
         },
         {
           "position": 5,
           "textUthmani": "يَسْتَقِيمَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ق و م",
+          "rootTranslit": "q-w-m",
+          "lemma": "ٱسْتَقَٰمُ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Imperfect"
+            },
+            {
+              "label": "Verb form",
+              "value": "X"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|IMPF|(X)|LEM:{sotaqa`mu|ROOT:qwm|3MS|MOOD:SUBJ"
         }
       ]
     },
@@ -1435,25 +2718,51 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "مَا",
+          "pos": "NEG",
+          "posLabel": "Negative particle",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "wa- (conjunction \"and\")"
+            }
+          ],
+          "featuresRaw": "PREFIX|w:REM+ STEM|POS:NEG|LEM:maA"
         },
         {
           "position": 2,
           "textUthmani": "تَشَآءُونَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ش ي ا",
+          "rootTranslit": "sh-y-ā",
+          "lemma": "شَا^ءَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Imperfect"
+            },
+            {
+              "label": "Person",
+              "value": "2nd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Suffix",
+              "value": "Attached pronoun"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|IMPF|LEM:$aA^'a|ROOT:$yA|2MP SUFFIX|PRON:2MP"
         },
         {
           "position": 3,
@@ -1461,12 +2770,12 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "إِلَّا",
+          "pos": "RES",
+          "posLabel": "Restriction particle",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:RES|LEM:<il~aA"
         },
         {
           "position": 4,
@@ -1474,64 +2783,112 @@
           "transliteration": null,
           "root": null,
           "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "lemma": "أَن",
+          "pos": "SUB",
+          "posLabel": "Subordinating conjunction",
           "pattern": null,
           "features": [],
-          "featuresRaw": null
+          "featuresRaw": "STEM|POS:SUB|LEM:>an"
         },
         {
           "position": 5,
           "textUthmani": "يَشَآءَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ش ي ا",
+          "rootTranslit": "sh-y-ā",
+          "lemma": "شَا^ءَ",
+          "pos": "V",
+          "posLabel": "Verb",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Aspect",
+              "value": "Imperfect"
+            },
+            {
+              "label": "Person",
+              "value": "3rd person"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Singular"
+            }
+          ],
+          "featuresRaw": "STEM|POS:V|IMPF|LEM:$aA^'a|ROOT:$yA|3MS|MOOD:SUBJ"
         },
         {
           "position": 6,
           "textUthmani": "ٱللَّهُ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ا ل ه",
+          "rootTranslit": "ā-l-h",
+          "lemma": "ٱللَّه",
+          "pos": "PN",
+          "posLabel": "Proper noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "STEM|POS:PN|LEM:{ll~ah|ROOT:Alh|NOM"
         },
         {
           "position": 7,
           "textUthmani": "رَبُّ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ر ب ب",
+          "rootTranslit": "r-b-b",
+          "lemma": "رَبّ",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Case",
+              "value": "Nominative"
+            }
+          ],
+          "featuresRaw": "STEM|POS:N|LEM:rab~|ROOT:rbb|M|NOM"
         },
         {
           "position": 8,
           "textUthmani": "ٱلْعَـٰلَمِينَ",
           "transliteration": null,
-          "root": null,
-          "rootTranslit": null,
-          "lemma": null,
-          "pos": null,
-          "posLabel": null,
+          "root": "ع ل م",
+          "rootTranslit": "ʿ-l-m",
+          "lemma": "عَٰلَمِين",
+          "pos": "N",
+          "posLabel": "Noun",
           "pattern": null,
-          "features": [],
-          "featuresRaw": null
+          "features": [
+            {
+              "label": "Prefix",
+              "value": "al- (definite article)"
+            },
+            {
+              "label": "Gender",
+              "value": "Masculine"
+            },
+            {
+              "label": "Number",
+              "value": "Plural"
+            },
+            {
+              "label": "Case",
+              "value": "Genitive"
+            }
+          ],
+          "featuresRaw": "PREFIX|Al+ STEM|POS:N|LEM:Ea`lamiyn|ROOT:Elm|MP|GEN"
         }
       ]
     }

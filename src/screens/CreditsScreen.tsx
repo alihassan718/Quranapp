@@ -31,6 +31,29 @@ export function CreditsScreen() {
           </AppText>
         </Card>
 
+        {/* Data-under-test notice (private build) */}
+        <View
+          style={{
+            flexDirection: 'row',
+            gap: theme.spacing.sm,
+            padding: theme.spacing.base,
+            borderRadius: theme.radii.md,
+            borderWidth: 1,
+            borderColor: theme.colors.danger,
+            backgroundColor: theme.colors.dangerSoft,
+            marginBottom: theme.spacing.lg,
+          }}
+        >
+          <Icon name="flask-outline" size={16} color={theme.colors.danger} />
+          <AppText variant="caption" tone={theme.colors.danger} style={{ flex: 1 }}>
+            DATA UNDER TEST — not yet scholar-reviewed. Morphology and lexicon are imported verbatim from the
+            sources below but have not been verified by a specialist. Meanings may be incomplete: about a fifth
+            of roots (including some very common ones) have no bundled lexicon entry and show no meaning — these
+            are left blank, never invented. Treat everything here as a study aid to check against the sources,
+            not as final scholarship.
+          </AppText>
+        </View>
+
         <SectionHeader text="DATA SOURCES" />
 
         <CreditBlock
@@ -47,27 +70,28 @@ export function CreditsScreen() {
 
         <CreditBlock
           title="Word morphology"
-          source="Quranic Arabic Corpus"
+          source="Quranic Arabic Corpus, morphology v0.4"
           status="licensed"
           statusLabel="GNU GPL"
           link="https://corpus.quran.com"
           lines={[
-            'Root, lemma, part of speech, and grammatical features follow the Quranic Arabic Corpus model.',
-            'Created by Kais Dukes (University of Leeds). Attribution required, with a link to corpus.quran.com.',
+            'Root, lemma, part of speech, and grammatical features for every word — imported verbatim from the Quranic Arabic Corpus.',
+            'Copyright © 2011 Kais Dukes (University of Leeds). Used with its source clearly indicated and a link to corpus.quran.com, per its terms of use.',
             'Cite: Dukes & Habash, “Morphological Annotation of Quranic Arabic”, LREC 2010.',
           ]}
         />
 
         <CreditBlock
-          title="Lexicon"
-          source="Lane's Arabic-English Lexicon"
+          title="Lexicon (root → meanings)"
+          source="Lane's Arabic-English Lexicon, via the Perseus Digital Library"
           status="public-domain"
-          statusLabel="Public domain"
+          statusLabel="CC BY-SA 3.0"
+          link="https://www.perseus.tufts.edu"
           lines={[
-            'Edward William Lane, An Arabic-English Lexicon (Williams & Norgate, 1863–1893).',
-            'The original work is public domain. If a digitised dataset is reused (e.g. Perseus), its added licence (CC BY-SA) applies.',
+            'Edward William Lane, An Arabic-English Lexicon (Williams & Norgate, 1863) — the underlying text is public domain.',
+            'Digitized by the Perseus Digital Library, Tufts University, under Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0); this lexicon data is redistributed under the same terms.',
+            'Only Lane\'s verbatim English definitions are bundled. About 81% of Qur\'anic roots have an entry; the rest (including some high-frequency roots) show no meaning and are left blank — never invented.',
           ]}
-          warn="The lexicon entries bundled in this build are illustrative SAMPLES of the classical meaning-range, not verbatim Lane's text. Replace with verified data before shipping."
         />
 
         <SectionHeader text="REFERENCE TRANSLATIONS" />

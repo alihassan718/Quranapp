@@ -41,7 +41,10 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "import:tanzil": "node scripts/import-tanzil.ts"
+    "import:tanzil": "node scripts/import-tanzil.ts",
+    "import:lexicon": "node scripts/import-lexicon.ts",
+    "import:morphology": "node scripts/import-morphology.ts",
+    "validate:data": "node scripts/validate-data.ts"
   },
   "private": true
 }

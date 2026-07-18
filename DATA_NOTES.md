@@ -161,6 +161,46 @@ of writing misaligned data. The app rebuilds its SQLite DB on next launch.
 
 ---
 
+## Importing morphology + lexicon (Importers A & B — Layers 2 & 3)
+
+Two **independent** importers (a messy lexicon can't block morphology):
+
+**Importer A — morphology** (`npm run import:morphology`, Layer 2)
+- Input: `data-sources/qac/quranic-corpus-morphology-0.4.txt` — the Quranic Arabic
+  Corpus morphology v0.4, downloaded (email-gated) from
+  <https://corpus.quran.com/download/>, saved verbatim.
+- Reassembles QAC's prefix/stem/suffix **segments** into whole words, converts
+  Buckwalter→Arabic, maps tag codes to plain-language grammar (root, lemma, POS,
+  features), and fills the null morphology fields in `quran/NNN.json` **in place**.
+- Aligns **positionally** by `(surah, ayah, word-index)` against our
+  letter-bearing tokens (pause marks are skipped as ornaments); asserts per-ayah
+  word counts and leaves any mismatch null + logged (never guessed).
+- Full mapping tables: `scripts/QAC-MAPPING.md`.
+- Attribution: "Quranic Arabic Corpus" + link to corpus.quran.com (GNU GPL).
+
+**Importer B — lexicon** (`npm run import:lexicon`, Layer 3)
+- Input: `data-sources/lane/quran-arabic-roots-lane-lexicon.json` — the structured
+  "Quran Arabic Roots — Lane's Lexicon" dataset (not email-gated).
+- Bundles **only** the verbatim `definition_en` (Lane's classical text) keyed by
+  root. Every AI-generated field (summaries, Turkish) is excluded. Roots with no
+  Lane's match are omitted (show null in-app). ~81% of Qur'anic roots covered.
+- Attribution: Lane (1863, public domain) via the Perseus Digital Library
+  (**CC BY-SA 3.0**) — the lexicon data file is share-alike.
+
+**Root-key convention** (shared): Arabic letters, hamza/alef-normalized,
+space-separated (`ا ل ه`). See `scripts/QAC-MAPPING.md §3`.
+
+**Validation**: `npm run validate:data` reports word/root coverage, the 20
+highest-frequency roots lacking a lexicon entry, and structural checks.
+
+Run order after a fresh Tanzil import: `import:tanzil` → `import:lexicon` →
+`import:morphology` (morphology must run last, as it reads the regenerated words).
+
+> **Known coverage gap:** the structured Lane's dataset left several very common
+> roots blank (ربّ 980×, هدى 316×, ضلّ 191×, …) — `corpus_only`, `confidence:low`.
+> They have morphology but show no meaning. To close this, supply the missing
+> roots from the full Perseus Lane's XML in a later pass.
+
 ## ⚠️ Data you must supply
 
 Everything below is **flagged in-app** (Credits screen, sample badges) and must be handled
@@ -172,14 +212,15 @@ before a real release:
    permitted); include Tanzil's copyright notice + a link to tanzil.net, and match the exact
    copyright year to the version you download.
 
-2. **The lexicon entries are illustrative SAMPLES, not verbatim Lane's Lexicon.**
-   (`lane.json` → `source.isSample: true`.) Replace with verified Lane's text (or OCR of the
-   public-domain scans). If you reuse a digitised dataset (e.g. Perseus), honour its added
-   licence (Perseus = CC BY-SA 3.0 US). This is the app's core promise — get it right.
+2. **Lexicon = verbatim Lane's via Perseus (CC BY-SA 3.0), ~81% root coverage.**
+   Now imported (Importer B), no longer samples. Keep the Lane + Perseus attribution and the
+   share-alike terms. ~19% of roots — including some high-frequency ones — have no entry and
+   show no meaning (null, never invented). Close the gap from the full Perseus Lane's XML later.
 
-3. **The morphology is modelled on the Quranic Arabic Corpus.** If you import the real QAC
-   data, keep its attribution ("Quranic Arabic Corpus" + link to corpus.quran.com) and cite
+3. **Morphology = Quranic Arabic Corpus v0.4 (GNU GPL).** Now imported verbatim (Importer A).
+   Keep its attribution ("Quranic Arabic Corpus" + link to corpus.quran.com) and cite
    Dukes & Habash, LREC 2010. Note QAC's GPL terms if your app is closed-source/commercial.
+   Per-word English glosses were intentionally SKIPPED (no clean-licensed source).
 
 4. **Translation renderings are SAMPLES — verify them** against an authoritative source file
    (e.g. Tanzil) before shipping the full Qur'an. Yusuf Ali (1934) and Pickthall (1930) are

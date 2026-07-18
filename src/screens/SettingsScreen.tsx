@@ -193,7 +193,7 @@ export function SettingsScreen() {
         <View style={{ alignItems: 'center', marginTop: theme.spacing.xl, gap: 4 }}>
           <ArabicText text="بيان" size={26} scaled={false} color={theme.colors.primary} />
           <AppText variant="caption" tone="tertiary">
-            Bayān · v1.1.0 · fully offline, on-device
+            Bayān · v1.2.0 · fully offline, on-device
           </AppText>
         </View>
       </ScrollView>
