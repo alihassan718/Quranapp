@@ -35,6 +35,8 @@ export interface AppSettings {
   definitionLang: DefinitionLang;
   /** Comparison screen layout preference. */
   comparisonLayout: ComparisonLayout;
+  /** Show the default reference translation under each ayah in the Reader. */
+  showInlineTranslation: boolean;
   showTransliteration: boolean;
   hapticsEnabled: boolean;
 }
@@ -48,6 +50,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   lexiconSourceId: 'lane',
   definitionLang: 'en',
   comparisonLayout: 'stacked',
+  showInlineTranslation: true,
   showTransliteration: true,
   hapticsEnabled: true,
 };

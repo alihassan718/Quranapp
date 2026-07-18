@@ -120,15 +120,57 @@ That's it — screens, queries and the DB builder iterate the registry arrays ge
 
 ---
 
+## Importing the full Qur'an (Tanzil importer — Layers 1 + 4)
+
+`scripts/import-tanzil.ts` converts raw Tanzil source files into all 114 surah files +
+the three translation files, updates `registry.ts` and `manifest.json`, and validates
+everything (canonical Kufan counts, 6236 ayat, verse alignment across all sources,
+schema conformance). It never invents content: morphology (Layer 2) and lexicon
+(Layer 3) fields are written as explicit `null`/`[]` for a later importer to fill.
+
+**1. Download the inputs into `data-sources/tanzil/` (gitignored, never fetched at build time):**
+
+| File | Where | Options |
+|---|---|---|
+| `quran-uthmani.xml` | <https://tanzil.net/download/> | Qur'an text **Uthmani**, file format **XML**. Leave *pause marks* and *sajdah signs* **unchecked** so word tokens align 1:1 with Quranic Arabic Corpus positions for the later Layer-2 import. |
+| `en.yusufali.txt` | <https://tanzil.net/trans/> | **Text** format |
+| `en.pickthall.txt` | <https://tanzil.net/trans/> | **Text** format |
+| `en.shakir.txt` | <https://tanzil.net/trans/> | **Text** format |
+
+XML is required for the Arabic (not `.txt`) because Tanzil's XML carries the bismillah
+as an *attribute*, keeping verse-1 text clean for surahs 2–114.
+
+**2. Run:**
+
+```
+npm run import:tanzil
+```
+
+The run is idempotent (same inputs → byte-identical outputs; the manifest version is
+derived from a content hash) and fails loudly on any count/alignment mismatch instead
+of writing misaligned data. The app rebuilds its SQLite DB on next launch.
+
+**Notes:**
+- Shakir's verses are imported but the translator stays `enabled: false`
+  (rights contested — see point 5 below). Enable it deliberately in
+  `assets/data/translations/shakir.json` if you accept that risk.
+- `sale.json` is untouched (Tanzil doesn't distribute Sale); it keeps its
+  Al-Fātiḥah sample verses until you supply a full source.
+- Re-running the importer replaces `001.json`, including its sample morphology —
+  after import, **all** words have `root: null` until the QAC (Layer 2) import exists.
+
+---
+
 ## ⚠️ Data you must supply
 
 Everything below is **flagged in-app** (Credits screen, sample badges) and must be handled
 before a real release:
 
-1. **Only Surah Al-Fātiḥah is bundled.** Supply `quran/002.json … quran/114.json` (and their
-   translations) in the same format. Source the Uthmani text from **Tanzil.net**, used
-   **verbatim** (modification is not permitted), and include Tanzil's copyright notice + a
-   link to tanzil.net. Match the exact copyright year to the version you download.
+1. **Only Surah Al-Fātiḥah is bundled.** Download the Tanzil sources and run
+   `npm run import:tanzil` (section above) to generate `quran/001.json … 114.json` and the
+   three translation files. The Uthmani text is used **verbatim** (modification is not
+   permitted); include Tanzil's copyright notice + a link to tanzil.net, and match the exact
+   copyright year to the version you download.
 
 2. **The lexicon entries are illustrative SAMPLES, not verbatim Lane's Lexicon.**
    (`lane.json` → `source.isSample: true`.) Replace with verified Lane's text (or OCR of the

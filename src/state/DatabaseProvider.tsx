@@ -30,7 +30,10 @@ export function DatabaseProvider({ children }: { children: React.ReactNode }) {
     let alive = true;
     (async () => {
       try {
-        const [readDb, userDb] = await Promise.all([openReadDatabase(), openUserDatabase()]);
+        // Open sequentially: expo-sqlite's web backend (wa-sqlite worker) is
+        // not re-entrant during open/PRAGMA, so concurrent opens crash on web.
+        const readDb = await openReadDatabase();
+        const userDb = await openUserDatabase();
         if (alive) setStatus({ phase: 'ready', readDb, userDb });
       } catch (e) {
         if (alive)

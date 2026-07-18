@@ -111,7 +111,7 @@ export function ShareSheet({ surah, ayah, arabic, surahName, onDone }: ShareShee
           <ArabicText text="بيان" size={20} scaled={false} color={theme.colors.primary} />
         </View>
 
-        <ArabicText text={arabic} size={30} scaled={false} align="center" lineHeightMultiplier={1.8} />
+        <ArabicText text={arabic} size={30} scaled={false} align="center" />
 
         {translation ? (
           <>

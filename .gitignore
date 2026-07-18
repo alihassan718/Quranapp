@@ -47,3 +47,6 @@ yarn-error.*
 /.claude/
 
 # keep released APKs (release/) tracked
+
+# raw source files for the data importer (user-supplied, not app assets)
+/data-sources/

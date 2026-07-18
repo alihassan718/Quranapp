@@ -35,7 +35,7 @@ export const WordChip = React.memo(function WordChip({ word, size, highlight, on
         />
       ) : null}
       <View style={{ paddingHorizontal: 5, paddingVertical: 1 }}>
-        <ArabicText text={word.textUthmani} size={size} lineHeightMultiplier={1.5} align="center" />
+        <ArabicText text={word.textUthmani} size={size} align="center" />
       </View>
     </PressableScale>
   );

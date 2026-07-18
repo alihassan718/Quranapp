@@ -86,7 +86,7 @@ export function SettingsScreen() {
             onChange={(v) => update({ arabicFontScale: v })}
           />
           <View style={{ alignItems: 'center', paddingVertical: theme.spacing.xs }}>
-            <ArabicText text="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ" size={28} align="center" lineHeightMultiplier={1.7} />
+            <ArabicText text="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ" size={28} align="center" />
           </View>
           <Divider />
           <Stepper
@@ -100,6 +100,12 @@ export function SettingsScreen() {
           <TranslationText variant="body" color={theme.colors.textSecondary}>
             In the name of Allah, Most Gracious, Most Merciful.
           </TranslationText>
+          <Divider />
+          <ToggleRow
+            label="Show translation under verses"
+            value={settings.showInlineTranslation}
+            onChange={(v) => update({ showInlineTranslation: v })}
+          />
           <Divider />
           <ToggleRow
             label="Show transliteration"
@@ -187,7 +193,7 @@ export function SettingsScreen() {
         <View style={{ alignItems: 'center', marginTop: theme.spacing.xl, gap: 4 }}>
           <ArabicText text="بيان" size={26} scaled={false} color={theme.colors.primary} />
           <AppText variant="caption" tone="tertiary">
-            Bayān · v1.0.0 · fully offline, on-device
+            Bayān · v1.0.1 · fully offline, on-device
           </AppText>
         </View>
       </ScrollView>

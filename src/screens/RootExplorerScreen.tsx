@@ -63,7 +63,7 @@ export function RootExplorerScreen() {
           <View style={{ paddingHorizontal: theme.spacing.lg, paddingTop: theme.spacing.base }}>
             {/* Root hero */}
             <View style={{ alignItems: 'center', gap: 6, marginBottom: theme.spacing.lg }}>
-              <ArabicText text={root} size={46} scaled={false} color={theme.colors.primary} lineHeightMultiplier={1.4} />
+              <ArabicText text={root} size={46} scaled={false} color={theme.colors.primary} />
               {rootTranslit ? (
                 <AppText variant="title" tone="secondary">
                   {rootTranslit}
@@ -136,7 +136,7 @@ export function RootExplorerScreen() {
             style={{ marginHorizontal: theme.spacing.lg, marginBottom: theme.spacing.sm }}
           >
             <Card surface="surface" elevation="none" padded style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.base }}>
-              <ArabicText text={item.word.textUthmani} size={30} scaled={false} lineHeightMultiplier={1.4} />
+              <ArabicText text={item.word.textUthmani} size={30} scaled={false} />
               <View style={{ flex: 1 }}>
                 <AppText variant="callout" tone="secondary">
                   {item.word.posLabel ?? 'Word'}

@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   runOnJS,
+  useAnimatedKeyboard,
   useAnimatedStyle,
   useSharedValue,
   withSpring,
@@ -35,6 +36,17 @@ export function BottomSheet({ visible, onClose, children, maxHeightRatio = 0.9 }
   const backdropOpacity = useSharedValue(0);
   const startY = useRef(0);
 
+  // The app is edge-to-edge (Android 15 targets), so the window does NOT
+  // resize for the soft keyboard — without this the sheet stays hidden behind
+  // it whenever a child input focuses (e.g. the note editor). Track the
+  // keyboard on the UI thread and lift the sheet just above it, clamped so a
+  // tall sheet can't get pushed past the top safe area.
+  const keyboard = useAnimatedKeyboard({
+    isStatusBarTranslucentAndroid: true,
+    isNavigationBarTranslucentAndroid: true,
+  });
+  const sheetHeight = useSharedValue(0);
+
   // Mount on show.
   useEffect(() => {
     if (visible) setMounted(true);
@@ -58,7 +70,11 @@ export function BottomSheet({ visible, onClose, children, maxHeightRatio = 0.9 }
     }
   }, [visible, mounted, screenH, translateY, backdropOpacity]);
 
-  const sheetStyle = useAnimatedStyle(() => ({ transform: [{ translateY: translateY.value }] }));
+  const sheetStyle = useAnimatedStyle(() => {
+    const maxLift = Math.max(0, screenH - insets.top - 12 - sheetHeight.value);
+    const lift = Math.min(keyboard.height.value, maxLift);
+    return { transform: [{ translateY: translateY.value - lift }] };
+  });
   const backdropStyle = useAnimatedStyle(() => ({ opacity: backdropOpacity.value }));
 
   const pan = Gesture.Pan()
@@ -91,6 +107,9 @@ export function BottomSheet({ visible, onClose, children, maxHeightRatio = 0.9 }
       </Animated.View>
 
       <Animated.View
+        onLayout={(e) => {
+          sheetHeight.value = e.nativeEvent.layout.height;
+        }}
         style={[
           styles.sheet,
           {

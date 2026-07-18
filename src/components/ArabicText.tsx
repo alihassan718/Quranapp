@@ -11,6 +11,13 @@ interface ArabicTextProps {
   /** Apply the user's arabicFontScale setting (default true). */
   scaled?: boolean;
   color?: string;
+  /**
+   * Optional explicit line height (× font size). Leave unset to use the font's
+   * own metrics — Amiri Quran / Scheherazade metrics reserve room for stacked
+   * diacritics, and Android hard-clips glyphs that overflow a forced lineHeight,
+   * so only pass a value when extra inter-line spacing is deliberately wanted
+   * (use ≥ 2 for Qur'anic text with marks).
+   */
   lineHeightMultiplier?: number;
   align?: TextStyle['textAlign'];
   style?: StyleProp<TextStyle>;
@@ -28,7 +35,7 @@ export function ArabicText({
   size = 30,
   scaled = true,
   color,
-  lineHeightMultiplier = 1.7,
+  lineHeightMultiplier,
   align = 'right',
   style,
   numberOfLines,
@@ -47,7 +54,7 @@ export function ArabicText({
         {
           fontFamily,
           fontSize: finalSize,
-          lineHeight: finalSize * lineHeightMultiplier,
+          lineHeight: lineHeightMultiplier ? finalSize * lineHeightMultiplier : undefined,
           color: color ?? theme.colors.textPrimary,
           textAlign: align,
           writingDirection: 'rtl',

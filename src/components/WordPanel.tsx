@@ -74,7 +74,7 @@ export function WordPanel({ word, onOpenRoot }: WordPanelProps) {
     >
       {/* Hero word */}
       <View style={{ alignItems: 'center', paddingVertical: theme.spacing.sm }}>
-        <ArabicText text={word.textUthmani} size={52} scaled={false} align="center" lineHeightMultiplier={1.5} />
+        <ArabicText text={word.textUthmani} size={52} scaled={false} align="center" />
         {settings.showTransliteration && word.transliteration ? (
           <AppText variant="callout" tone="secondary" style={{ marginTop: 2 }}>
             {word.transliteration}
@@ -100,7 +100,7 @@ export function WordPanel({ word, onOpenRoot }: WordPanelProps) {
                 ROOT
               </AppText>
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.sm, marginTop: 2 }}>
-                <ArabicText text={word.root} size={30} scaled={false} color={theme.colors.primaryText} lineHeightMultiplier={1.3} />
+                <ArabicText text={word.root} size={30} scaled={false} color={theme.colors.primaryText} />
                 {word.rootTranslit ? (
                   <AppText variant="callout" tone={theme.colors.primaryText}>
                     {word.rootTranslit}
@@ -202,7 +202,7 @@ export function WordPanel({ word, onOpenRoot }: WordPanelProps) {
                 </View>
                 <View style={{ flex: 1 }}>
                   {lang === 'ar' ? (
-                    <ArabicText text={text} size={22} scaled={false} lineHeightMultiplier={1.6} />
+                    <ArabicText text={text} size={22} scaled={false} />
                   ) : (
                     <AppText variant="body">{text}</AppText>
                   )}
@@ -261,7 +261,7 @@ function FeatureRow({ label, value, valueArabic }: { label: string; value?: stri
         {label}
       </AppText>
       {valueArabic ? (
-        <ArabicText text={valueArabic} size={22} scaled={false} lineHeightMultiplier={1.4} />
+        <ArabicText text={valueArabic} size={22} scaled={false} />
       ) : (
         <AppText variant="callout" style={{ flex: 1, textAlign: 'right' }}>
           {value}

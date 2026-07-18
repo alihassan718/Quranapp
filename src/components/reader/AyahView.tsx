@@ -12,10 +12,15 @@ import { ArabicText } from '../ArabicText';
 import { Icon, IconName } from '../ui/Icon';
 import { PressableScale } from '../ui/PressableScale';
 import { AppText } from '../ui/Text';
+import { TranslationText } from '../ui/TranslationText';
 import { WordChip } from './WordChip';
 
 interface AyahViewProps {
   ayah: AyahWithWords;
+  /** Inline reference translation for this ayah (null → hidden). */
+  translation?: string | null;
+  /** Attribution label for the inline translation — always shown with it. */
+  translatorName?: string | null;
   onWordPress: (word: Word) => void;
   onHighlight: () => void;
   onNote: () => void;
@@ -27,6 +32,8 @@ const VERSE_BASE_SIZE = 32;
 
 export const AyahView = React.memo(function AyahView({
   ayah,
+  translation,
+  translatorName,
   onWordPress,
   onHighlight,
   onNote,
@@ -47,7 +54,6 @@ export const AyahView = React.memo(function AyahView({
       <View
         style={{
           borderRadius: theme.radii.lg,
-          overflow: 'hidden',
           paddingHorizontal: hlSwatch ? theme.spacing.sm : 0,
           paddingVertical: hlSwatch ? theme.spacing.sm : 0,
         }}
@@ -93,11 +99,26 @@ export const AyahView = React.memo(function AyahView({
               text={ayahMarker(ayah.ayah)}
               size={VERSE_BASE_SIZE - 2}
               color={theme.colors.gold}
-              lineHeightMultiplier={1.5}
             />
           </View>
         </View>
       </View>
+
+      {/* Inline reference translation (clearly attributed, never author-less).
+          Plain View: Reanimated `entering` animations silently drop the subtree
+          on web, and this block must always be visible when enabled. */}
+      {translation ? (
+        <View style={{ marginTop: theme.spacing.sm, gap: 4 }}>
+          <TranslationText variant="body" color={theme.colors.textSecondary}>
+            {translation}
+          </TranslationText>
+          {translatorName ? (
+            <AppText variant="caption" tone="tertiary">
+              — {translatorName}
+            </AppText>
+          ) : null}
+        </View>
+      ) : null}
 
       {/* Meta + actions */}
       <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: theme.spacing.sm }}>

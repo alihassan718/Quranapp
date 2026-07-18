@@ -97,7 +97,7 @@ export function ComparisonScreen() {
       {/* The verse */}
       {ayahData ? (
         <Card surface="surface" elevation="sm" style={{ marginBottom: theme.spacing.lg }}>
-          <ArabicText text={ayahData.textUthmani} size={30} align="center" lineHeightMultiplier={1.9} />
+          <ArabicText text={ayahData.textUthmani} size={30} align="center" />
         </Card>
       ) : null}
 
@@ -128,7 +128,7 @@ export function ComparisonScreen() {
             }}
           >
             <View style={{ alignItems: 'center', minWidth: 60 }}>
-              <ArabicText text={r.root} size={22} scaled={false} color={theme.colors.primary} lineHeightMultiplier={1.3} />
+              <ArabicText text={r.root} size={22} scaled={false} color={theme.colors.primary} />
               {r.rootTranslit ? (
                 <AppText variant="caption" tone="tertiary">
                   {r.rootTranslit}

@@ -227,7 +227,7 @@ const SurahRow = React.memo(function SurahRow({
       </View>
 
       <View style={{ alignItems: 'flex-end', gap: 4 }}>
-        <ArabicText text={surah.nameArabic} size={22} scaled={false} lineHeightMultiplier={1.4} />
+        <ArabicText text={surah.nameArabic} size={22} scaled={false} />
         <Chip
           label={surah.revelationPlace}
           small

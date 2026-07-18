@@ -141,7 +141,7 @@ export function SearchScreen() {
                   onPress={() => navigation.navigate('RootExplorer', { root: r.root, rootTranslit: r.rootTranslit })}
                 >
                   <Card surface="surface" elevation="none" style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.base }}>
-                    <ArabicText text={r.root} size={26} scaled={false} color={theme.colors.primary} lineHeightMultiplier={1.3} />
+                    <ArabicText text={r.root} size={26} scaled={false} color={theme.colors.primary} />
                     <View style={{ flex: 1 }}>
                       {r.rootTranslit ? (
                         <AppText variant="callout" tone="secondary">

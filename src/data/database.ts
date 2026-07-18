@@ -555,6 +555,26 @@ export async function getTranslationText(
   return r?.text ?? null;
 }
 
+/** One translator's rendering of every ayah in a surah (for the Reader's inline view). */
+export async function getTranslationsForSurah(
+  db: SQLite.SQLiteDatabase,
+  translatorId: string,
+  surah: number,
+): Promise<{ translatorName: string | null; verses: Map<number, string> }> {
+  const t = await db.getFirstAsync<{ translator: string }>(
+    `SELECT translator FROM translators WHERE id = ? AND enabled = 1`,
+    [translatorId],
+  );
+  const rows = await db.getAllAsync<{ ayah: number; text: string }>(
+    `SELECT ayah, text FROM translations WHERE translatorId = ? AND surah = ? ORDER BY ayah ASC`,
+    [translatorId, surah],
+  );
+  return {
+    translatorName: t?.translator ?? null,
+    verses: new Map(rows.map((r) => [r.ayah, r.text])),
+  };
+}
+
 /* ------------------------------------------------------------------ *
  * Search
  * ------------------------------------------------------------------ */

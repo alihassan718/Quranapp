@@ -14,10 +14,11 @@ import { Chip } from '../components/ui/Chip';
 import { Divider } from '../components/ui/Divider';
 import { EmptyState } from '../components/ui/EmptyState';
 import { AppText } from '../components/ui/Text';
-import { getAyahsWithWords, getSurah } from '../data/database';
+import { getAyahsWithWords, getSurah, getTranslationsForSurah } from '../data/database';
 import { AyahWithWords, Surah, Word } from '../domain/models';
 import { useAnnotations } from '../state/AnnotationsContext';
 import { useReadDb } from '../state/DatabaseProvider';
+import { useSettings } from '../state/SettingsContext';
 import { useAppNavigation, RootStackParamList } from '../navigation/types';
 import { useTheme } from '../theme/ThemeProvider';
 import { HighlightColorKey } from '../theme/tokens';
@@ -30,10 +31,14 @@ export function ReaderScreen() {
   const route = useRoute<RouteProp<RootStackParamList, 'Reader'>>();
   const { surah: surahNum, ayah: targetAyah } = route.params;
   const { getAyahHighlight, getWordHighlight, toggleHighlight, markLastRead } = useAnnotations();
+  const { settings } = useSettings();
 
   const [surah, setSurah] = useState<Surah | null>(null);
   const [ayahs, setAyahs] = useState<AyahWithWords[]>([]);
   const [loading, setLoading] = useState(true);
+  const [inlineTr, setInlineTr] = useState<{ translatorName: string | null; verses: Map<number, string> } | null>(
+    null,
+  );
 
   const [selectedWord, setSelectedWord] = useState<Word | null>(null);
   const [highlightAyah, setHighlightAyah] = useState<number | null>(null);
@@ -59,6 +64,23 @@ export function ReaderScreen() {
       alive = false;
     };
   }, [db, surahNum]);
+
+  // Inline translation for the whole surah (one query; re-runs when the user
+  // changes the default translator or toggles the setting).
+  useEffect(() => {
+    let alive = true;
+    if (!settings.showInlineTranslation) {
+      setInlineTr(null);
+      return;
+    }
+    (async () => {
+      const res = await getTranslationsForSurah(db, settings.defaultTranslationId, surahNum);
+      if (alive) setInlineTr(res);
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [db, surahNum, settings.showInlineTranslation, settings.defaultTranslationId]);
 
   useLayoutEffect(() => {
     navigation.setOptions({ title: surah?.nameTransliteration ?? `Surah ${surahNum}` });
@@ -112,6 +134,7 @@ export function ReaderScreen() {
         <FlatList
           ref={listRef}
           data={ayahs}
+          extraData={inlineTr}
           keyExtractor={(a) => String(a.ayah)}
           viewabilityConfigCallbackPairs={viewPairs.current}
           showsVerticalScrollIndicator={false}
@@ -124,7 +147,7 @@ export function ReaderScreen() {
           ListHeaderComponent={
             surah ? (
               <View style={{ alignItems: 'center', paddingTop: theme.spacing.base, paddingHorizontal: theme.spacing.lg }}>
-                <ArabicText text={surah.nameArabic} size={34} scaled={false} color={theme.colors.primary} lineHeightMultiplier={1.5} />
+                <ArabicText text={surah.nameArabic} size={34} scaled={false} color={theme.colors.primary} />
                 <AppText variant="h3" style={{ marginTop: 4 }}>
                   {surah.nameEnglish}
                 </AppText>
@@ -137,7 +160,6 @@ export function ReaderScreen() {
                     text="بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
                     size={26}
                     align="center"
-                    lineHeightMultiplier={1.8}
                     style={{ marginTop: theme.spacing.lg }}
                   />
                 ) : null}
@@ -149,6 +171,8 @@ export function ReaderScreen() {
             <>
               <AyahView
                 ayah={item}
+                translation={inlineTr?.verses.get(item.ayah) ?? null}
+                translatorName={inlineTr?.translatorName ?? null}
                 onWordPress={onWordPress}
                 onHighlight={() => setHighlightAyah(item.ayah)}
                 onNote={() => setNoteAyah(item.ayah)}
