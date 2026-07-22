@@ -1,6 +1,6 @@
 import { useFocusEffect } from '@react-navigation/native';
 import React, { useCallback, useMemo, useRef, useState } from 'react';
-import { TextInput, View } from 'react-native';
+import { Image, Platform, TextInput, View, ViewStyle } from 'react-native';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 import Animated, {
   makeMutable,
@@ -42,9 +42,21 @@ import { haptics } from '../utils/haptics';
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
 const WORLD = 4000; // world-space canvas size (px, unscaled)
+const WORLD_C = WORLD / 2; // RN view transforms act about the view's CENTER
 const NODE_W = 176;
 
+// ANDROID HARD CONSTRAINT: react-native-svg's SvgView rasterizes itself into a
+// view-sized ARGB bitmap on every draw (SvgView.drawOutput → Bitmap.createBitmap
+// of the view's PIXEL size, even with zero children). A world-sized Svg is
+// ~12000×12000 px on a 3× phone ≈ 576 MB → instant OOM abort ("app keeps
+// stopping"). So: no Svg may ever be laid out bigger than the screen. Edges are
+// drawn in ONE screen-sized Svg with world→screen math done in worklets, and
+// the dot grid is a tiled Image (images draw via GPU shader, no such bitmap).
+const DOT_TILE =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAADJUlEQVR4Ae3BoXEYBBzG0V//xGQCJENU43KxZQQWiYrJRBwXi84cHaEGgahA9DrB99779Pb2FrDpAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmHUBsy5g1gXMuoBZFzDrAmZdwKwLmPUQiz5XL9Vz371Xr9VHTHmINZ+rf6rH/veleq5+rz5ixsWal+qxHz1WLzHlYs1zP/ccUy5g1sWa937uPaZcrHmtvvWjb9VrTPnl6ekppnyt/q5+rX6r/q3+qv6sPmLKQyz6qP6IeRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCsC5h1AbMuYNYFzLqAWRcw6wJmXcCs/wAd6RXa2lgSJgAAAABJRU5ErkJggg==';
+
 type Pos = { x: SharedValue<number>; y: SharedValue<number> };
+type Camera = { tx: SharedValue<number>; ty: SharedValue<number>; scale: SharedValue<number> };
 type Selection = { kind: 'node'; id: number } | { kind: 'edge'; id: number } | null;
 
 /**
@@ -61,13 +73,20 @@ export function ResearchBoardScreen() {
   const [nodes, setNodes] = useState<BoardNode[]>([]);
   const [edges, setEdges] = useState<BoardEdge[]>([]);
   const [selection, setSelection] = useState<Selection>(null);
-  const [connectFrom, setConnectFrom] = useState<number | null>(null);
+  // connectFrom drives UI through state, but gesture callbacks read the REF:
+  // node tap handlers live inside memoized RNGH gestures whose callbacks are
+  // not reliably rebound on re-render, so a state closure goes stale there.
+  const [connectFrom, setConnectFromState] = useState<number | null>(null);
+  const connectFromRef = useRef<number | null>(null);
+  const setConnectFrom = useCallback((v: number | null) => {
+    connectFromRef.current = v;
+    setConnectFromState(v);
+  }, []);
   const [editing, setEditing] = useState<
     | { kind: 'node-note'; id: number; initial: string }
     | { kind: 'edge-label'; id: number | { from: number; to: number }; initial: string }
     | null
   >(null);
-  const [, bump] = useState(0); // re-render fallback so edges refresh after drags
 
   // World-space positions as shared values, created OUTSIDE hooks so nodes and
   // edges can share them without hook-ordering issues.
@@ -120,23 +139,30 @@ export function ResearchBoardScreen() {
       scale.value = Math.min(2.5, Math.max(0.4, startScale.value * e.scale));
     });
   const canvasGesture = Gesture.Simultaneous(canvasPan, pinch);
+  const camera = useMemo<Camera>(() => ({ tx, ty, scale }), [tx, ty, scale]);
 
   const worldStyle = useAnimatedStyle(() => ({
+    transform: [{ translateX: tx.value }, { translateY: ty.value }, { scale: scale.value }],
+  }));
+  // Same transform for the grid layer, which sits BELOW the screen-space edge
+  // Svg while the node layer sits above it (grid < edges < nodes).
+  const gridStyle = useAnimatedStyle(() => ({
     transform: [{ translateX: tx.value }, { translateY: ty.value }, { scale: scale.value }],
   }));
 
   /* ---- interactions ---- */
   const onNodeTap = useCallback(
-    async (node: BoardNode) => {
-      if (connectFrom != null && connectFrom !== node.id) {
-        setEditing({ kind: 'edge-label', id: { from: connectFrom, to: node.id }, initial: '' });
+    (node: BoardNode) => {
+      const from = connectFromRef.current;
+      if (from != null && from !== node.id) {
+        setEditing({ kind: 'edge-label', id: { from, to: node.id }, initial: '' });
         setConnectFrom(null);
         return;
       }
       setSelection((cur) => (cur?.kind === 'node' && cur.id === node.id ? null : { kind: 'node', id: node.id }));
       haptics.selection();
     },
-    [connectFrom],
+    [setConnectFrom],
   );
 
   const selectedNode = selection?.kind === 'node' ? nodes.find((n) => n.id === selection.id) : undefined;
@@ -157,33 +183,67 @@ export function ResearchBoardScreen() {
       {/* Canvas */}
       <GestureDetector gesture={canvasGesture}>
         <View style={{ flex: 1, overflow: 'hidden' }}>
+          {/* dot grid backdrop (subtle, non-interactive): a tiny tiled PNG,
+              NOT an Svg — see the DOT_TILE note above */}
           <Animated.View
+            pointerEvents="none"
+            style={[
+              {
+                position: 'absolute',
+                width: WORLD,
+                height: WORLD,
+                opacity: theme.scheme === 'dark' ? 0.5 : 0.4,
+              },
+              // RN-web's <Image> stretches instead of tiling, so tile via CSS there.
+              Platform.OS === 'web'
+                ? ({ backgroundImage: `url(${DOT_TILE})`, backgroundRepeat: 'repeat' } as unknown as ViewStyle)
+                : null,
+              gridStyle,
+            ]}
+          >
+            {Platform.OS === 'web' ? null : (
+              <Image
+                source={{ uri: DOT_TILE }}
+                resizeMode="repeat"
+                fadeDuration={0}
+                style={{ width: '100%', height: '100%' }}
+              />
+            )}
+          </Animated.View>
+
+          {/* edges: ONE screen-sized Svg (never world-sized — see DOT_TILE
+              note); paths convert world→screen in their worklets so they
+              still track nodes live during drag/pan/pinch */}
+          <Svg
+            width="100%"
+            height="100%"
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            pointerEvents="box-none"
+          >
+            {edges.map((e) => {
+              const a = positions.current.get(e.fromId);
+              const b = positions.current.get(e.toId);
+              if (!a || !b) return null;
+              return (
+                <EdgePath
+                  key={e.id}
+                  a={a}
+                  b={b}
+                  camera={camera}
+                  color={selection?.kind === 'edge' && selection.id === e.id ? theme.colors.primary : theme.colors.borderStrong}
+                  onPress={() => {
+                    setSelection({ kind: 'edge', id: e.id });
+                    haptics.selection();
+                  }}
+                />
+              );
+            })}
+          </Svg>
+
+          <Animated.View
+            pointerEvents="box-none"
             style={[{ position: 'absolute', width: WORLD, height: WORLD }, worldStyle]}
           >
-            {/* dot grid backdrop (subtle, non-interactive) */}
-            <DotGrid color={theme.colors.divider} />
-
-            {/* edges */}
-            <Svg width={WORLD} height={WORLD} style={{ position: 'absolute' }} pointerEvents="box-none">
-              {edges.map((e) => {
-                const a = positions.current.get(e.fromId);
-                const b = positions.current.get(e.toId);
-                if (!a || !b) return null;
-                return (
-                  <EdgePath
-                    key={e.id}
-                    a={a}
-                    b={b}
-                    color={selection?.kind === 'edge' && selection.id === e.id ? theme.colors.primary : theme.colors.borderStrong}
-                    onPress={() => {
-                      setSelection({ kind: 'edge', id: e.id });
-                      haptics.selection();
-                    }}
-                  />
-                );
-              })}
-            </Svg>
-
             {/* edge labels */}
             {edges.map((e) => {
               const a = positions.current.get(e.fromId);
@@ -204,7 +264,6 @@ export function ResearchBoardScreen() {
                 onTap={onNodeTap}
                 onDragEnd={(x, y) => {
                   void moveBoardNode(db, n.id, x, y);
-                  bump((v) => v + 1);
                 }}
               />
             ))}
@@ -499,23 +558,33 @@ function BoardNodeView({
   );
 }
 
-/** A gently curved connection line that follows both endpoints live. */
+/**
+ * A gently curved connection line that follows both endpoints live. Endpoints
+ * are world-space shared values, but the path renders inside the SCREEN-sized
+ * Svg, so the worklet mirrors the world view's transform (which RN applies
+ * about the view's center) to keep edges registered with nodes at every zoom.
+ */
 function EdgePath({
   a,
   b,
+  camera,
   color,
   onPress,
 }: {
   a: Pos;
   b: Pos;
+  camera: Camera;
   color: string;
   onPress: () => void;
 }) {
   const props = useAnimatedProps(() => {
-    const x1 = a.x.value + NODE_W / 2;
-    const y1 = a.y.value + 44;
-    const x2 = b.x.value + NODE_W / 2;
-    const y2 = b.y.value + 44;
+    const s = camera.scale.value;
+    const ox = camera.tx.value + WORLD_C * (1 - s);
+    const oy = camera.ty.value + WORLD_C * (1 - s);
+    const x1 = ox + s * (a.x.value + NODE_W / 2);
+    const y1 = oy + s * (a.y.value + 44);
+    const x2 = ox + s * (b.x.value + NODE_W / 2);
+    const y2 = oy + s * (b.y.value + 44);
     const mx = (x1 + x2) / 2;
     const my = (y1 + y2) / 2 - Math.min(60, Math.abs(x2 - x1) * 0.15);
     return { d: `M ${x1} ${y1} Q ${mx} ${my} ${x2} ${y2}` };
@@ -644,21 +713,3 @@ function BoardTextEditor({
   );
 }
 
-/** Sparse dot grid so the canvas reads as a space, not a page. */
-function DotGrid({ color }: { color: string }) {
-  // One SVG path containing every dot — a single element, not thousands.
-  const d = useMemo(() => {
-    const parts: string[] = [];
-    for (let x = 0; x < WORLD; x += 90) {
-      for (let y = 0; y < WORLD; y += 90) {
-        parts.push(`M ${x} ${y} h 1.6`);
-      }
-    }
-    return parts.join(' ');
-  }, []);
-  return (
-    <Svg width={WORLD} height={WORLD} style={{ position: 'absolute' }} pointerEvents="none">
-      <Path d={d} stroke={color} strokeWidth={1.6} strokeLinecap="round" />
-    </Svg>
-  );
-}
