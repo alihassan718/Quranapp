@@ -94,8 +94,8 @@
         },
         {
           "source": "Project Gutenberg",
-          "title": "The Nicomachean Ethics of Aristotle (F. H. Peters translation)",
-          "authors": "Aristotle",
+          "title": "The Nicomachean Ethics of Aristotle (D. P. Chase translation)",
+          "authors": "Aristotle; trans. D. P. Chase",
           "year": null,
           "url": "https://www.gutenberg.org/ebooks/8438",
           "access": "public-domain",
@@ -119,7 +119,7 @@
       "proposer": null,
       "status": null,
       "statusNote": null,
-      "reviewFlag": "WARN: Citation names the wrong translator. It cites Project Gutenberg ebook 8438 as the 'F. H. Peters translation,' but that URL is actually the D. P. Chase translation (the title page reads 'Translator: D. P. Chase' and its Book I opening is Chase's wording, not Peters's). The URL is real and the primary text is correct and public-domain; only the translator attribution is wrong and should be changed to D. P. Chase (or the URL swapped to an actual Peters edition)."
+      "reviewFlag": null
     },
     {
       "id": "philosophy-k-004",

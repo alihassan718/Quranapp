@@ -89,7 +89,7 @@
         {
           "source": "Child Development (via PubMed Central)",
           "title": "Origins of Secure Base Script Knowledge and the Developmental Construction of Attachment Representations",
-          "authors": "Theodore E. A. Waters, Sophia W. Ruiz, Glenn I. Roisman",
+          "authors": "Theodore E. A. Waters, Sarah K. Ruiz, Glenn I. Roisman",
           "year": "2017",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5159319/",
           "access": "free-to-read",
@@ -118,7 +118,7 @@
       "proposer": null,
       "status": null,
       "statusNote": null,
-      "reviewFlag": "WARN: Citation lists a wrong/invented author name: \"Sophia W. Ruiz\". The actual middle author of PMC5159319 (\"Origins of Secure Base Script Knowledge...\", Child Development) is Sarah K. Ruiz. The URL, journal, other authors (Waters, Roisman), and content all check out; only the author name is misattributed. Fix the name before shipping."
+      "reviewFlag": null
     },
     {
       "id": "psychology-k-004",
@@ -325,7 +325,7 @@
         {
           "source": "Frontiers in Psychology, open access CC-BY",
           "title": "Universality and Cultural Diversity in Moral Reasoning and Judgment",
-          "authors": "Frontiers in Psychology (peer-reviewed article collection)",
+          "authors": "Lina Bentahila, Roger Fontaine, Valérie Pennequin",
           "year": "2021",
           "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.764360/full",
           "access": "open-access",

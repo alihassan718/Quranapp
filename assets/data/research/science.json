@@ -195,7 +195,7 @@
       "type": "knowledge",
       "title": "Earth's Inner Core Doesn't Just Spin, It Wobbles",
       "hook": "The solid iron ball at Earth's center appears to speed up, slow down, and even reverse relative to the surface over decades.",
-      "summary": "Earth's inner core is a solid iron-nickel sphere, about the size of the Moon, suspended in the molten outer core and largely free to rotate at its own pace. For years scientists thought it steadily 'super-rotated,' turning slightly faster than the rest of the planet. By comparing seismic waves from repeated earthquakes and old nuclear tests that pass through the core, researchers found the picture is more complex: the inner core's rotation relative to the surface changes over time and seems to oscillate on a multi-decade cycle. Around 2009 its differential rotation appears to have slowed to near zero and may have reversed direction.",
+      "summary": "Earth's inner core is a solid iron-nickel sphere about the size of the Moon, suspended in the liquid outer core and free to rotate at its own pace relative to the surface. Scientists once pictured it steadily 'super-rotating,' turning slightly faster than the planet above it. But when Wei Wang and John Vidale (2022) reanalyzed seismic waves from Alaskan underground nuclear tests (Milrow 1969, Cannikin 1971) and repeating earthquakes, they found the inner core had actually changed its direction of rotation between 1969 and 1974 — evidence that it gently oscillates back and forth on a roughly six-year cycle that matches a known six-year wobble in the length of Earth's day, rather than simply racing ahead.",
       "detail": "Because the inner core is bathed in liquid metal and coupled to the mantle by gravity and magnetism, it can rotate at a slightly different rate than the crust we stand on. Seismologists detect this by using 'repeating' earthquakes or explosions from the same location years apart: if the core has rotated, the seismic waves that travel through it arrive with subtly different timing and waveform. Different teams reading these signals concluded the inner core has an oscillating differential rotation, with one influential 2022 study finding a roughly six-to-seven-decade cycle and a recent near-halt. These tiny shifts are of great interest because they may be linked to small changes in the length of the day and to the behavior of Earth's magnetic field, though the exact mechanisms are still debated.",
       "citations": [
         {
@@ -235,7 +235,7 @@
       "proposer": null,
       "status": null,
       "statusNote": null,
-      "reviewFlag": "WARN: Two specific claims in the summary are not supported by either cited source. The cited Wang & Vidale (2022, Science Advances / USC Dornsife) report a roughly 6-year oscillation inferred from 1969-1974 seismic and nuclear-test data. But the summary asserts the inner core 'seems to oscillate on a multi-decade cycle' and that 'around 2009 its differential rotation appears to have slowed to near zero and may have reversed direction.' Those claims (multi-decade cycle, ~2009 slowdown/reversal) actually come from a different, uncited study (Yang & Song, Nature Geoscience 2023). The phenomenon is real, but the summary overclaims relative to the sources it cites. Fix by either citing Yang & Song 2023 for the 2009/multi-decade claim, or rewriting the summary to match the ~6-year oscillation the cited papers actually describe."
+      "reviewFlag": null
     },
     {
       "id": "science-k-006",
@@ -454,7 +454,7 @@
       "title": "Q 21:30 and the Big Bang: \"joined, then We parted them\"",
       "hook": "A verse describing the heavens and earth as once a single closed mass that was then split apart has been read as echoing the Big Bang.",
       "summary": "Q 21:30 says the heavens and earth were once a single closed-up mass (ratq) that God tore open (fatq). Some modern writers link this to the Big Bang, in which the universe expanded from an extremely dense, hot state. The app presents the claim and its attribution without endorsing it: the reading is contested on both linguistic and scientific grounds.",
-      "detail": "The relevant words are ratqan (a sewn-together / closed whole) and fataqnahuma (We split the two open). Advocates map ratq onto the initial dense state and fatq onto the expansion. Critics point out that these words denote closing and opening in an ordinary, non-technical sense; that pre-modern exegetes typically read the verse as the sky and earth being separated so that rain and vegetation could come forth; and that Earth did not exist at the time of the Big Bang, so 'heavens and earth' being one mass does not map cleanly onto cosmology.",
+      "detail": "The relevant words are ratqan (a sewn-together / closed whole) and fataqnahuma (We split the two open). Advocates map ratq onto the initial dense state and fatq onto the expansion. Critics point out that these words denote closing and opening in an ordinary, non-technical sense; that pre-modern exegetes typically read the verse as the sky and earth being separated so that rain and vegetation could come forth; and that Earth did not exist at the time of the Big Bang, so 'heavens and earth' being one mass does not map cleanly onto cosmology.\n\nClassical context: A 'single joined mass that was then separated' reading does exist pre-modern: Ibn Kathīr reports as one interpretation that the heavens and earth 'were all one piece' then were separated, though he and al-Jalālayn and the Ibn-ʿAbbās-attributed Tanwīr al-Miqbās give as the primary/alternative sense the functional 'opening' — the sky was closed (no rain) and the earth closed (no plants), then both were opened; none of them frame it as physical cosmogony in the modern Big-Bang sense.",
       "citations": [
         {
           "source": "NASA Science (Hubble)",
@@ -473,6 +473,42 @@
           "url": "https://doi.org/10.1111/zygo.12321",
           "access": "metadata-only",
           "note": "Zygon 52(1):146-171. Peer-reviewed survey and critique of the i'jaz 'ilmi genre popularized by Bucaille; full text paywalled (Wiley), cited by metadata and DOI."
+        },
+        {
+          "source": "QuranX (tafsir aggregator: Ibn Kathir, al-Jalalayn, Tanwir al-Miqbas)",
+          "title": "Commentaries for 21.30",
+          "authors": "Ibn Kathīr; al-Maḥallī & al-Suyūṭī; attrib. Ibn ʿAbbās",
+          "year": "classical",
+          "url": "https://quranx.com/tafsirs/21.30",
+          "access": "free-to-read",
+          "note": "Ibn Kathir gives 'they were all one piece...then He separated them' as one reading; Jalalayn and Tanwir al-Miqbas favour the rain/plants 'opening' reading."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "free-to-read",
+          "note": "Confirms 'La Bible, le Coran et la science' (1976) and its comparison of Quran with modern astronomy/embryology/geology."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Abdul Majeed al-Zindani",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Abdul_Majeed_al-Zindani",
+          "access": "free-to-read",
+          "note": "Verbatim: al-Zindani 'approached the Saudi government's largest charity, the Muslim World League, in 1984 to establish a Commission on Scientific Signs in the Quran and Sunnah.'"
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (Wiley), peer-reviewed",
+          "title": "The 'Scientific Miracle of the Qur'ān,' Pseudoscience, and Conspiracism (Stefano Bigliardi)",
+          "authors": "Stefano Bigliardi",
+          "year": "2017",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Peer-reviewed history/critique of i'jaz 'ilmi. Cited for provenance of the movement; full text not accessed live (publisher access wall), so treated as metadata-only."
         }
       ],
       "tags": [
@@ -493,10 +529,10 @@
       },
       "whatKnowledgeSays": "The prevailing scientific model holds that the observable universe began about 13.8 billion years ago from an extremely hot, dense, tiny state and has been expanding and cooling ever since. NASA describes it as starting from 'a dense, tremendously hot... extremely tiny point that rapidly surged outward in all directions,' with the cosmic microwave background counted as key supporting evidence. The model describes the origin of the cosmos as a whole; it does not treat the Earth as pre-existing and later separated from the sky.",
       "proposedConnection": "The French physician Maurice Bucaille, in his 1976 book 'The Bible, the Qur'an and Science,' argued that Qur'anic descriptions of the heavens align with modern cosmology, and later popularizers (for example the preacher Zakir Naik) explicitly read the ratq/fatq of Q 21:30 as a reference to the Big Bang's expansion from a single dense mass. This is presented here strictly as their interpretive claim.",
-      "proposer": "Maurice Bucaille (1976), later popularized by preachers such as Zakir Naik",
+      "proposer": "The modern Big-Bang reading is chiefly the work of Maurice Bucaille in 'La Bible, le Coran et la science' (1st French ed. May 1976), which mapped the verse onto the condensation of a primary nebula and the common origin of matter. It was then institutionalized and mass-popularized by ʿAbd al-Majīd al-Zindānī's apologetic apparatus (the King Abdulaziz University embryology/science circle of the early 1980s and, from 1984, the Muslim World League's Commission on Scientific Signs in the Qur'an and Sunnah) and by later da'wah figures such as Zakir Naik and Harun Yahya (Adnan Oktar). NOTE: Bucaille had a partial precursor in the Egyptian scientific-exegesis (tafsir 'ilmi) tradition — esp. Ṭanṭāwī Jawharī's 'al-Jawāhir fī tafsīr al-Qur'ān' (1920s–30s) — so 'sole origin' overstates it; flagged for that reason.",
       "status": "contested",
       "statusNote": "Contested: scholars of the 'scientific miracle' (i'jaz 'ilmi) genre argue that ratq/fatq carry only a broad 'closed vs. opened' meaning, that classical tafsir read the verse as sky-earth separation for rain/vegetation, and that Earth did not exist at the Big Bang.",
-      "reviewFlag": null
+      "reviewFlag": "ATTRIBUTION NOTE: Ṭanṭāwī Jawharī cited as a pre-Bucaille tafsir-ilmi precursor but not pinned to a live citation — verify before relying on it."
     },
     {
       "id": "science-c-002",
@@ -505,25 +541,52 @@
       "title": "Q 51:47 and the expanding universe: \"and indeed We are expanding it\"",
       "hook": "The clause 'wa-inna la-musi'un' has been translated as 'We are expanding it,' and read as anticipating the expansion of the universe.",
       "summary": "Q 51:47 says God built the heaven 'bi-aydin' and that 'inna la-musi'un.' Some modern translators and writers render the final phrase as 'We are steadily expanding it' and link it to Hubble's discovery that the universe is expanding. The reading is contested: the underlying word classically means possessing vast power or making spacious, and critics note that no pre-1929 commentary read it as cosmic expansion.",
-      "detail": "Musi'un is an active participle from a root meaning 'to be wide/spacious' or 'to have ample means.' Classical exegetes such as al-Tabari understood the verse as God having made the sky vast and having the power to do so, or as a statement of God's abundant capacity. The 'expanding universe' rendering appears mainly in translations from the 1970s onward (e.g., some renderings by Muhammad Asad and others), after Edwin Hubble's 1929 observations, which is the core of the retrofitting objection.",
+      "detail": "Musi'un is an active participle from a root meaning 'to be wide/spacious' or 'to have ample means.' Classical exegetes such as al-Tabari understood the verse as God having made the sky vast and having the power to do so, or as a statement of God's abundant capacity. The 'expanding universe' rendering appears mainly in translations from the 1970s onward (e.g., some renderings by Muhammad Asad and others), after Edwin Hubble's 1929 observations, which is the core of the retrofitting objection.\n\nClassical context: Classical exegetes did NOT read cosmic expansion: they took 'mūsiʿūn' from the root w-s-ʿ meaning God possesses power/capacity/vastness — al-Jalālayn glosses it via 'awsaʿa al-rajulu' = 'he has become capable/has ample means'; Ibn Kathīr explains 'We made it vast and raised its roof high without pillars'; the Ibn-ʿAbbās-attributed Tanwīr al-Miqbās offers 'We expand the provision thereof.' None describe the heavens themselves continuously enlarging in the modern astrophysical sense.",
       "citations": [
         {
-          "source": "NASA Science (Hubble)",
-          "title": "Hubble and the Big Bang",
-          "authors": "NASA Science; page editor Andrea Gianopoulos",
-          "year": "2024",
+          "source": "NASA Science (science.nasa.gov)",
+          "title": "The Hubble Constant and the Big Bang (science behind the discoveries)",
+          "authors": null,
+          "year": null,
           "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/",
           "access": "public-domain",
-          "note": "Documents Hubble's role in establishing expansion and the later discovery of accelerating expansion (dark energy)."
+          "note": "Backs 'dark energy' and 'acceleration'. Verbatim: 'More recently, the expansion has begun to speed up again as the repulsive effects of dark energy have come to dominate the expansion of the universe.' This page does NOT name Edwin Hubble or the year 1929, so it cannot support those two specifics on its own."
         },
         {
-          "source": "Zygon: Journal of Religion and Science (peer-reviewed)",
-          "title": "The \"Scientific Miracle of the Qur'an,\" Pseudoscience, and Conspiracism",
+          "source": "Carnegie Science - Everyday Cosmology (Carnegie Observatories, where Hubble worked)",
+          "title": "1929: Edwin Hubble Discovers the Universe is Expanding",
+          "authors": null,
+          "year": null,
+          "url": "https://cosmology.carnegiescience.edu/timeline/1929.html",
+          "access": "free-to-read",
+          "note": "Backs 'Hubble' and '1929' and 'expanding'. Verbatim: 'In 1929 Hubble published a paper that would lead to the realization that the universe was expanding.' Also describes that galaxies recede at speeds increasing with distance."
+        },
+        {
+          "source": "QuranX (tafsir aggregator: Ibn Kathir, al-Jalalayn, Tanwir al-Miqbas)",
+          "title": "Commentaries for 51.47",
+          "authors": "Ibn Kathīr; al-Maḥallī & al-Suyūṭī; attrib. Ibn ʿAbbās",
+          "year": "classical",
+          "url": "https://quranx.com/tafsirs/51.47",
+          "access": "free-to-read",
+          "note": "Jalalayn: capability/strength gloss; Ibn Kathir: 'made it vast...raised its roof higher without pillars'; Tanwir al-Miqbas: 'we expand the provision thereof.' No cosmic-expansion sense."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "free-to-read",
+          "note": "Confirms Bucaille's astronomy chapter treating expansion of the universe among his 'scientific accuracy' claims."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (Wiley), peer-reviewed",
+          "title": "The 'Scientific Miracle of the Qur'ān,' Pseudoscience, and Conspiracism (Stefano Bigliardi)",
           "authors": "Stefano Bigliardi",
           "year": "2017",
-          "url": "https://doi.org/10.1111/zygo.12321",
+          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/zygo.12321",
           "access": "metadata-only",
-          "note": "Zygon 52(1):146-171. Discusses the critique that i'jaz 'ilmi readings assign untenable meanings to Qur'anic vocabulary and retrofit verses to discoveries; full text paywalled, cited by DOI."
+          "note": "For provenance of the i'jaz movement; full text not accessed live."
         }
       ],
       "tags": [
@@ -542,12 +605,12 @@
         "surah": 51,
         "ayah": 47
       },
-      "whatKnowledgeSays": "In 1929 Edwin Hubble found that distant galaxies recede from us at speeds proportional to their distance, evidence that space itself is expanding. NASA notes the universe is 'not only expanding, but... that expansion is also accelerating,' a Nobel Prize-winning finding attributed to an unknown component called dark energy. Cosmic expansion is a continuous, measurable, large-scale phenomenon established by 20th-century observation.",
+      "whatKnowledgeSays": "In 1929 the astronomer Edwin Hubble published evidence that distant galaxies are receding from us, and that the farther away a galaxy is the faster it moves away - the first observational sign that the universe is expanding. Far more recently, observations show this expansion is not slowing but speeding up again: NASA attributes this acceleration to the repulsive effects of dark energy, which has come to dominate the expansion of the universe.",
       "proposedConnection": "Maurice Bucaille argued in 'The Bible, the Qur'an and Science' (1976) that 'wa-inna la-musi'un' should be read as 'We are expanding it,' presenting it as consonant with the discovery of an expanding universe. This translation-plus-interpretation is presented here as Bucaille's (and later translators') claim, not as the app's position.",
-      "proposer": "Maurice Bucaille (1976); adopted in several post-1970s translations",
+      "proposer": "The 'expanding universe' reading is a 20th-century retrofit onto Hubble's 1929 discovery of cosmic expansion, popularized in the same i'jaz 'ilmi wave: Maurice Bucaille (1976) presents 51:47 as an allusion to the expansion of the universe, and it was then amplified by al-Zindānī's Commission on Scientific Signs, Zakir Naik, Harun Yahya, and countless da'wah sites. There is no verified classical exegete who read the verse as physical cosmic expansion.",
       "status": "contested",
       "statusNote": "Contested: critics argue musi'un classically means 'possessing vast power / making spacious,' that no pre-Hubble (pre-1929) tafsir read it as ongoing cosmic expansion, and that the 'expanding' rendering looks retrofitted to match modern science.",
-      "reviewFlag": "WARN: The direct quote attributed to NASA — \"not only expanding, but... that expansion is also accelerating\" — does not appear verbatim on the cited 'Hubble and the Big Bang' page, which instead says 'the acceleration of our expanding universe' and 'the repulsive effects of dark energy.' A quotation shown in quote marks and attributed to NASA should be verbatim from the cited page. Fix: correct the quote to the page's actual wording, or cite the specific NASA dark-energy page that carries this phrasing."
+      "reviewFlag": null
     },
     {
       "id": "science-c-003",
@@ -556,7 +619,7 @@
       "title": "Q 21:30 and life from water: \"We made every living thing from water\"",
       "hook": "The same verse that mentions the parting of the heavens ends: 'and We made from water every living thing.'",
       "summary": "Q 21:30 closes with 'wa-ja'alna mina l-ma'i kulla shay'in hayy' - 'and We made every living thing from water.' This is often cited alongside the scientific fact that all known life depends on liquid water. It is among the less linguistically strained parallels, and is presented here as a widely-discussed claim with its interpretive caveats noted.",
-      "detail": "Science agrees that water is central to life as we know it: it is the solvent in which the chemistry of cells occurs, and NASA's astrobiology strategy is literally to 'follow the water.' Two honest caveats: classical exegetes frequently read 'from water' as referring to semen/procreation or to rain rather than to biochemistry or abiogenesis; and science holds that life requires water as a medium and is built from many elements (carbon, etc.), not that organisms are composed of water alone. So the fit depends on how loosely 'made from water' is read.",
+      "detail": "Science agrees that water is central to life as we know it: it is the solvent in which the chemistry of cells occurs, and NASA's astrobiology strategy is literally to 'follow the water.' Two honest caveats: classical exegetes frequently read 'from water' as referring to semen/procreation or to rain rather than to biochemistry or abiogenesis; and science holds that life requires water as a medium and is built from many elements (carbon, etc.), not that organisms are composed of water alone. So the fit depends on how loosely 'made from water' is read.\n\nClassical context: The reading that water is the origin/cause of life is explicitly classical: Ibn Kathīr states 'the origin of every living thing is in water' (citing the hadith 'Everything was created from water'), and al-Jalālayn glosses that 'water is the cause of such things having life.' This long predates modern apologetics.",
       "citations": [
         {
           "source": "NASA Science (Astrobiology)",
@@ -575,6 +638,24 @@
           "url": "https://doi.org/10.1111/zygo.12321",
           "access": "metadata-only",
           "note": "Zygon 52(1):146-171. Provides the scholarly caution against reading modern scientific detail into Qur'anic vocabulary; full text paywalled, cited by DOI."
+        },
+        {
+          "source": "QuranX (tafsir aggregator: Ibn Kathir, al-Jalalayn)",
+          "title": "Commentaries for 21.30",
+          "authors": "Ibn Kathīr; al-Maḥallī & al-Suyūṭī",
+          "year": "classical",
+          "url": "https://quranx.com/tafsirs/21.30",
+          "access": "free-to-read",
+          "note": "Ibn Kathir: 'the origin of every living thing is in water'; Jalalayn: 'water is the cause of such things having life.'"
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "free-to-read",
+          "note": "Bucaille's 1976 work is the vehicle for re-framing such verses as modern-science anticipations."
         }
       ],
       "tags": [
@@ -595,7 +676,7 @@
       },
       "whatKnowledgeSays": "Water is treated by biologists and astrobiologists as a fundamental requirement for life as we know it. NASA states that 'one attribute that is common to all living things that we know of is the need for water to survive' and that water 'allows the chemistry of life to take place' as a solvent; the search for extraterrestrial life follows the presence of liquid water. NASA also notes the caveat that other, non-water-based life forms cannot be ruled out.",
       "proposedConnection": "Maurice Bucaille and many later writers on 'scientific miracles' cite this clause as anticipating the modern understanding that life is bound up with water. The claim, attributed to them, is that 'every living thing from water' corresponds to water's indispensability to biology; the app records this as their reading, not as a verdict.",
-      "proposer": "Maurice Bucaille (1976) and subsequent i'jaz 'ilmi writers",
+      "proposer": "This is the atypical case: the 'every living thing from water' reading is GENUINELY CLASSICAL and pre-modern, so there is no modern 'discoverer' — modern apologists (Maurice Bucaille 1976 and successors like Zakir Naik) merely re-framed the long-standing exegetical reading as an anticipation of biology/abiogenesis and the water-content of cells. The scientific 'miracle' packaging is Bucaillean; the reading itself is not.",
       "status": "widely-discussed",
       "statusNote": "Widely-discussed and among the less strained parallels, but note the gap: classical tafsir often read 'from water' as semen/rain, and science says life needs water as a medium rather than being composed only of water.",
       "reviewFlag": null
@@ -607,7 +688,7 @@
       "title": "Iron \"Sent Down\" and the Stellar Origin of Iron",
       "hook": "The Qur'an says iron was \"sent down\" — and astrophysics finds that Earth's iron really did arrive from the sky, forged inside dying stars.",
       "summary": "Q 57:25 states that iron was \"sent down\" (anzala). Modern astrophysics holds that iron is forged in the cores of massive stars and scattered through space by supernova explosions, so the iron in Earth and the wider Solar System has a stellar, extraterrestrial origin. Some writers link the verse's \"descent\" wording to this picture. Others counter that anzala is used broadly across the Qur'an — for cattle, clothing, and provision — so it need not mean literal fall from space, and that the idea of \"metal from the sky\" (meteoric iron) was already familiar to ancient peoples. On that view the verse establishes no previously unknown scientific fact. The app presents the link without endorsing it.",
-      "detail": "The peer-reviewed analysis notes five historical exegetical readings of anzala here (hierarchical descent, metaphorical creation, provision of means, narrative accounts, and literal physical descent) and argues that even if the science is accepted, the case for foreknowledge fails its own third condition: that the fact be unknowable at the time of revelation.",
+      "detail": "The peer-reviewed analysis notes five historical exegetical readings of anzala here (hierarchical descent, metaphorical creation, provision of means, narrative accounts, and literal physical descent) and argues that even if the science is accepted, the case for foreknowledge fails its own third condition: that the fact be unknowable at the time of revelation.\n\nClassical context: Classical and pre-modern exegetes did NOT read 'sent down' as a physical descent from space; they understood anzalnā as God creating iron and making it available to mankind — al-Jalālayn glosses it as iron being extracted from mineral ores, and Ibn Kathīr ties the verse to iron's use for justice and warfare rather than to any cosmic descent.",
       "citations": [
         {
           "source": "NASA Goddard Space Flight Center — Imagine the Universe",
@@ -626,6 +707,33 @@
           "url": "https://iqs.sbu.ac.ir/article_105022.html",
           "access": "open-access",
           "note": "Peer-reviewed, CC BY 4.0. Examines the verb anzala, the pre-Islamic 'iron of heaven' (bia' n pet) tradition, and concludes the foreknowledge condition for a scientific 'miracle' is not met."
+        },
+        {
+          "source": "QuranX (aggregated classical tafsirs)",
+          "title": "Tafsirs for Qur'an 57.25 Al-Hadid — Ibn Kathir, Jalalayn, Maududi",
+          "authors": null,
+          "year": null,
+          "url": "https://quranx.com/tafsirs/57.25",
+          "access": "free-to-read",
+          "note": "Verified: Jalalayn reads 'sent down' as iron extracted from mineral ores; Ibn Kathir stresses iron as deterrent/justice, no space descent."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "open-access",
+          "note": "Confirms 1976 book 'The Bible, the Qur'an and Science' as origin of modern concordist framing."
+        },
+        {
+          "source": "Fountain Magazine",
+          "title": "Supernova Explosion and a Miracle of the Qur'an",
+          "authors": null,
+          "year": "2006",
+          "url": "https://fountainmagazine.com/all-issues/2006/issue-54-april-june-2006/supernova-explosion-and-a-miracle-of-the-quran/",
+          "access": "free-to-read",
+          "note": "Example of the supernova-origin iron argument in popular iʿjāz literature."
         }
       ],
       "tags": [
@@ -647,7 +755,7 @@
       },
       "whatKnowledgeSays": "Elements up to iron are built by nuclear fusion in the cores of stars at least roughly eight times the Sun's mass. When such a star exhausts its fuel, its iron core collapses and the star detonates as a core-collapse supernova, dispersing iron and other elements into interstellar space. The gas and dust that later condensed into the Solar System — and the iron now in Earth's crust and core — was enriched by earlier generations of such stars. A star like our Sun is not hot enough to fuse iron, so Earth's iron ultimately traces back to more massive stars that died before the Sun formed.",
       "proposedConnection": "Popularized by the French physician Maurice Bucaille (The Bible, the Qur'an and Science, 1976) and later by Harun Yahya (pen name of Adnan Oktar), the reading holds that the Qur'an's choice of anzala (\"sent down\") for iron, rather than khalaqa (\"created\"), anticipates the discovery that Earth's iron originated in stars beyond the planet.",
-      "proposer": "Maurice Bucaille",
+      "proposer": "The broad Qur'an-science concordism was launched by Maurice Bucaille's 1976 book 'La Bible, le Coran et la science' (The Bible, the Qur'an and Science), which argues the Qur'an anticipates modern science. However, the SPECIFIC modern reading of Q57:25 — that 'sent down' encodes iron's extraterrestrial/supernova origin, reinforced by numerology (surah 57 vs an iron isotope mass, verse 26-with-basmala vs iron's 26 protons) — was chiefly popularized by Harun Yahya (pen name of Adnan Oktar) in his 'Miracles of the Qur'an' material and by debater Zakir Naik; it is a staple of the organized iʿjāz ʿilmī (scientific-miracle) movement. Bucaille himself did not originate the supernova argument, so the supernova claim should be attributed to Harun Yahya/Naik, not to Bucaille.",
       "status": "contested",
       "statusNote": "The astrophysics is sound, but a peer-reviewed Qur'anic-studies analysis argues the \"miracle\" claim fails because anzala is used broadly in the Qur'an and the notion of iron \"from heaven\" (meteoric iron) predates Islam, so no previously unknown fact is demonstrated.",
       "reviewFlag": null
@@ -659,7 +767,7 @@
       "title": "Mountains as \"Pegs\" and the Geology of Isostasy",
       "hook": "The Qur'an calls mountains \"pegs\" that steady the earth. Geology shows mountains do have deep roots — but does that stop the ground from shaking?",
       "summary": "Q 78:6-7 describes the earth as a bed and the mountains as \"pegs\" (awtād), and Q 16:15 says firm mountains were set \"lest it shake with you.\" Writers link this to isostasy: mountains have deep, low-density crustal roots that float in buoyant balance on the denser mantle, like icebergs. Critics respond that isostasy does not imply mountains prevent earthquakes — the tectonic plate collisions that build mountains are themselves a leading cause of earthquakes — and that not all mountains have deep roots. On that reading, the \"peg that stabilizes\" interpretation goes beyond what geology supports. The app presents the link without endorsing it.",
-      "detail": "Isostasy accounts for vertical balance (why thick, light crust rides high on the mantle); it says nothing about resisting seismic shaking. Most large earthquakes occur precisely in the convergent, mountain-building zones — e.g. the Himalaya-Tibet collision belt — where crust is thickened by ongoing plate collision.",
+      "detail": "Isostasy accounts for vertical balance (why thick, light crust rides high on the mantle); it says nothing about resisting seismic shaking. Most large earthquakes occur precisely in the convergent, mountain-building zones — e.g. the Himalaya-Tibet collision belt — where crust is thickened by ongoing plate collision.\n\nClassical context: A 'stability' reading of awtād is genuinely classical: al-Ṭabarī explains the mountains are pegs for the earth 'so that it does not sway/shake beneath you' (an tamīda bikum) — but this is the general notion of steadying the earth, NOT the modern deep-roots/isostasy interpretation, which classical exegetes had no knowledge of.",
       "citations": [
         {
           "source": "Geosciences LibreTexts — Oceanography 101 (MiraCosta College)",
@@ -678,6 +786,42 @@
           "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes",
           "access": "free-to-read",
           "note": "Explains earthquakes as sudden slip on faults driven by plate motion, with most earthquakes occurring along plate-boundary faults — including the convergent zones where mountains form."
+        },
+        {
+          "source": "Quran.com (Tafsir al-Tabari, Arabic)",
+          "title": "Tafsir Surah An-Naba 78:7 — al-Tabari",
+          "authors": null,
+          "year": null,
+          "url": "https://quran.com/en/78:7/tafsirs/ar-tafsir-al-tabari",
+          "access": "free-to-read",
+          "note": "Verified: al-Tabari glosses awtād as pegs preventing the earth from swaying (tamīd) beneath its people."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Zaghloul El-Naggar",
+          "authors": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Zaghloul_El-Naggar",
+          "access": "open-access",
+          "note": "Egyptian geologist, chairman of the Committee of Scientific Notions in the Qur'an; principal geologist-advocate of the mountains-as-pegs miracle."
+        },
+        {
+          "source": "Islamonweb",
+          "title": "Dr. Zaghloul Al-Najjar (1933–2025): The Pioneer of Scientific Miracles in the Qur'an",
+          "authors": null,
+          "year": null,
+          "url": "https://en.islamonweb.net/dr-zaghloul-al-najjar-19332025-the-pioneer-of-scientific-miracles-in-the-quran",
+          "access": "free-to-read",
+          "note": "Profile confirming his central role in the scientific-miracle movement."
+        },
+        {
+          "source": "WikiIslam",
+          "title": "The Qur'an and Mountains",
+          "authors": null,
+          "year": null,
+          "url": "https://wikiislam.net/wiki/The_Quran_and_Mountains",
+          "access": "free-to-read",
+          "note": "Documents the isostasy claim, its advocates (Bucaille, Naik, El-Naggar) and Airy's 1865 deep-roots theory."
         }
       ],
       "tags": [
@@ -699,7 +843,7 @@
       },
       "whatKnowledgeSays": "Under the principle of isostasy, the thick and relatively light crust beneath a mountain range extends downward as a \"root\" into the denser mantle, so the range floats in buoyant equilibrium much as an iceberg does; this is why high ranges such as the Himalayas overlie unusually thick crust. Separately, earthquakes are caused by sudden slip on faults as tectonic plates move, and most occur at plate boundaries — including the convergent boundaries where colliding crust is pushed up into mountains. Mountain-building regions therefore tend to be seismically active rather than seismically quiet.",
       "proposedConnection": "Advanced by Maurice Bucaille and repeated by many later popularizers of the \"scientific miracles\" genre, the claim is that the Qur'an's image of mountains as awtād (\"pegs\" or \"stakes\") driven into the earth anticipates their deep isostatic roots, and that calling them a means of steadying the earth matches a stabilizing geological role.",
-      "proposer": "Maurice Bucaille",
+      "proposer": "Popularized by the same iʿjāz ʿilmī movement: Maurice Bucaille (1976) framed mountains-as-pegs as scientifically prescient, and it was developed most explicitly by the Egyptian geologist Zaghloul El-Naggar (Zaghloul Ragheb Al-Najjar, 1933–2025), who chaired the Committee of Scientific Notions/Signs in the Qur'an (Supreme Council of Islamic Affairs, Cairo) and argued the 'peg' matches mountains' deep crustal roots; it is also heavily promoted by Zakir Naik. The underlying geology (deep mountain roots / isostasy) traces to G. B. Airy (Astronomer Royal) in 1865, long predating the apologetic reading.",
       "status": "criticized",
       "statusNote": "Geologists reject the claim that mountains \"prevent\" earthquakes: the plate collisions that raise mountains are a principal cause of earthquakes (most quakes cluster at plate boundaries), and not all mountains have deep roots — so the stabilizing-\"peg\" reading is not supported by geology.",
       "reviewFlag": null
@@ -711,7 +855,7 @@
       "title": "The \"Barrier Between Two Seas\" and Ocean Stratification",
       "hook": "Where a river meets the sea, fresh and salt water can stay stubbornly separate. The Qur'an speaks of a \"barrier\" between two waters that do not overrun each other.",
       "summary": "Q 55:19-20 describes two seas that meet with a barrier (barzakh) they do not transgress, and Q 25:53 contrasts fresh and salt water separated by a \"forbidding partition.\" Writers link this to haloclines and salt wedges, where lighter fresh water layers over denser seawater in estuaries and the two can remain visibly distinct. Critics respond that this separation is a density difference, not a solid or permanent barrier: the waters do gradually mix, and how much they mix depends on tides, wind, and estuary shape. On that view, \"barrier\" loosely describes ordinary, directly observable stratification rather than a hidden scientific fact. The app presents the link without endorsing it.",
-      "detail": "NOAA classifies estuaries by how much the layers mix — from salt-wedge estuaries (sharp boundary, little mixing) through slightly stratified to vertically mixed estuaries where strong tides erase the layering entirely. The distinctness is set by salinity-driven density, and the layering is a surface-visible phenomenon known long before modern oceanography.",
+      "detail": "NOAA classifies estuaries by how much the layers mix — from salt-wedge estuaries (sharp boundary, little mixing) through slightly stratified to vertically mixed estuaries where strong tides erase the layering entirely. The distinctness is set by salinity-driven density, and the layering is a surface-visible phenomenon known long before modern oceanography.\n\nClassical context: The 'two seas with a barrier between them' being sweet/fresh water versus salty water is a genuinely PRE-MODERN reading: Ibn Kathīr, al-Jalālayn, and the Ibn-ʿAbbās-attributed Tanwīr al-Miqbās all identify the two waters as the sweet and the salt, meeting yet kept apart by a barrier — so the fresh/salt-barrier idea predates modern oceanography; only the halocline/density-science gloss is modern.",
       "citations": [
         {
           "source": "NOAA — National Ocean Service, Estuaries Tutorial",
@@ -721,6 +865,33 @@
           "url": "https://oceanservice.noaa.gov/education/tutorial_estuaries/est05_circulation.html",
           "access": "free-to-read",
           "note": "Explains that fresh water floats over denser seawater by density difference (not a physical barrier), and classifies estuaries from salt-wedge (little mixing) to vertically mixed (layering eliminated by tides), showing the waters do mix."
+        },
+        {
+          "source": "QuranX (aggregated classical tafsirs)",
+          "title": "Tafsirs for Qur'an 55.19 Ar-Rahman — Ibn Kathir, Jalalayn, Ibn Abbas",
+          "authors": null,
+          "year": null,
+          "url": "https://quranx.com/tafsirs/55.19",
+          "access": "free-to-read",
+          "note": "Verified: all three identify the two seas as sweet/fresh vs salt water with a dividing barrier."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": null,
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "open-access",
+          "note": "Origin of the modern concordist framing later applied to the two-seas verses."
+        },
+        {
+          "source": "WikiIslam",
+          "title": "Scientific Miracles in the Quran",
+          "authors": null,
+          "year": null,
+          "url": "https://wikiislam.net/wiki/Scientific_Miracles_in_the_Quran",
+          "access": "free-to-read",
+          "note": "Catalogues the two-seas/halocline claim and its promotion within the scientific-miracle movement."
         }
       ],
       "tags": [
@@ -742,7 +913,7 @@
       },
       "whatKnowledgeSays": "When fresh river water meets salt seawater in an estuary, the lighter fresh water tends to float over the heavier salt water, forming a halocline — a zone where salinity changes sharply with depth. In salt-wedge estuaries the boundary is sharp with little mixing, while in others tidal currents and wind mix the layers partly or completely, sometimes eliminating the vertical layering altogether. The separation is driven by differences in density (salinity), and the two water bodies do exchange and mix over time rather than being held apart by any physical wall.",
       "proposedConnection": "Cited by Maurice Bucaille and popularized by speakers including Zakir Naik, the reading holds that the Qur'an's barzakh (\"barrier\") between fresh and salt waters that \"do not transgress\" anticipates the modern description of haloclines and density-driven separation where two bodies of water meet.",
-      "proposer": "Maurice Bucaille",
+      "proposer": "The modern oceanographic reading — that the barzakh corresponds to the halocline/pycnocline where waters of differing salinity, temperature and density meet without fully mixing — was popularized by Maurice Bucaille (1976) and carried through the iʿjāz ʿilmī movement and popularizers such as Zakir Naik. (The closely related fresh-vs-salt estuary verse Q25:53 is often cited alongside it.)",
       "status": "contested",
       "statusNote": "Oceanography confirms density-driven layering (haloclines and salt wedges), but critics note there is no solid or impermeable \"barrier\": the waters do mix, the degree of mixing varies with tides and wind, and the layering is a visible surface phenomenon rather than a newly revealed fact.",
       "reviewFlag": null
@@ -754,7 +925,7 @@
       "title": "The embryology verses (Q 23:12–14) and the \"scientific miracle\" argument",
       "hook": "A famous claim says these verses describe embryo development centuries early. It is also the most heavily criticized case in the whole genre.",
       "summary": "Q 23:12–14 describes the forming of a human being through a sequence of stages — a drop (nutfa), then a clinging/clot-like form (ʿalaqa), then a chewed-lump form (mudgha), then bones clothed with flesh. From the 1970s onward this passage became the centerpiece of the iʿjāz ʿilmī (\"scientific miracle\") movement, which argued the stages match modern embryology. The same movement drew equally strong pushback from historians of science and religion, who argue the described sequence closely tracks the much older embryology of Galen and Aristotle that circulated in Late Antiquity, and who have challenged how the supporting endorsements from Western scientists were obtained and presented. The app presents the claim and the criticism side by side and takes no position on either.",
-      "detail": "Historians of medicine note that Galen (2nd century CE), whose works were studied in Syria and Egypt in Late Antiquity, described embryonic formation in stages — seminal matter, a blood-form, a flesh stage, then fully articulated organs — and that medieval Muslim physicians such as Ibn Sina explicitly matched Galen's stages to the Qur'anic terms nutfa, ʿalaqa and mudgha, treating the agreement as unremarkable. Critics therefore see the modern claim as reading later microscopic knowledge back into terms whose classical meaning (e.g. ʿalaqa as congealed/clotted blood) was well established. The peer-reviewed literature (Bigliardi 2017; Guénon 2019) also examines how the movement gathered and framed statements from Western scientists.",
+      "detail": "Historians of medicine note that Galen (2nd century CE), whose works were studied in Syria and Egypt in Late Antiquity, described embryonic formation in stages — seminal matter, a blood-form, a flesh stage, then fully articulated organs — and that medieval Muslim physicians such as Ibn Sina explicitly matched Galen's stages to the Qur'anic terms nutfa, ʿalaqa and mudgha, treating the agreement as unremarkable. Critics therefore see the modern claim as reading later microscopic knowledge back into terms whose classical meaning (e.g. ʿalaqa as congealed/clotted blood) was well established. The peer-reviewed literature (Bigliardi 2017; Guénon 2019) also examines how the movement gathered and framed statements from Western scientists.\n\nClassical context: Classical exegetes read 'ʿalaqa' as a clot of congealed/clinging blood, NOT a 'leech-like' embryo: Ibn Kathīr glosses the stages with ʿalaqa as clotted blood, consistent with the mainstream classical understanding — the microscope-informed 'leech' image was grafted on only after the 1980s.",
       "citations": [
         {
           "source": "StatPearls (NCBI Bookshelf)",
@@ -782,6 +953,33 @@
           "url": "https://doi.org/10.3366/jqs.2019.0398",
           "access": "metadata-only",
           "note": "Peer-reviewed study of how al-Zindani constructed and disseminated the embryology-miracle model (JQS 21(3):32–56). Paywalled; cited by metadata and DOI."
+        },
+        {
+          "source": "Internet Archive (scanned book)",
+          "title": "The Developing Human; With Islamic Additions (Keith L. Moore; Abdul-Majeed A. Azzindani), 3rd ed., 1983",
+          "authors": "Keith L. Moore; ʿAbd al-Majīd al-Zindānī",
+          "year": "1983",
+          "url": "https://archive.org/details/developing-human-islamic",
+          "access": "free-to-read",
+          "note": "Primary artifact of the Moore–Zindani collaboration; alternates standard embryology chapters with Islamic commentary."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Abdul Majeed al-Zindani",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Abdul_Majeed_al-Zindani",
+          "access": "free-to-read",
+          "note": "Commission on Scientific Signs founded 1984 via Muslim World League; documents the recruitment-of-Western-scientists controversy."
+        },
+        {
+          "source": "Wikipedia",
+          "title": "Maurice Bucaille",
+          "authors": null,
+          "year": "2026",
+          "url": "https://en.wikipedia.org/wiki/Maurice_Bucaille",
+          "access": "free-to-read",
+          "note": "1976 book + French Academy of Medicine embryology lecture; foundational to the embryology i'jaz reading."
         }
       ],
       "tags": [
@@ -800,10 +998,10 @@
       },
       "whatKnowledgeSays": "Modern embryology describes early human development as a continuous process rather than a series of sharply separated substances. In week one a sperm and oocyte fuse into a single-celled zygote, which divides repeatedly (cleavage) into a morula and then a fluid-filled blastocyst of roughly 50–150 cells; this blastocyst implants in the uterine lining about six to ten days after fertilization. Organ formation follows through gastrulation and organogenesis over the embryonic period (weeks 3–8). Notably, bone and muscle tissue arise together from the same mesodermal layer, so there is no stage in which a skeleton is formed first and only afterward wrapped in muscle.",
       "proposedConnection": "The French physician Maurice Bucaille argued in his 1976 book 'The Bible, the Qur'an and Science' that the Qur'an's descriptions of human development anticipate modern findings. The argument was amplified when the Canadian anatomist Keith L. Moore, after joining an embryology committee at King Abdulaziz University, co-produced a special \"with Islamic Additions\" edition of his textbook alongside the cleric ʿAbd al-Majīd al-Zindānī; al-Zindānī built and popularized a detailed model mapping nutfa, ʿalaqa and mudgha onto microscopic embryonic stages, including reading ʿalaqa as \"leech-like.\" This is presented as their claim, not the app's.",
-      "proposer": "Maurice Bucaille (1976); Keith L. Moore and ʿAbd al-Majīd al-Zindānī (1980s)",
+      "proposer": "The current credit (Maurice Bucaille 1976 + Keith L. Moore + ʿAbd al-Majīd al-Zindānī) is ACCURATE. Bucaille's 'La Bible, le Coran et la science' (1976) and his 9 Nov 1976 lecture to the French Academy of Medicine, 'Physiological and Embryological data in the Qur'an', launched the modern embryology reading. It was cemented when the King Abdulaziz University embryology committee recruited Keith L. Moore (author of 'The Developing Human'), yielding 'The Developing Human: Clinically Oriented Embryology, With Islamic Additions' (3rd ed., co-credited to Moore & al-Zindānī, W.B. Saunders / Dar Al-Qiblah, 1982–83); al-Zindānī then scaled it through the Commission on Scientific Signs (est. 1984). Zakir Naik later mass-popularized it. Add: the specific 'ʿalaqa = leech-like clinging thing' rendering is itself a 1980s reinterpretation, not the classical gloss.",
       "status": "criticized",
       "statusNote": "Scholars argue the staged sequence restates pre-existing Galenic/Aristotelian embryology available in Muhammad's era, that the \"leech-like\" reading of ʿalaqa is a modern retrofit not found in classical exegesis, and that the sequential bones-then-flesh order conflicts with modern developmental biology.",
-      "reviewFlag": null
+      "reviewFlag": "ATTRIBUTION NOTE: clot-reading of ʿalaqa also attributed to al-Baghawī/al-Samarqandī in secondary sources; only Ibn Kathīr was verified live."
     }
   ]
 }

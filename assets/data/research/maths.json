@@ -371,7 +371,7 @@
       "type": "knowledge",
       "title": "The First Great Theorem a Computer Helped Prove",
       "hook": "Four colors always suffice to shade any map so neighbors differ, but the 1976 proof needed a machine, and that unsettled people.",
-      "summary": "Mapmakers long suspected that four colors are always enough to color any map so that no two regions sharing a border get the same color. The claim resisted proof for over a century. In 1976 Kenneth Appel and Wolfgang Haken finally settled it, reducing the infinitely many possible maps to a set of 1,936 unavoidable configurations and then checking each one by computer, taking more than a thousand hours of computation. Since no smallest counterexample could survive that check, the theorem holds.",
+      "summary": "Mapmakers long suspected that four colors are always enough to color any map so that no two regions sharing a border get the same color. The claim resisted proof for over a century. In 1976 Kenneth Appel and Wolfgang Haken finally settled it, reducing the infinitely many possible maps to an unavoidable set of 1,482 reducible configurations and then checking each one by computer, taking more than a thousand hours of computation. Since no smallest counterexample could survive that check, the theorem holds.",
       "detail": "This was the first time a computer was essential to proving a major theorem, and it sparked lasting philosophical debate: if no human can verify every step by hand, is it truly a proof? The unavoidability part still demanded extensive human analysis, and the computer-checked portion was later re-verified with independent programs and, in 2005, by a fully formal machine-checked proof. The episode reshaped how mathematicians think about certainty, verification, and what it means to understand a result.",
       "citations": [
         {
@@ -384,13 +384,13 @@
           "note": null
         },
         {
-          "source": "arXiv",
-          "title": "Xiang's formal proof of the four color theorem",
-          "authors": null,
-          "year": "2009",
-          "url": "https://arxiv.org/abs/0905.3713",
-          "access": "open-access",
-          "note": null
+          "source": "Celebratio Mathematica (Wolfgang Haken collection)",
+          "title": "The Four-Color Solution",
+          "authors": "Kenneth Appel and Wolfgang Haken",
+          "year": null,
+          "url": "https://celebratio.org/Haken_W/article/794/",
+          "access": "free-to-read",
+          "note": "First-person account by the two provers. States verbatim: 'A considerable part of this material, including the reduction of 1,482 configurations, was used in the final proof' and 'We had used 1,200 hours of time on three different computers.' Authoritative because it is the mathematicians' own words, hosted on a scholarly (AMS-affiliated) publication and free to read."
         }
       ],
       "tags": [
@@ -408,7 +408,7 @@
       "proposer": null,
       "status": null,
       "statusNote": null,
-      "reviewFlag": "WARN: The arXiv citation 0905.3713 is misquoted as \"Xiang's formal proof of the four color theorem\" — the paper's actual title is \"A formal proof of the four color theorem\" (author Limin Xiang, 2009). More importantly it is an unrefereed single-author preprint advancing its own alleged proof; it does not support this entry's narrative about the 1976 Appel-Haken computer proof. It is a weak, tangential source and should be replaced with a source that actually documents the Appel-Haken proof."
+      "reviewFlag": null
     }
   ]
 }

@@ -196,15 +196,6 @@
       "detail": null,
       "citations": [
         {
-          "source": "World Health Organization",
-          "title": "How do vaccines work?",
-          "authors": null,
-          "year": null,
-          "url": "https://www.who.int/news-room/feature-stories/detail/how-do-vaccines-work",
-          "access": "free-to-read",
-          "note": null
-        },
-        {
           "source": "MedlinePlus (NLM/NIH)",
           "title": "Vaccines / Immunization",
           "authors": null,
@@ -212,6 +203,15 @@
           "url": "https://medlineplus.gov/vaccines.html",
           "access": "public-domain",
           "note": null
+        },
+        {
+          "source": "MedlinePlus - U.S. National Library of Medicine (NIH)",
+          "title": "Vaccines - immunizations",
+          "authors": null,
+          "year": null,
+          "url": "https://medlineplus.gov/ency/article/002024.htm",
+          "access": "public-domain",
+          "note": "MedlinePlus content produced by the U.S. National Library of Medicine (NIH) is US-government public domain (no non-commercial restriction, unlike WHO's CC BY-NC-SA). Verbatim: 'Your immune system learns to recognize and attack the infection if you are exposed to it later in life.' This directly supports the immune-memory / 'rehearsal' framing. (Additional confirmation: CDC's public-domain vaccine pages state the body is left with 'memory' T-lymphocytes and B-lymphocytes 'that will remember how to fight that virus in the future' - CDC content is also US public domain, e.g. https://www.cdc.gov/vaccines/basics/explaining-how-vaccines-work.html)"
         }
       ],
       "tags": [
@@ -450,7 +450,7 @@
       "title": "Honey as \"healing\" for people (Q 16:68–69)",
       "hook": "A verse calls the bees' drink a source of healing. Popular writers link this to honey's documented antibacterial effect — but the medicinal use of honey was already ancient.",
       "summary": "Q 16:68–69 speaks of bees producing a drink of varying colors 'in which there is healing (shifāʾ) for people.' Modern proponents of the \"scientific miracle\" genre cite this alongside laboratory evidence that honey has real antibacterial and wound-healing properties. The app notes both that this evidence is genuine and that the medicinal use of honey was widely known across ancient Egyptian, Greek and pre-Islamic Arabian medicine, and that the verse is a general statement rather than a specific pharmacological description.",
-      "detail": null,
+      "detail": "Classical context: Classical exegetes uniformly identify the 'drink' as honey and its healing as literal medicine: Ibn Kathīr names it honey and cites the Bukhārī/Muslim hadith of the man whose brother had a stomach ailment (diarrhoea) being repeatedly told by the Prophet to give him honey until he recovered; al-Jalālayn likewise glosses it as honey that is 'a cure for mankind.'",
       "citations": [
         {
           "source": "Jundishapur Journal of Natural Pharmaceutical Products (PMC)",
@@ -469,6 +469,33 @@
           "url": "https://doi.org/10.1111/zygo.12321",
           "access": "metadata-only",
           "note": "Peer-reviewed context for the iʿjāz ʿilmī movement that advances claims like the honey verse. Paywalled; cited by metadata and DOI."
+        },
+        {
+          "source": "QuranX (aggregated classical tafsirs)",
+          "title": "Tafsirs for Qur'an 16.69 An-Nahl — Ibn Kathir, Jalalayn",
+          "authors": null,
+          "year": null,
+          "url": "https://quranx.com/tafsirs/16.69",
+          "access": "free-to-read",
+          "note": "Verified: Ibn Kathir identifies honey and cites the Bukhari/Muslim honey-cure hadith; Jalalayn glosses it as honey, a cure for mankind."
+        },
+        {
+          "source": "WikiIslam (archive)",
+          "title": "Honey Healing in the Quran Miracle",
+          "authors": null,
+          "year": null,
+          "url": "https://archive.wikiislam.net/wiki/Honey_Healing_in_the_Quran_Miracle",
+          "access": "free-to-read",
+          "note": "Documents the modern scientific-miracle framing and its critique (limits of empirical support for honey's medical claims)."
+        },
+        {
+          "source": "WhyIslam (ICNA)",
+          "title": "Signs of the Divine: The Honeybee in the Quran",
+          "authors": null,
+          "year": null,
+          "url": "https://www.whyislam.org/honeybee/",
+          "access": "free-to-read",
+          "note": "Example of contemporary da'wah presenting honey's healing as a scientific sign."
         }
       ],
       "tags": [
@@ -486,7 +513,7 @@
       },
       "whatKnowledgeSays": "Medical-grade honey does have measurable antimicrobial and wound-healing activity, and is used clinically on burns and some chronic or infected wounds. Reviews attribute this to several mechanisms: enzymatic production of hydrogen peroxide, a strong osmotic (high-sugar) effect that dehydrates bacteria, and low pH (around 4.4) that discourages microbial growth. Its broad-spectrum activity extends to organisms such as Staphylococcus aureus and Pseudomonas aeruginosa, including some antibiotic-resistant strains. Reviewers also caution that many clinical trials have been small or methodologically weak, so honey is an adjunct treatment, not a cure-all.",
       "proposedConnection": "Writers in the iʿjāz ʿilmī tradition — including Maurice Bucaille and popularizers such as Zakir Naik and the Harun Yahya publishing enterprise — cite Q 16:69's mention of 'healing' in the bees' drink as anticipating modern findings on honey's therapeutic value. This is presented as their claim, attributed to them, not the app's own position.",
-      "proposer": "iʿjāz ʿilmī popularizers (e.g. Maurice Bucaille; Zakir Naik; Harun Yahya)",
+      "proposer": "This case differs from the others: honey-as-healing is stated EXPLICITLY in the Qur'anic text itself and is universally affirmed in classical tafsir, so there is no modern reinterpretation of an ambiguous verse. Modern apologetics (the general iʿjāz ʿilmī movement, e.g. Harun Yahya's 'Miracles of the Qur'an' and da'wah outlets such as WhyIslam) simply overlay contemporary research on honey's antibacterial/antimicrobial and wound-healing properties onto an already-explicit and long-established claim. No single modern figure 'proposed' the healing reading — it is scriptural and classical; the modern contribution is the biomedical gloss.",
       "status": "contested",
       "statusNote": "The therapeutic claim about honey is scientifically supported, but the connection is contested because honey's medicinal use was already documented in Egyptian, Greek and pre-Islamic Arabian medicine, and because 'healing' is a broad statement rather than a testable, previously-unknown scientific detail.",
       "reviewFlag": null
