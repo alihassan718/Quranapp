@@ -44,7 +44,8 @@
     "import:tanzil": "node scripts/import-tanzil.ts",
     "import:lexicon": "node scripts/import-lexicon.ts",
     "import:morphology": "node scripts/import-morphology.ts",
-    "validate:data": "node scripts/validate-data.ts"
+    "validate:data": "node scripts/validate-data.ts",
+    "validate:research": "node scripts/validate-research.ts"
   },
   "private": true
 }

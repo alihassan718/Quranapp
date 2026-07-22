@@ -1,0 +1,414 @@
+{
+  "field": "maths",
+  "schemaVersion": 1,
+  "_note": "DATA UNDER TEST — curated summaries in the app's own words with verified source metadata; connection entries are attributed reflections, not proofs. Not yet scholar-reviewed.",
+  "entries": [
+    {
+      "id": "maths-k-001",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "There Is No Largest Prime Number",
+      "hook": "Over 2,300 years ago Euclid proved the primes never run out, and the argument still works perfectly today.",
+      "summary": "Primes are whole numbers divisible only by 1 and themselves, and they thin out as numbers grow, so it is natural to wonder whether they eventually stop. Euclid settled it around 300 BC with a proof needing no computer and no advanced tools. Suppose you had a complete finite list of every prime; multiply them all together and add 1. That new number leaves remainder 1 when divided by any prime on your list, so whatever prime divides it must be missing from the list, a contradiction. Hence no finite list can be complete, and the primes go on forever.",
+      "detail": "A stubborn myth says the proof shows that the product of all known primes plus one is itself prime. It does not. The number only has to have some prime factor not on the original list, and that factor can even be smaller than the largest prime you started with. Mathematicians have since collected well over a hundred distinct proofs of the same fact, using topology, combinatorics, and analysis, a sign of how central the result is. As G. H. Hardy put it, two thousand years have not aged Euclid's argument.",
+      "citations": [
+        {
+          "source": "The Prime Pages (t5k.org)",
+          "title": "Euclid's Proof of the Infinitude of Primes (c. 300 BC)",
+          "authors": null,
+          "year": null,
+          "url": "https://t5k.org/notes/proofs/infinite/euclids.html",
+          "access": "free-to-read",
+          "note": "Verified live; page explicitly corrects the product-plus-one-is-prime misconception."
+        },
+        {
+          "source": "arXiv",
+          "title": "Euclid's theorem on the infinitude of primes: a historical survey of its proofs (300 B.C.–2022) and another new proof",
+          "authors": null,
+          "year": "2012",
+          "url": "https://arxiv.org/abs/1202.3670",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "number theory",
+        "primes",
+        "proof",
+        "Euclid"
+      ],
+      "relatedEntryIds": [
+        "maths-k-009"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-002",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "Gödel Proved Some Truths Can Never Be Proven",
+      "hook": "In 1931 a 25-year-old showed that any honest arithmetic system must contain true statements it can never prove.",
+      "summary": "Mathematicians once hoped every true statement about arithmetic could, in principle, be derived from a fixed set of axioms. Kurt Gödel's first incompleteness theorem shattered that hope: any consistent formal system rich enough to describe basic arithmetic contains statements that can be neither proved nor disproved within it. His second theorem goes further, showing such a system cannot even prove its own consistency. These are not gaps to be patched by adding more axioms, because the new, larger system simply has its own unprovable truths.",
+      "detail": "The results are widely misquoted. Gödel's theorems are stated relative to a particular formal system, not as claims that some truths are unknowable in an absolute sense; a statement unprovable in one system can be provable in another. The Stanford Encyclopedia of Philosophy also cautions against reading the Gödel sentence as literally talking about itself, and against popular leaps to sweeping conclusions about the human mind or the divine, most of which rest on misunderstandings of what the theorems actually establish.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Gödel's Incompleteness Theorems",
+          "authors": null,
+          "year": "2025",
+          "url": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+          "access": "free-to-read",
+          "note": "Verified live; first published 2013, substantive revision Oct 2025."
+        }
+      ],
+      "tags": [
+        "mathematical logic",
+        "incompleteness",
+        "Gödel",
+        "foundations"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-003",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "Some Infinities Are Bigger Than Others",
+      "hook": "Cantor's diagonal trick shows the infinity of decimals is strictly larger than the infinity of counting numbers.",
+      "summary": "We tend to treat infinity as a single idea, but Georg Cantor showed in 1891 that infinite sets come in different sizes. The counting numbers 1, 2, 3 and so on are countable. The real numbers between 0 and 1 are not: suppose you tried to list them all, then build a new number whose first digit differs from the first listed number's first digit, whose second digit differs from the second number's second digit, and so on down the diagonal. The result differs from every number on the list, so no list can be complete, meaning there are strictly more reals than integers.",
+      "detail": "The same diagonal idea generalizes to Cantor's theorem: the set of all subsets of any set is always strictly larger than the set itself, so there is no biggest infinity and the hierarchy climbs forever. This launched modern set theory and the study of cardinal numbers. It also seeded deep questions such as the continuum hypothesis, which asks whether any infinity sits strictly between the integers and the reals, later shown to be undecidable from the standard axioms in the very Gödelian sense described elsewhere in this collection.",
+      "citations": [
+        {
+          "source": "Wolfram MathWorld",
+          "title": "Cantor Diagonal Method",
+          "authors": null,
+          "year": null,
+          "url": "https://mathworld.wolfram.com/CantorDiagonalMethod.html",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "arXiv",
+          "title": "Infinity — A simple, but not too simple introduction",
+          "authors": null,
+          "year": "2015",
+          "url": "https://arxiv.org/abs/1506.06319",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "set theory",
+        "infinity",
+        "Cantor",
+        "cardinality"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-004",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "The Golden Ratio Is Real Math and Mostly Fake History",
+      "hook": "The number phi genuinely governs how plants grow; it probably has nothing to do with the Parthenon or the Mona Lisa.",
+      "summary": "The golden ratio, roughly 1.618, is a perfectly real irrational number with elegant properties. But most cultural claims about it are unsupported. There is no evidence the ancient Greeks designed the Parthenon around it, or that Leonardo built his paintings on it; those numbers only appear if you cherry-pick which rectangles to measure. Studies also fail to show that people reliably prefer golden rectangles to others. Where it genuinely does turn up is in biology, through the closely related Fibonacci sequence.",
+      "detail": "In many plants, leaves and seeds are arranged near the golden angle of about 137.5 degrees, which packs them efficiently without overlap, visible in sunflower seed spirals and pinecones. The mathematician Chris Budd argues that the ratio's real importance is its extreme irrationality: phi is the hardest number to approximate well with fractions, so systems that need to avoid resonance or synchronization, from plant growth to engineering, tend toward it. That is a far more interesting truth than the aesthetic legends.",
+      "citations": [
+        {
+          "source": "Plus Magazine (University of Cambridge, Millennium Mathematics Project)",
+          "title": "Myths of maths: The golden ratio",
+          "authors": "Chris Budd",
+          "year": "2020",
+          "url": "https://plus.maths.org/content/myths-maths-golden-ratio",
+          "access": "free-to-read",
+          "note": "Verified live; debunks Parthenon/da Vinci claims, affirms Fibonacci/phyllotaxis."
+        }
+      ],
+      "tags": [
+        "golden ratio",
+        "Fibonacci",
+        "myths",
+        "phyllotaxis",
+        "geometry"
+      ],
+      "relatedEntryIds": [
+        "maths-k-008"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-005",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "A Stroll Over Seven Bridges That Invented a Field",
+      "hook": "Can you cross all seven bridges of a city exactly once? Euler's answer of no created graph theory and foreshadowed topology.",
+      "summary": "The 18th-century city of Königsberg had two river islands linked to the banks by seven bridges, and residents wondered whether anyone could walk a route crossing each bridge exactly once. In 1736 Leonhard Euler proved it impossible by throwing away everything except what connects to what. He treated each landmass as a point and each bridge as a link, then observed that a workable route needs every landmass, except possibly the start and end, to have an even number of bridges. Königsberg had four landmasses each with an odd number, so no such walk exists.",
+      "detail": "Euler's insight, that distances and shapes were irrelevant and only the pattern of connections mattered, was a genuinely new kind of reasoning. It became the first theorem of graph theory, and its spirit that connection matters more than shape foreshadowed topology, the mathematics of properties preserved under stretching and bending. Today routes crossing every edge exactly once are called Eulerian paths, and the same logic underlies problems from circuit design to DNA sequence assembly.",
+      "citations": [
+        {
+          "source": "Mathematical Association of America (Convergence)",
+          "title": "Leonard Euler's Solution to the Königsberg Bridge Problem",
+          "authors": null,
+          "year": null,
+          "url": "https://old.maa.org/press/periodicals/convergence/leonard-eulers-solution-to-the-konigsberg-bridge-problem",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "Wolfram MathWorld",
+          "title": "Königsberg Bridge Problem",
+          "authors": null,
+          "year": null,
+          "url": "https://mathworld.wolfram.com/KoenigsbergBridgeProblem.html",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "topology",
+        "graph theory",
+        "Euler",
+        "networks"
+      ],
+      "relatedEntryIds": [
+        "maths-k-010"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-006",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "Is Finding an Answer as Easy as Checking One?",
+      "hook": "The million-dollar P versus NP question asks whether every problem that is quick to verify is also quick to solve.",
+      "summary": "Some problems are easy to check but seem hard to solve. If a friend hands you a completed Sudoku or a valid schedule, you can verify it quickly, yet finding one from scratch can take enormous effort. The class P is problems solvable quickly, while NP is problems whose proposed solutions can be checked quickly. P versus NP asks whether these are secretly the same, whether easy to check always implies easy to find. Almost every expert believes they differ, but nobody has proved it.",
+      "detail": "It is one of the seven Clay Mathematics Institute Millennium Prize Problems, carrying a one-million-dollar reward, and was formulated independently by Stephen Cook and Leonid Levin around 1971. The stakes are practical: if P equaled NP, much of modern cryptography, which relies on certain problems being hard to solve but easy to verify, could unravel, while optimization, logistics, and large search problems would become dramatically easier. A resolution either way would reshape computer science.",
+      "citations": [
+        {
+          "source": "Clay Mathematics Institute",
+          "title": "P vs NP Problem (Millennium Problems)",
+          "authors": null,
+          "year": null,
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "access": "free-to-read",
+          "note": "Verified live; confirms Cook/Levin 1971 and Millennium Prize status."
+        }
+      ],
+      "tags": [
+        "algorithms",
+        "complexity",
+        "computer science",
+        "P vs NP"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-007",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "In a Room of 23 People, Two Probably Share a Birthday",
+      "hook": "With 365 days in a year it sounds impossible, yet 23 strangers reach even odds of a birthday match.",
+      "summary": "Ask how many people you need in a room for a better-than-even chance that two share a birthday, and most people guess somewhere near 180. The real answer is just 23. The key is that you are not comparing yourself against everyone else, you are comparing every pair of people. A group of 23 contains 253 different pairs, and with that many chances for a coincidence a match becomes likely. By around 70 people the probability climbs past 99.9 percent.",
+      "detail": "The clean way to compute it is to track the chance that everyone's birthday is different and subtract from one. The first person is free, the second must avoid 1 day, the third 2 days, and so on, so the all-distinct probability falls quickly. This is a veridical paradox, surprising but genuinely true, and it has a serious side: the same reasoning, called a birthday attack, tells cryptographers how many random values can be generated before collisions become likely, which shapes how large secure hash outputs need to be.",
+      "citations": [
+        {
+          "source": "Encyclopædia Britannica",
+          "title": "Birthday problem",
+          "authors": null,
+          "year": null,
+          "url": "https://www.britannica.com/science/birthday-problem",
+          "access": "free-to-read",
+          "note": "Located via live web search; publicly readable but Britannica returns HTTP 403 to automated fetch, so text was not machine-verified. The 23-person / 253-pairs claim is standard and also supported by the arXiv citation below."
+        },
+        {
+          "source": "arXiv",
+          "title": "A generalization of the Birthday problem and the chromatic polynomial",
+          "authors": null,
+          "year": "2011",
+          "url": "https://arxiv.org/abs/1105.0698",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "probability",
+        "combinatorics",
+        "counterintuitive",
+        "cryptography"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-008",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "Euclid's Fifth Rule Was Optional All Along",
+      "hook": "For 2,000 years mathematicians tried to prove the parallel postulate; it turned out you can simply drop it.",
+      "summary": "Euclid built geometry on five postulates, and the fifth, about parallel lines, always felt less self-evident than the others, so generations tried to derive it from them. In the 1820s and 1830s Janos Bolyai and Nikolai Lobachevsky independently did something bolder: they assumed it was false, allowing many lines through a point parallel to a given line, and found the resulting geometry was perfectly consistent. Carl Friedrich Gauss had reached similar conclusions privately but never published, fearing controversy.",
+      "detail": "This hyperbolic geometry describes a saddle-shaped world where the angles of a triangle sum to less than 180 degrees. Skeptics doubted it was legitimate mathematics until Eugenio Beltrami showed in 1868 how to build a model of it inside ordinary Euclidean space, proving it exactly as consistent as Euclid's own system. The consequence was profound: geometry was not a single unquestionable truth about space but a choice of axioms. Decades later, curved non-Euclidean geometry became the natural language of Einstein's general relativity.",
+      "citations": [
+        {
+          "source": "MacTutor History of Mathematics Archive (University of St Andrews)",
+          "title": "Non-Euclidean geometry",
+          "authors": null,
+          "year": null,
+          "url": "https://mathshistory.st-andrews.ac.uk/HistTopics/Non-Euclidean_geometry/",
+          "access": "free-to-read",
+          "note": "Verified live; covers Gauss/Bolyai/Lobachevsky and Beltrami's 1868 consistency model."
+        }
+      ],
+      "tags": [
+        "geometry",
+        "non-Euclidean",
+        "parallel postulate",
+        "history"
+      ],
+      "relatedEntryIds": [
+        "maths-k-004"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-009",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "The Deepest Unsolved Riddle About Prime Numbers",
+      "hook": "One unproven line, that all the special zeros sit on a single vertical line, would decode how the primes are scattered.",
+      "summary": "Primes look random up close, yet on average they thin out in a predictable way. In 1859 Bernhard Riemann connected their distribution to a function of complex numbers, the zeta function, and the location of its zeros. The Riemann hypothesis conjectures that all of the non-trivial zeros have real part exactly one half, lining up on a single vertical line in the complex plane. If true, it would pin down how far the primes stray from their average distribution with remarkable precision.",
+      "detail": "It is one of the Clay Millennium Prize Problems, worth one million dollars, and is arguably the most famous open problem in mathematics. Vast computation has verified that the first many trillions of zeros obey the pattern, but computation can never replace proof, since a single stray zero off the line would break it. Numerous theorems in number theory are stated conditionally, assuming the Riemann hypothesis, so a proof would instantly upgrade a large body of tentative results to certainty.",
+      "citations": [
+        {
+          "source": "Clay Mathematics Institute",
+          "title": "Riemann Hypothesis (Millennium Problems)",
+          "authors": null,
+          "year": null,
+          "url": "https://www.claymath.org/millennium/riemann-hypothesis/",
+          "access": "free-to-read",
+          "note": "Verified live; confirms zeta zeros on the critical line real part 1/2 and the prime-distribution link."
+        },
+        {
+          "source": "Clay Mathematics Institute",
+          "title": "Problems of the Millennium: the Riemann Hypothesis (official problem statement)",
+          "authors": "Enrico Bombieri",
+          "year": null,
+          "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "number theory",
+        "primes",
+        "Riemann hypothesis",
+        "unsolved"
+      ],
+      "relatedEntryIds": [
+        "maths-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "maths-k-010",
+      "field": "maths",
+      "type": "knowledge",
+      "title": "The First Great Theorem a Computer Helped Prove",
+      "hook": "Four colors always suffice to shade any map so neighbors differ, but the 1976 proof needed a machine, and that unsettled people.",
+      "summary": "Mapmakers long suspected that four colors are always enough to color any map so that no two regions sharing a border get the same color. The claim resisted proof for over a century. In 1976 Kenneth Appel and Wolfgang Haken finally settled it, reducing the infinitely many possible maps to a set of 1,936 unavoidable configurations and then checking each one by computer, taking more than a thousand hours of computation. Since no smallest counterexample could survive that check, the theorem holds.",
+      "detail": "This was the first time a computer was essential to proving a major theorem, and it sparked lasting philosophical debate: if no human can verify every step by hand, is it truly a proof? The unavoidability part still demanded extensive human analysis, and the computer-checked portion was later re-verified with independent programs and, in 2005, by a fully formal machine-checked proof. The episode reshaped how mathematicians think about certainty, verification, and what it means to understand a result.",
+      "citations": [
+        {
+          "source": "University of Illinois (Distributed Museum)",
+          "title": "Four Color Theorem",
+          "authors": null,
+          "year": null,
+          "url": "https://distributedmuseum.illinois.edu/exhibit/four-color-theorem/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "arXiv",
+          "title": "Xiang's formal proof of the four color theorem",
+          "authors": null,
+          "year": "2009",
+          "url": "https://arxiv.org/abs/0905.3713",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "topology",
+        "graph theory",
+        "four color theorem",
+        "computer proof"
+      ],
+      "relatedEntryIds": [
+        "maths-k-005"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": "WARN: The arXiv citation 0905.3713 is misquoted as \"Xiang's formal proof of the four color theorem\" — the paper's actual title is \"A formal proof of the four color theorem\" (author Limin Xiang, 2009). More importantly it is an unrefereed single-author preprint advancing its own alleged proof; it does not support this entry's narrative about the 1976 Appel-Haken computer proof. It is a weak, tangential source and should be replaced with a source that actually documents the Appel-Haken proof."
+    }
+  ]
+}

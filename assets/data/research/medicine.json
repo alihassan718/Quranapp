@@ -1,0 +1,495 @@
+{
+  "field": "medicine",
+  "schemaVersion": 1,
+  "_note": "DATA UNDER TEST — curated summaries in the app's own words with verified source metadata; connection entries are attributed reflections, not proofs. Not yet scholar-reviewed.",
+  "entries": [
+    {
+      "id": "medicine-k-001",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "The Immune System's Two-Speed Defense",
+      "hook": "Your body runs two defense systems: one fast and blunt, one slow and brilliantly precise.",
+      "summary": "The immune system has two arms that work together. Innate immunity is the rapid, general-purpose first responder: physical barriers like skin plus cells that recognize broad molecular patterns shared by many microbes and attack within minutes to hours. Adaptive immunity is slower but exquisitely specific: B cells make antibodies tailored to a single target, and T cells hunt down infected cells. The two arms constantly signal each other, and adaptive immunity keeps a memory of past invaders, which is why you rarely catch the same disease twice.",
+      "detail": "The innate system detects trouble using pattern-recognition receptors such as Toll-like receptors, which read conserved molecular signatures on pathogens and trigger inflammation. It was long assumed that innate immunity simply switches on adaptive immunity, but recent work shows the communication runs in both directions, with adaptive cells also instructing and tuning innate responses. Immunological memory, carried by long-lived memory B and T cells, is the biological basis for lasting immunity and for how vaccines protect us.",
+      "citations": [
+        {
+          "source": "NCBI Bookshelf (InformedHealth.org / IQWiG)",
+          "title": "In brief: The innate and adaptive immune systems",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK279396/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "MedComm (via PubMed Central)",
+          "title": "The interaction of innate immune and adaptive immune system",
+          "authors": "Wang et al.",
+          "year": "2024",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11401974/",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "immunology",
+        "innate-immunity",
+        "adaptive-immunity",
+        "antibodies"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-005",
+        "medicine-k-004"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-002",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "The Heart: A Four-Chambered Pump That Never Rests",
+      "hook": "A fist-sized muscle beats around 100,000 times a day to keep every cell supplied.",
+      "summary": "The heart is a double pump with four chambers. Its right side receives oxygen-poor blood from the body and sends it to the lungs to pick up oxygen and offload carbon dioxide; its left side pumps that freshly oxygenated blood out to the rest of the body. One-way valves keep the flow moving in the correct direction. The vessels complete the circuit: arteries carry blood away from the heart under pressure, capillaries let oxygen and nutrients cross into tissues, and veins bring blood back. At 60 to 100 beats a minute, this cycle runs continuously for your whole life.",
+      "detail": "Blood returning from the body enters the right atrium through the venae cavae, passes through the tricuspid valve into the right ventricle, and is pumped through the pulmonary valve to the lungs. Oxygen-rich blood returns to the left atrium, drops into the left ventricle, and is forced out through the aorta to the body. Beyond delivering oxygen and nutrients, the cardiovascular system distributes hormones, helps regulate body temperature, and lets the body meet the demands of exercise and stress.",
+      "citations": [
+        {
+          "source": "StatPearls, NCBI Bookshelf (NIH)",
+          "title": "Physiology, Cardiovascular",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK493197/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "MedlinePlus Medical Encyclopedia (NLM/NIH)",
+          "title": "Heart and vascular services",
+          "authors": null,
+          "year": null,
+          "url": "https://medlineplus.gov/ency/article/007459.htm",
+          "access": "public-domain",
+          "note": null
+        }
+      ],
+      "tags": [
+        "cardiology",
+        "physiology",
+        "anatomy",
+        "circulation"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-003"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-003",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "Eight Weeks From One Cell to Every Organ",
+      "hook": "In just eight weeks, a single fertilized cell becomes an embryo with a beating heart and the start of every organ.",
+      "summary": "Human organ formation is compressed into an astonishingly short window: weeks 3 through 8 after fertilization. In week 3, a process called gastrulation sorts cells into three founding layers, the ectoderm, mesoderm, and endoderm, and every future tissue traces back to one of them. The cardiovascular system forms first, and the heart establishes its four chambers by about week 4 and begins beating early. By the end of week 8, the major organs are laid down and the embryo looks recognizably human; the rest of pregnancy is largely growth and refinement.",
+      "detail": "Each germ layer has a characteristic fate: ectoderm gives rise to skin and the nervous system, mesoderm to muscle, bone, and the circulatory system, and endoderm to the lining of the gut and respiratory tract plus organs like the bladder, thymus, and parathyroid. This tightly scheduled period is also when the developing embryo is most sensitive to disruptions, which is why the first trimester is such a critical developmental stage.",
+      "citations": [
+        {
+          "source": "StatPearls, NCBI Bookshelf (NIH)",
+          "title": "Embryology, Gastrulation",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK554394/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "StatPearls, NCBI Bookshelf (NIH)",
+          "title": "Embryology, Weeks 6-8",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK563181/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "embryology",
+        "developmental-biology",
+        "organogenesis",
+        "anatomy"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-002"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-004",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "You Are an Ecosystem: The Human Microbiome",
+      "hook": "Trillions of microbes live on and in you, and most of them earn their keep.",
+      "summary": "The human microbiome is the vast community of bacteria, viruses, fungi, and other microbes living in and on the body, densest in the gut. Far from being freeloaders, they help digest food, synthesize vitamins, train the immune system, and crowd out harmful invaders. One of their key jobs is fermenting dietary fiber into short-chain fatty acids that feed the cells lining the colon and help calm inflammation. When this community falls out of balance, a state called dysbiosis, it has been linked to conditions ranging from inflammatory bowel disease to metabolic and cardiovascular disorders.",
+      "detail": "Because the microbiome shapes immune development, researchers have explored links between early-life microbial exposure and later allergy risk, and between gut dysbiosis and chronic diseases across the body. This has driven interest in interventions that reshape the microbial community, including dietary changes, probiotics, prebiotics, and, for specific conditions, fecal microbiota transplantation, though the science of deliberately steering the microbiome is still young.",
+      "citations": [
+        {
+          "source": "International Journal of Microbiology (via PubMed Central)",
+          "title": "The Human Microbiome and Its Impacts on Health",
+          "authors": "Ogunrinola GA, Oyewale JO, Oshamika OO, Olasehinde GI",
+          "year": "2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306068/",
+          "access": "open-access",
+          "note": null
+        },
+        {
+          "source": "PubMed Central (NIH)",
+          "title": "Gut Microbiome: Profound Implications for Diet and Disease",
+          "authors": null,
+          "year": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6682904/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "microbiome",
+        "gut-health",
+        "bacteria",
+        "immunology"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-008",
+        "medicine-k-005",
+        "medicine-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-005",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "How Vaccines Work: A Rehearsal for the Immune System",
+      "hook": "A vaccine teaches your immune system the enemy's face before the real fight begins.",
+      "summary": "Vaccines expose the immune system to a harmless fragment or a weakened form of a pathogen, called an antigen, so the body can mount a response without getting sick. In doing so, B cells produce antibodies against that specific antigen, and, crucially, the body also creates long-lived memory cells. If the real pathogen shows up later, those memory cells trigger a much faster and stronger response that often stops the infection before it can take hold. Some vaccines require several doses spaced apart to build durable memory and high-quality, long-lasting protection.",
+      "detail": null,
+      "citations": [
+        {
+          "source": "World Health Organization",
+          "title": "How do vaccines work?",
+          "authors": null,
+          "year": null,
+          "url": "https://www.who.int/news-room/feature-stories/detail/how-do-vaccines-work",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "MedlinePlus (NLM/NIH)",
+          "title": "Vaccines / Immunization",
+          "authors": null,
+          "year": null,
+          "url": "https://medlineplus.gov/vaccines.html",
+          "access": "public-domain",
+          "note": null
+        }
+      ],
+      "tags": [
+        "vaccines",
+        "immunology",
+        "public-health",
+        "immune-memory"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-010",
+        "medicine-k-004",
+        "medicine-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-006",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "Sleep Is When the Brain Cleans House",
+      "hook": "While you sleep, your brain opens its plumbing and flushes the day's waste away.",
+      "summary": "In 2013, researchers discovered that the sleeping brain physically reconfigures itself to clean up. During sleep, the space between brain cells expands by roughly 60%, letting cerebrospinal fluid flow through and carry off metabolic waste, including beta-amyloid, a protein linked to Alzheimer's disease. This clearance process runs far faster during sleep than during wakefulness. It offers one of the most concrete biological answers yet to why sleep is non-negotiable, and it connects chronic sleep loss to long-term brain health.",
+      "detail": "This waste-removal network is often called the glymphatic system because it depends on astrocyte water channels (aquaporin-4) and acts as the brain's substitute for a conventional lymphatic system. The clearance is strongest during deep, slow-wave (N3) sleep and is thought to be helped by a drop in the signaling chemical norepinephrine, which relaxes the vessels and widens the fluid spaces. Much of the detailed mechanism was first mapped in mice, and confirming and quantifying it in humans remains an active area of research.",
+      "citations": [
+        {
+          "source": "Science (author manuscript via PubMed Central)",
+          "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
+          "authors": "Xie L, Kang H, Xu Q, Chen MJ, et al. (Nedergaard lab)",
+          "year": "2013",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3880190/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "sleep",
+        "neuroscience",
+        "glymphatic-system",
+        "brain-health"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-009",
+        "medicine-k-007"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-007",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "Depression Has a Neurobiology, Not Just a Mood",
+      "hook": "Depression isn't a character flaw; it leaves fingerprints across brain circuits, chemistry, and structure.",
+      "summary": "Major depression involves measurable changes in the brain, not only in how a person feels. Circuits linking the prefrontal cortex, amygdala, and hippocampus become dysregulated, with overactivity in emotion-processing regions and reduced activity in areas handling reasoning and control. The neurotransmitters serotonin, norepinephrine, and dopamine are involved, which is why many antidepressants target them. Chronic stress and reduced levels of growth factors like BDNF appear to shrink parts of the hippocampus, and some treatments may work partly by restoring this neuroplasticity. Depression is among the leading causes of disability worldwide.",
+      "detail": "Brain-imaging and clinical studies consistently find reduced hippocampal volume in people with major depressive disorder compared with controls, with the effect linked to how long and how often someone has been ill and untreated. A leading integrated model holds that genetic vulnerability plus chronic stress raise glucocorticoid stress hormones and lower neurotrophic support, impairing the brain's ability to adapt and rewire; recovery may involve reversing that downregulation. This is a scientific view of the illness, not a substitute for professional diagnosis or care.",
+      "citations": [
+        {
+          "source": "International Journal of Clinical Practice (via PubMed Central)",
+          "title": "Neurobiology of depression: an integrated view of key findings",
+          "authors": "Maletic V, Robinson M, Oakes T, Iyengar S, Ball SG, Russell J",
+          "year": "2007",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2228409/",
+          "access": "open-access",
+          "note": "Creative Commons Attribution (non-commercial) license."
+        }
+      ],
+      "tags": [
+        "mental-health",
+        "depression",
+        "neuroscience",
+        "psychiatry"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-009",
+        "medicine-k-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-008",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "The Fiber You Can't Digest Feeds the Body You Can't See",
+      "hook": "Undigestible fiber is really food for the microbes that keep your gut, and maybe your whole body, healthy.",
+      "summary": "Dietary fiber survives your own digestion and reaches the colon largely intact, where resident bacteria ferment it into short-chain fatty acids such as acetate, propionate, and butyrate. Butyrate is the preferred fuel for the cells lining the colon, while the others enter the bloodstream and influence appetite, blood-sugar control, mineral absorption, and inflammation throughout the body. This helps explain why fiber-rich diets track with better metabolic and cardiovascular health. It reframes nutrition itself: when you eat fiber, you are not only feeding yourself, you are feeding an entire microbial ecosystem.",
+      "detail": "Short-chain fatty acids curb the glycemic response and promote satiety, support the integrity of the gut barrier, and modulate immune signaling, so their benefits reach well beyond the intestine. Because the amount and type of these acids depend on both what you eat and which microbes you host, the effects of fiber vary between people, and this diet-microbiome interaction is one of the most active frontiers in nutrition science.",
+      "citations": [
+        {
+          "source": "Advances in Nutrition (via PubMed Central)",
+          "title": "Perspective: Physiologic Importance of Short-Chain Fatty Acids from Nondigestible Carbohydrate Fermentation",
+          "authors": null,
+          "year": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6628845/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "International Journal of Microbiology (via PubMed Central)",
+          "title": "The Human Microbiome and Its Impacts on Health",
+          "authors": "Ogunrinola GA, Oyewale JO, Oshamika OO, Olasehinde GI",
+          "year": "2020",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306068/",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "nutrition",
+        "dietary-fiber",
+        "gut-health",
+        "metabolism"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-004"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-009",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "Pain Has a Gate, and the Brain Holds the Key",
+      "hook": "Pain isn't a simple wire from injury to brain; the spinal cord has a gate that can turn it up or down.",
+      "summary": "Before 1965, pain was pictured as a direct signal: damage in, pain out. Ronald Melzack and Patrick Wall's gate control theory overturned that, proposing that neurons in the spinal cord's dorsal horn act like a gate that can amplify or dampen pain signals before they ever reach the brain. Non-painful input, like rubbing a banged elbow, can help close the gate and reduce the hurt. The brain also sends signals back down that suppress pain, which helps explain placebo effects and why chronic pain can persist long after the original tissue damage has healed.",
+      "detail": "A major hub of this top-down control is the periaqueductal gray in the midbrain: stimulating it, or delivering morphine there, produces powerful pain relief, while its suppression is thought to contribute to chronic pain. In long-lasting pain, the brain and spinal cord undergo plasticity, rewiring in ways that can keep pain switched on even without ongoing injury, which is why chronic pain is increasingly treated as a disease of the nervous system in its own right rather than just a symptom.",
+      "citations": [
+        {
+          "source": "StatPearls, NCBI Bookshelf (NIH)",
+          "title": "Pain Theory",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK545194/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "PubMed Central (NIH)",
+          "title": "Towards a theory of chronic pain",
+          "authors": null,
+          "year": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2650821/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "pain",
+        "neuroscience",
+        "gate-control-theory",
+        "chronic-pain"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-007",
+        "medicine-k-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-k-010",
+      "field": "medicine",
+      "type": "knowledge",
+      "title": "Antibiotic Resistance: Evolution Outrunning Our Drugs",
+      "hook": "Bacteria evolve faster than we invent drugs, and they've learned to survive almost everything we throw at them.",
+      "summary": "Antibiotic resistance occurs when bacteria evolve ways to survive the drugs designed to kill them, a process accelerated by overuse of antibiotics in medicine and agriculture. Bacteria defend themselves through a handful of core strategies: pumping the drug back out with efflux pumps, altering the molecular target the drug attacks, producing enzymes that chemically destroy the drug, and tightening their outer membrane to keep it out. They can also share resistance genes with one another directly, letting defenses spread rapidly through a population. The WHO regards antimicrobial resistance as one of the top global health threats, because it risks making once-routine infections deadly again.",
+      "detail": "Resistance genes spread not only from parent to offspring but horizontally between bacteria via mobile genetic elements, so a single successful adaptation can propagate across species. Biofilms, dense communities of bacteria encased in a protective matrix, add another layer of tolerance. To track and slow the problem, the WHO launched the Global Antimicrobial Resistance Surveillance System in 2015 to standardize international data, while researchers race to develop new antibiotics and alternative therapies against priority multidrug-resistant pathogens.",
+      "citations": [
+        {
+          "source": "StatPearls, NCBI Bookshelf (NIH)",
+          "title": "Antibiotic Resistance",
+          "authors": null,
+          "year": null,
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK513277/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "PubMed Central (NIH)",
+          "title": "Combating Antibiotic Resistance: Mechanisms, Multidrug-Resistant Pathogens, and Novel Therapeutic Approaches: An Updated Review",
+          "authors": null,
+          "year": null,
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11944582/",
+          "access": "open-access",
+          "note": "Published under a Creative Commons license per the publisher."
+        }
+      ],
+      "tags": [
+        "antibiotics",
+        "microbiology",
+        "antimicrobial-resistance",
+        "public-health"
+      ],
+      "relatedEntryIds": [
+        "medicine-k-005"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "medicine-c-001",
+      "field": "medicine",
+      "type": "connection",
+      "title": "Honey as \"healing\" for people (Q 16:68–69)",
+      "hook": "A verse calls the bees' drink a source of healing. Popular writers link this to honey's documented antibacterial effect — but the medicinal use of honey was already ancient.",
+      "summary": "Q 16:68–69 speaks of bees producing a drink of varying colors 'in which there is healing (shifāʾ) for people.' Modern proponents of the \"scientific miracle\" genre cite this alongside laboratory evidence that honey has real antibacterial and wound-healing properties. The app notes both that this evidence is genuine and that the medicinal use of honey was widely known across ancient Egyptian, Greek and pre-Islamic Arabian medicine, and that the verse is a general statement rather than a specific pharmacological description.",
+      "detail": null,
+      "citations": [
+        {
+          "source": "Jundishapur Journal of Natural Pharmaceutical Products (PMC)",
+          "title": "Evidence for Clinical Use of Honey in Wound Healing as an Anti-bacterial, Anti-inflammatory, Anti-oxidant and Anti-viral Agent: A Review",
+          "authors": "Yaghoobi R, Kazerouni A, Kazerouni O",
+          "year": "2013",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3941901/",
+          "access": "open-access",
+          "note": "Reviews honey's antibacterial/wound-healing mechanisms (hydrogen peroxide, osmolarity, acidity) and notes methodological limits of the trial literature."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (Wiley)",
+          "title": "The \"Scientific Miracle of the Qur'ān,\" Pseudoscience, and Conspiracism",
+          "authors": "Bigliardi S",
+          "year": "2017",
+          "url": "https://doi.org/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Peer-reviewed context for the iʿjāz ʿilmī movement that advances claims like the honey verse. Paywalled; cited by metadata and DOI."
+        }
+      ],
+      "tags": [
+        "honey",
+        "bees",
+        "wound healing",
+        "iʿjāz ʿilmī",
+        "materia medica",
+        "antibacterial"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": {
+        "surah": 16,
+        "ayah": 69
+      },
+      "whatKnowledgeSays": "Medical-grade honey does have measurable antimicrobial and wound-healing activity, and is used clinically on burns and some chronic or infected wounds. Reviews attribute this to several mechanisms: enzymatic production of hydrogen peroxide, a strong osmotic (high-sugar) effect that dehydrates bacteria, and low pH (around 4.4) that discourages microbial growth. Its broad-spectrum activity extends to organisms such as Staphylococcus aureus and Pseudomonas aeruginosa, including some antibiotic-resistant strains. Reviewers also caution that many clinical trials have been small or methodologically weak, so honey is an adjunct treatment, not a cure-all.",
+      "proposedConnection": "Writers in the iʿjāz ʿilmī tradition — including Maurice Bucaille and popularizers such as Zakir Naik and the Harun Yahya publishing enterprise — cite Q 16:69's mention of 'healing' in the bees' drink as anticipating modern findings on honey's therapeutic value. This is presented as their claim, attributed to them, not the app's own position.",
+      "proposer": "iʿjāz ʿilmī popularizers (e.g. Maurice Bucaille; Zakir Naik; Harun Yahya)",
+      "status": "contested",
+      "statusNote": "The therapeutic claim about honey is scientifically supported, but the connection is contested because honey's medicinal use was already documented in Egyptian, Greek and pre-Islamic Arabian medicine, and because 'healing' is a broad statement rather than a testable, previously-unknown scientific detail.",
+      "reviewFlag": null
+    }
+  ]
+}

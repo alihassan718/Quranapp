@@ -1,0 +1,412 @@
+{
+  "field": "philosophy",
+  "schemaVersion": 1,
+  "_note": "DATA UNDER TEST — curated summaries in the app's own words with verified source metadata; connection entries are attributed reflections, not proofs. Not yet scholar-reviewed.",
+  "entries": [
+    {
+      "id": "philosophy-k-001",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "The Gettier Problem: When True, Justified Belief Still Isn't Knowledge",
+      "hook": "For 2,000 years knowledge meant 'justified true belief' — then a three-page paper broke it.",
+      "summary": "Since Plato, philosophers roughly agreed that you know something if you believe it, it's true, and you have good reason (justification) for believing it. In 1963 Edmund Gettier published a short paper showing cases where all three boxes are ticked yet we'd never call it real knowledge. The trick: your justified belief happens to be true by luck, disconnected from the fact that makes it true. Imagine believing 'someone in my office owns a Ford' on strong evidence about a colleague who actually sold his — but unknown to you, a different colleague does own one. You're right, and justified, but only by accident. Decades of epistemology since have tried to patch the definition, and the difficulty of doing so cleanly is now simply called 'the Gettier problem.'",
+      "detail": "Gettier's own examples chain a justified belief off a false premise to reach a coincidentally true conclusion, which is why later 'no false lemmas' fixes were proposed — and promptly defeated by fresh counterexamples like Alvin Goldman's fake-barn country, where you see the one real barn among many facades. The episode reshaped 20th-century epistemology into a hunt for a fourth condition (reliability, safety, sensitivity, 'anti-luck' clauses) that would rule out epistemic luck without ruling out ordinary knowledge. No proposal has won consensus, and some philosophers now argue knowledge simply can't be reduced to a tidy list of conditions at all.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "The Analysis of Knowledge",
+          "authors": "Jonathan Jenkins Ichikawa and Matthias Steup",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/knowledge-analysis/",
+          "access": "free-to-read",
+          "note": "SEP entry covering the justified-true-belief account and Gettier's counterexamples."
+        }
+      ],
+      "tags": [
+        "epistemology",
+        "knowledge",
+        "Gettier",
+        "justification"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-002",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Kant's Categorical Imperative: Could Everyone Do What You're Doing?",
+      "hook": "Kant thought morality boils down to one test: would your rule survive becoming a universal law?",
+      "summary": "Immanuel Kant argued that the foundation of morality isn't consequences or feelings but reason itself. His 'categorical imperative' is an unconditional command that applies to everyone regardless of their desires. Its most famous form says: act only on a rule (a 'maxim') that you could consistently will everyone to follow. A lying promise fails the test because if everyone made promises they intended to break, the whole practice of promising would collapse — you couldn't even coherently will it. A second version tells us to treat humanity, in ourselves and others, always as an end and never merely as a means.",
+      "detail": "Kant introduced the idea in his 1785 Groundwork of the Metaphysics of Morals, which he framed as clearing the ground for a full moral system he'd publish twelve years later. He distinguished categorical imperatives (binding no matter what you want) from hypothetical ones ('if you want X, do Y'). For Kant, only actions done from duty out of respect for the moral law carry genuine moral worth — acting rightly merely because it suits you doesn't count. Critics from his day to ours press on the theory's rigor: it seems to forbid lying even to a murderer at the door, and philosophers still debate whether the universalizability test truly generates all and only the duties Kant claimed.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Kant's Moral Philosophy",
+          "authors": "Robert Johnson and Adam Cureton",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/kant-moral/",
+          "access": "free-to-read",
+          "note": "Covers the categorical imperative and its formulations in the Groundwork."
+        }
+      ],
+      "tags": [
+        "ethics",
+        "Kant",
+        "deontology",
+        "duty",
+        "moral philosophy"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-003"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-003",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Aristotle's Golden Mean: Virtue Lives Between Two Vices",
+      "hook": "Courage isn't the opposite of fear — it's the sweet spot between cowardice and recklessness.",
+      "summary": "In the Nicomachean Ethics, Aristotle proposed that each virtue of character sits as a balance point between two failings: one of excess and one of deficiency. Courage falls between cowardice (too little confidence) and rashness (too much); generosity between stinginess and wastefulness. Crucially, this 'mean' is not a fixed mathematical midpoint but is relative to the person and situation — the right amount of anger at the right time toward the right person. Getting it right takes practical wisdom, not a rulebook, and becomes second nature only through habit and practice.",
+      "detail": "Aristotle's ethics is built around eudaimonia, usually translated 'flourishing' or 'happiness,' which he saw as the activity of a life lived well in accordance with virtue over a complete lifetime. The doctrine of the mean is famously flexible: some acts (murder, adultery) admit no virtuous amount at all, and the mean can sit far closer to one extreme than the other — courage leans nearer to boldness than to timidity. This is why Aristotle insists that no finite set of rules can replace the trained judgment of the practically wise person, who perceives what a situation calls for the way an expert reads a game.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Aristotle's Ethics",
+          "authors": "Richard Kraut",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/aristotle-ethics/",
+          "access": "free-to-read",
+          "note": "Detailed treatment of the doctrine of the mean and eudaimonia."
+        },
+        {
+          "source": "Project Gutenberg",
+          "title": "The Nicomachean Ethics of Aristotle (F. H. Peters translation)",
+          "authors": "Aristotle",
+          "year": null,
+          "url": "https://www.gutenberg.org/ebooks/8438",
+          "access": "public-domain",
+          "note": "Full public-domain English translation of the primary source."
+        }
+      ],
+      "tags": [
+        "ethics",
+        "Aristotle",
+        "virtue-ethics",
+        "golden-mean",
+        "classical"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-008",
+        "philosophy-k-002"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": "WARN: Citation names the wrong translator. It cites Project Gutenberg ebook 8438 as the 'F. H. Peters translation,' but that URL is actually the D. P. Chase translation (the title page reads 'Translator: D. P. Chase' and its Book I opening is Chase's wording, not Peters's). The URL is real and the primary text is correct and public-domain; only the translator attribution is wrong and should be changed to D. P. Chase (or the URL swapped to an actual Peters edition)."
+    },
+    {
+      "id": "philosophy-k-004",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "The Liar Paradox: 'This Sentence Is False'",
+      "hook": "If the sentence is true, it's false; if it's false, it's true. Logic has been stuck on it since antiquity.",
+      "summary": "Consider the sentence 'This sentence is false.' If it's true, then what it says holds — so it's false. But if it's false, then it's not the case that it's false, so it's true. Either assumption flips into its opposite, leaving no stable answer. Credited to Eubulides of Miletus in the 4th century BC, this 'liar' is the classic example of a semantic paradox, one that arises from the notion of truth combined with self-reference. It looks like a party trick, but it strikes at the foundations of any theory that tries to say precisely what 'true' means.",
+      "detail": "The paradox resists easy dismissal because you can strip out the explicit self-reference and it still bites: let Max say 'Agnes's claim is true' while Agnes says 'Max's claim is not true' — no single sentence talks about itself, yet the contradiction returns. Alfred Tarski responded by arguing no consistent language can contain its own truth predicate, proposing a hierarchy of languages; others accept truth-value gaps (the sentence is neither true nor false) or gluts (it's both). The stakes reach well beyond word games: the same self-referential structure underlies Gödel's incompleteness theorems, Russell's paradox in set theory, and the halting problem in computer science.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Liar Paradox",
+          "authors": "Jc Beall, Michael Glanzberg, and David Ripley",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/liar-paradox/",
+          "access": "free-to-read",
+          "note": "Comprehensive entry on the liar and proposed resolutions."
+        },
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Self-Reference and Paradox",
+          "authors": "Thomas Bolander",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/self-reference/",
+          "access": "free-to-read",
+          "note": "Connects the liar to Gödel, Russell, and computability."
+        }
+      ],
+      "tags": [
+        "logic",
+        "paradox",
+        "truth",
+        "self-reference"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-010"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-005",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "The Hard Problem of Consciousness: Why Does Any of It Feel Like Anything?",
+      "hook": "Science can map every neuron firing — and still not explain why it feels like something to be you.",
+      "summary": "Philosopher David Chalmers drew a line between the 'easy' problems of consciousness and the 'hard' one. The easy problems — how the brain discriminates stimuli, integrates information, controls behavior, reports its own states — are hard in practice but fall to ordinary science: they're about function. The hard problem is why all that processing is accompanied by subjective experience at all: why there is 'something it is like' to see red or taste coffee. Even a complete physical story of the brain seems to leave this out, producing what Chalmers calls an explanatory gap between objective mechanism and felt experience.",
+      "detail": "The worry is that functional explanation answers 'what does the system do?' but the phenomenal question — 'why is doing it accompanied by inner experience rather than nothing?' — appears untouched by any amount of mechanistic detail. Responses split sharply: physicalists argue the gap is merely epistemic and will close as science matures (or that it's a conceptual illusion), while others take it to show consciousness is a fundamental feature of reality, motivating property dualism or even panpsychism. Thought experiments drive the debate — philosophical zombies (physically identical to us but experience-free) and Frank Jackson's 'Mary the color scientist,' who knows every physical fact about color yet seems to learn something new the first time she actually sees red.",
+      "citations": [
+        {
+          "source": "Internet Encyclopedia of Philosophy",
+          "title": "Hard Problem of Consciousness",
+          "authors": "Josh Weisberg",
+          "year": null,
+          "url": "https://iep.utm.edu/hard-problem-of-conciousness/",
+          "access": "free-to-read",
+          "note": "Peer-reviewed IEP entry; note the URL's spelling of 'conciousness' is the site's own."
+        },
+        {
+          "source": "Internet Encyclopedia of Philosophy",
+          "title": "Consciousness",
+          "authors": null,
+          "year": null,
+          "url": "https://iep.utm.edu/consciousness/",
+          "access": "free-to-read",
+          "note": "Broader survey of theories of consciousness."
+        }
+      ],
+      "tags": [
+        "philosophy-of-mind",
+        "consciousness",
+        "Chalmers",
+        "qualia"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-008"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-006",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Compatibilism: Free Will Even in a Determined Universe",
+      "hook": "What if physics settling every event in advance doesn't actually threaten your freedom?",
+      "summary": "If the laws of nature plus the distant past fix everything that happens, are we ever free? Incompatibilists say no — real freedom would require that we could have done otherwise, which determinism seems to rule out. Compatibilists disagree: they argue free will is compatible with determinism because freedom is really about the right kind of connection between your actions and your own desires, reasoning, and values. On this view, you act freely when your choice flows from you — your deliberation and character — rather than from coercion, compulsion, or manipulation, regardless of whether that choice was in principle predictable.",
+      "detail": "The debate matters because free will is usually treated as a precondition for moral responsibility: if no one is ever free, praise and blame lose their footing. Classical compatibilists (Hobbes, Hume) defined a free act simply as one that isn't externally constrained — you do what you will, even if what you will was itself caused. Modern versions add depth: Harry Frankfurt locates freedom in whether your first-order desires line up with the higher-order desires you want to have, and his famous cases argue you can be responsible even when you couldn't have done otherwise. Incompatibilists counter with the 'consequence argument': if our acts are consequences of laws and a past we never controlled, then we don't control our acts either.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Compatibilism",
+          "authors": "Michael McKenna and D. Justin Coates",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/compatibilism/",
+          "access": "free-to-read",
+          "note": "Surveys classical and contemporary compatibilist positions."
+        }
+      ],
+      "tags": [
+        "free-will",
+        "metaphysics",
+        "determinism",
+        "moral-responsibility"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-010",
+        "philosophy-k-009"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-007",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Sartre: Existence Precedes Essence",
+      "hook": "There's no blueprint for being human — you exist first, then make yourself through your choices.",
+      "summary": "Jean-Paul Sartre summed up his existentialism in the slogan 'existence precedes essence.' A manufactured object like a knife has its essence first — a design and purpose in the maker's mind — before it exists. Human beings, Sartre argued, are the reverse: we show up in the world without any predetermined nature or purpose, and only afterward define who we are through what we choose and do. This means there's no fixed human essence, no excuse to fall back on ('that's just how I am'), and radical responsibility for the self we become. With that freedom comes anguish, and the temptation of 'bad faith' — lying to ourselves that we're not free.",
+      "detail": "Sartre developed the idea most accessibly in his 1945 lecture 'Existentialism Is a Humanism,' arguing that in choosing for ourselves we implicitly affirm an image of what a human being ought to be, so personal freedom carries a weight of responsibility toward everyone. Because we are 'condemned to be free,' we cannot appeal to God, human nature, or circumstance to author our decisions for us. Later readers extended the point ethically and politically: recognizing that essence is made, not given, becomes a call to transform the conditions that constrain the choices of the oppressed. The view is bracing and controversial — critics ask whether we really are as unconstrained as Sartre's early formulations suggest.",
+      "citations": [
+        {
+          "source": "Internet Encyclopedia of Philosophy",
+          "title": "Sartre, Jean Paul: Existentialism",
+          "authors": null,
+          "year": null,
+          "url": "https://iep.utm.edu/sartre-ex/",
+          "access": "free-to-read",
+          "note": "Peer-reviewed IEP entry on Sartre's existentialist philosophy."
+        },
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Existentialism",
+          "authors": "Steven Crowell",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/existentialism/",
+          "access": "free-to-read",
+          "note": "Broader context for the movement and the essence/existence theme."
+        }
+      ],
+      "tags": [
+        "existentialism",
+        "Sartre",
+        "freedom",
+        "continental-philosophy"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-008",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Ibn Sina's Flying Man: Proving the Self From Nothing",
+      "hook": "Suspended in a void, blind and numb, feeling no body at all — you'd still know that 'you' exist.",
+      "summary": "The 11th-century Persian philosopher Ibn Sina (Avicenna) devised one of history's most striking thought experiments. Imagine a person created fully formed but floating in empty space, sight blocked, limbs apart so nothing touches, deprived of every sensation. Ibn Sina argued that even this person, aware of no body and no external world, would still affirm one thing: that they themselves exist. From this he concluded that self-awareness is immediate and doesn't depend on the senses or the body — evidence, he thought, that the soul is something distinct from the physical body.",
+      "detail": "Ibn Sina used the 'flying man' as one argument (not his only one) for the immateriality and self-subsistence of the human soul: if you can affirm your own existence while affirming nothing bodily, then the self you're aware of can't be identical to the body you're unaware of. The reflexive, unmediated character of this self-knowledge anticipates concerns later associated with Descartes's cogito, though the arguments differ in aim and structure. The experiment traveled through medieval Latin and later philosophy and still features in contemporary debates about minimal self-consciousness — whether there is a basic, pre-reflective awareness of oneself underlying all experience.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Self-Consciousness",
+          "authors": null,
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/self-consciousness/",
+          "access": "free-to-read",
+          "note": "Discusses Avicenna's flying man in the context of self-awareness."
+        }
+      ],
+      "tags": [
+        "philosophy-of-mind",
+        "Ibn-Sina",
+        "Avicenna",
+        "self",
+        "classical",
+        "Islamic-philosophy"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-009",
+        "philosophy-k-005",
+        "philosophy-k-003"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-009",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "Al-Ghazali and Occasionalism: Does Fire Really Burn the Cotton?",
+      "hook": "Maybe cotton doesn't burn because fire touches it — maybe God causes each event, and we only see the pattern.",
+      "summary": "In The Incoherence of the Philosophers (c. 1095), the theologian al-Ghazali attacked the assumption that natural causes necessarily produce their effects. When fire meets cotton and the cotton burns, we see two events together, but al-Ghazali argued we never observe a necessary connection forcing one from the other — only constant conjunction. On the occasionalist reading long associated with him, the true and only cause of every event is God, who by habit creates the burning 'on the occasion' of fire's contact. This preserved the possibility of miracles against philosophers who held the natural order was fixed and necessary.",
+      "detail": "The argument strikingly prefigures David Hume's critique of causation seven centuries later: both deny that we can perceive any necessary link between cause and effect, only regular succession. Al-Ghazali's exact commitment is debated by scholars — some (like Marmura) read him as a full occasionalist who denies real secondary causation in creatures, while others argue his aim was narrower, merely to show that a break in the usual order (a miracle) is logically possible, leaving room for genuine created causes operating by God's decree. Either way, the work was pivotal in the classical exchange between philosophy (falsafa) and theology (kalam), and drew a famous rebuttal from Ibn Rushd (Averroes), The Incoherence of the Incoherence.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Occasionalism",
+          "authors": null,
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/occasionalism/",
+          "access": "free-to-read",
+          "note": "Covers al-Ghazali's arguments and the scholarly debate over his commitment to occasionalism."
+        }
+      ],
+      "tags": [
+        "metaphysics",
+        "causation",
+        "al-Ghazali",
+        "occasionalism",
+        "Islamic-philosophy"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-010",
+        "philosophy-k-008",
+        "philosophy-k-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "philosophy-k-010",
+      "field": "philosophy",
+      "type": "knowledge",
+      "title": "The Ship of Theseus: When Is Something Still the Same Thing?",
+      "hook": "Replace every plank of a ship one by one — is it the same ship? Now rebuild the old planks into a second ship.",
+      "summary": "An ancient puzzle asks: if you gradually replace every plank of a wooden ship until none of the original material remains, is it still the same ship? Most people say yes — gradual repair preserves identity. But now suppose you saved every discarded plank and reassembled them into a complete ship. Now you have two vessels, and each has a claim to be the original: one by continuity of form and function, the other by continuity of matter. They can't both be identical to the original, since they're clearly not identical to each other — and that violates the logic of identity.",
+      "detail": "The case is a workhorse in metaphysics because it forces a choice about what identity over time even tracks: the same parts, the same structure, or an unbroken causal history. Philosophers respond with several strategies — distinguishing an object from the matter that merely 'constitutes' it at a time, adopting four-dimensionalism (objects are extended in time as sequences of stages), or treating identity as relative to a sortal concept. The stakes go beyond boats: the very same worry drives debates about personal identity, where the 'planks' become your cells, memories, and psychological traits, all of which change over a lifetime while we still speak of one continuing person.",
+      "citations": [
+        {
+          "source": "Stanford Encyclopedia of Philosophy",
+          "title": "Identity Over Time",
+          "authors": "André Gallois",
+          "year": null,
+          "url": "https://plato.stanford.edu/entries/identity-time/",
+          "access": "free-to-read",
+          "note": "Treats the Ship of Theseus and approaches like constitution and relative identity."
+        }
+      ],
+      "tags": [
+        "metaphysics",
+        "identity",
+        "personal-identity",
+        "paradox"
+      ],
+      "relatedEntryIds": [
+        "philosophy-k-009",
+        "philosophy-k-006",
+        "philosophy-k-004"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    }
+  ]
+}

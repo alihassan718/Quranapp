@@ -1,0 +1,391 @@
+{
+  "field": "psychology",
+  "schemaVersion": 1,
+  "_note": "DATA UNDER TEST — curated summaries in the app's own words with verified source metadata; connection entries are attributed reflections, not proofs. Not yet scholar-reviewed.",
+  "entries": [
+    {
+      "id": "psychology-k-001",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Memory Consolidation: How the Brain Turns Experience Into Something Lasting",
+      "hook": "A new memory is fragile for hours—then the brain quietly rebuilds it to last.",
+      "summary": "When you learn something, the trace is at first unstable and easily disrupted. Over the following hours the brain runs 'synaptic consolidation'—protein-building that locks changes into individual connections. On a much longer timescale, 'systems consolidation' reorganizes the memory so it no longer depends on the hippocampus and instead lives in distributed cortex. Strikingly, a settled memory can be pulled back into a fragile state when recalled, then must stabilize again (reconsolidation), which means remembering is partly re-writing.",
+      "detail": "The distinction between synaptic and systems consolidation is central. Synaptic consolidation happens within a single circuit over minutes to hours and depends on new protein synthesis to stabilize the strengthened connections formed during learning. Systems consolidation is slower and larger in scale: the hippocampus initially binds together the scattered cortical fragments of an event, but over weeks to years it guides a reorganization so that the cortex can support the memory on its own. Information is not literally shipped from one place to another—the hippocampus orchestrates a gradual restructuring, then becomes progressively less necessary for retrieval. Reconsolidation adds a twist that overturns the old idea of memory as a fixed recording: reactivating a memory can return it to a labile state, opening a window in which it can be modified before it re-stabilizes.",
+      "citations": [
+        {
+          "source": "Cold Spring Harbor Perspectives in Biology (via PubMed Central)",
+          "title": "Memory Consolidation",
+          "authors": "Larry R. Squire, Lisa Genzel, John T. Wixted, Richard G. Morris",
+          "year": "2015",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526749/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "memory",
+        "hippocampus",
+        "learning",
+        "neuroscience"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-010",
+        "psychology-k-008",
+        "psychology-k-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-002",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Heuristics and Biases: Why Smart Minds Make Predictable Mistakes",
+      "hook": "The mental shortcuts that usually work are the same ones that fool us in the same ways every time.",
+      "summary": "Facing uncertainty, people rarely compute probabilities; they lean on fast rules of thumb. Tversky and Kahneman identified three big ones: representativeness (judging by resemblance to a stereotype), availability (judging frequency by how easily examples come to mind), and anchoring-and-adjustment (starting from a number and nudging). These shortcuts are efficient and often right, but they misfire in systematic, repeatable ways—so the errors are predictable rather than random. Recognizing the pattern is the first defense: base-rate neglect, overconfidence, and the conjunction fallacy all trace back to these same heuristics.",
+      "detail": "The power of the 1974 framework is that it reframed error. Rather than treating mistakes as noise or stupidity, it showed that a limited set of cognitive strategies produces a well-mapped catalog of biases. Representativeness leads people to ignore prior probabilities (base rates) and to expect small samples to mirror the population, and it drives the conjunction fallacy where a specific, vivid scenario seems more likely than the broader category that contains it. Availability makes dramatic or recent events feel more common than they are. Anchoring shows that an arbitrary starting number—even a clearly irrelevant one—biases final estimates. Because these tendencies are structural features of how judgment works, they show up in doctors, judges, and forecasters alike, which is why understanding them can measurably improve real decisions.",
+      "citations": [
+        {
+          "source": "Science (American Association for the Advancement of Science)",
+          "title": "Judgment under Uncertainty: Heuristics and Biases",
+          "authors": "Amos Tversky, Daniel Kahneman",
+          "year": "1974",
+          "url": "https://doi.org/10.1126/science.185.4157.1124",
+          "access": "metadata-only",
+          "note": "Canonical journal record (paywalled); the classic source that named representativeness, availability, and anchoring."
+        }
+      ],
+      "tags": [
+        "cognitive-bias",
+        "decision-making",
+        "heuristics",
+        "judgment"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-009"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-003",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Attachment Theory: The Blueprint Built From Early Bonds",
+      "hook": "A child's earliest relationships become an inner template for every relationship after.",
+      "summary": "John Bowlby argued that infants are biologically primed to seek closeness to caregivers, who serve as a 'secure base' for exploring the world and a 'haven of safety' in distress. From repeated interactions the child forms 'internal working models'—mental templates of what to expect from closeness that shape relationships into adulthood. Mary Ainsworth's Strange Situation experiment turned this into observable categories: secure, and the insecure patterns (avoidant and ambivalent/resistant), with a disorganized category added later. Decades of longitudinal work link the sensitivity and consistency of early caregiving to how these representations develop.",
+      "detail": "Bowlby's insight was to treat attachment as a primary motivational system in its own right, not a byproduct of feeding. Ainsworth operationalized it: by watching how infants around 9 to 18 months reacted to brief separations and reunions with a caregiver, she could classify the quality of the bond. Secure infants used the caregiver as a base, protested separation, and were comforted on reunion; avoidant infants suppressed distress; ambivalent infants were hard to soothe; and the later disorganized category captured children with no coherent strategy. The theory's enduring claim is that these early patterns get internalized as working models and secure-base 'scripts'—expectations about whether others will be available and responsive—which later research from long-running developmental studies has tied to observed caregiving sensitivity across childhood. The framework has been influential though not uncontested, including critiques about culture and the early neglect of fathers.",
+      "citations": [
+        {
+          "source": "Child Development (via PubMed Central)",
+          "title": "Origins of Secure Base Script Knowledge and the Developmental Construction of Attachment Representations",
+          "authors": "Theodore E. A. Waters, Sophia W. Ruiz, Glenn I. Roisman",
+          "year": "2017",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5159319/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "Journal of Psychotherapy Practice and Research (via PubMed Central)",
+          "title": "Attachment Theory and Psychotherapy Research",
+          "authors": "Tracy D. Eells",
+          "year": "2001",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3330635/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "attachment",
+        "development",
+        "relationships",
+        "childhood"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": "WARN: Citation lists a wrong/invented author name: \"Sophia W. Ruiz\". The actual middle author of PMC5159319 (\"Origins of Secure Base Script Knowledge...\", Child Development) is Sarah K. Ruiz. The URL, journal, other authors (Waters, Roisman), and content all check out; only the author name is misattributed. Fix the name before shipping."
+    },
+    {
+      "id": "psychology-k-004",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Emotion Regulation: Reappraisal Beats Bottling It Up",
+      "hook": "When you steer an emotion matters as much as whether you do—early edits cost less than late suppression.",
+      "summary": "James Gross's process model treats emotions as unfolding over time, so different regulation strategies act at different stages. Reappraisal—rethinking what a situation means before the feeling fully forms—reliably reduces negative experience without much cognitive or physiological cost. Expressive suppression, applied late to hide feelings you already have, is different: it can mask the outward signs but often leaves the internal emotional and bodily response intact, and can even increase it. Regulation can also be explicit and effortful or implicit and automatic, and the strategy that helps is partly a question of timing.",
+      "detail": "Gross's framework arranges strategies along the emotion timeline: situation selection, situation modification, attention deployment, cognitive change (reappraisal), and finally response modulation (suppression). The first four are 'antecedent-focused'—they act before the emotional response is fully generated—while suppression is 'response-focused', arriving after the fact. Neuroscience maps onto this: reappraisal engages prefrontal control regions and dampens amygdala activity, effectively changing the emotion at its source, whereas suppression recruits control regions but fails to quiet the limbic response. A further distinction is between explicit regulation, which requires conscious effort and monitoring, and implicit regulation, which is triggered automatically by the stimulus and runs to completion. The practical upshot: habitually reinterpreting situations tends to be adaptive, while chronically suppressing is linked to worse affective outcomes.",
+      "citations": [
+        {
+          "source": "Cognition & Emotion (via PubMed Central)",
+          "title": "Explicit and Implicit Emotion Regulation: A Dual-Process Framework",
+          "authors": "Anett Gyurak, James J. Gross, Amit Etkin",
+          "year": "2011",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3280343/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "emotion",
+        "self-regulation",
+        "reappraisal",
+        "prefrontal-cortex"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-005",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Neuroplasticity: The Brain That Rewires Itself",
+      "hook": "Your brain is not fixed hardware—experience physically reshapes its connections throughout life.",
+      "summary": "Neuroplasticity is the nervous system's capacity to change its structure, function, and connections in response to experience, learning, or injury. At the microscopic level the key mechanism is long-term potentiation—activity strengthens synapses by adding neurotransmitter receptors, lowering the threshold to fire—which is thought to underlie normal learning and memory. At larger scales the brain can reorganize functions across networks and even grow new neurons in certain regions. Importantly, plasticity is not the same as improvement: the same rewiring machinery can produce restorative, neutral, or maladaptive changes.",
+      "detail": "Researchers group plasticity into two broad families. The first, neuronal regeneration and collateral sprouting, includes synaptic plasticity and neurogenesis—cellular-level remodeling of connections and, in places like the hippocampus, the birth of new neurons. The second, functional reorganization, involves whole networks redistributing work through processes such as equipotentiality, vicariation, and diaschisis, letting intact regions take over roles after damage. Long-term potentiation, first documented in the early 1970s, remains the prevailing model for how experience leaves a lasting synaptic mark. A crucial caveat runs through the modern literature: plasticity is a mechanism, not a guarantee of recovery. The very adaptability that lets the brain learn a language or recover from stroke can also entrench chronic pain, addiction, or maladaptive patterns—so plasticity is best understood as change, which may or may not be for the better.",
+      "citations": [
+        {
+          "source": "StatPearls, NCBI Bookshelf (National Library of Medicine)",
+          "title": "Neuroplasticity",
+          "authors": "Konstantinos Margetis, Elsa S. Vadakekut",
+          "year": "2026",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK557811/",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "neuroplasticity",
+        "learning",
+        "brain",
+        "synapses"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-007",
+        "psychology-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-006",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Sleep and the Brain: The Nighttime Cleaning Crew",
+      "hook": "While you sleep, the brain opens up its own plumbing to wash away the day's waste.",
+      "summary": "Sleep isn't downtime—it's when the brain runs maintenance it can't do while awake. In a landmark mouse study, sleep and anesthesia widened the space between brain cells by roughly 60%, letting cerebrospinal fluid flush through and clear metabolic waste far faster than during waking. This 'glymphatic' system removes byproducts including beta-amyloid, a protein implicated in Alzheimer's disease. The finding gave a concrete, physiological reason for why sleep is restorative and why chronic poor sleep may raise the risk of neurodegeneration.",
+      "detail": "The brain lacks conventional lymphatic vessels, so how it disposes of waste was long unclear. The glymphatic system is the answer: cerebrospinal fluid moves along channels surrounding blood vessels, exchanges with the fluid bathing brain cells, and carries away dissolved waste—a process that depends on aquaporin-4 water channels on support cells. What makes it remarkable is its dependence on brain state. During natural sleep or anesthesia, interstitial space expands and clearance can run up to about twice as fast as during wakefulness, while being sharply suppressed when awake. Because the waste cleared includes beta-amyloid, this offers a mechanistic link between disrupted sleep and the accumulation of neurotoxic proteins over a lifetime. It reframes sleep from passive rest into an active, essential housekeeping function for brain health.",
+      "citations": [
+        {
+          "source": "Science (2013); full text via PubMed Central",
+          "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
+          "authors": "Lulu Xie, Hongyi Kang, Qiwu Xu, Michael J. Chen, et al. (Maiken Nedergaard, senior author)",
+          "year": "2013",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3880190/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "sleep",
+        "glymphatic-system",
+        "brain-health",
+        "neuroscience"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-010",
+        "psychology-k-008",
+        "psychology-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-007",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "The Stress Response: Allostasis and the Price of Wear-and-Tear",
+      "hook": "Stress hormones protect you in the moment—but keep the alarm on too long and it starts eroding the brain.",
+      "summary": "Bruce McEwen reframed stress around 'allostasis'—the body's active adjustments (via cortisol, the autonomic nervous system, and immune signals) that maintain stability through change. In short bursts this is adaptive and even sharpens cognition. But when stress is chronic and the systems don't switch off properly, the cumulative cost is 'allostatic load': measurable wear-and-tear on the body and brain. Over time, elevated cortisol reshapes key brain regions, and the same molecules that help acutely become harmful.",
+      "detail": "Allostasis means the setpoints themselves move to meet demand—your physiology doesn't just defend one fixed baseline but shifts to cope with a challenge. Allostatic load is what accumulates when that machinery is overused: repeated stressors, failure to habituate to the familiar ones, or a sluggish shutdown that leaves cortisol elevated long after the threat is gone. The brain is both the controller and a target. Chronic stress causes dendrites in the hippocampus to shrink and reduces new neuron formation there, drives dendritic growth in the amygdala with heightened fear responses, and produces dendritic retraction in the prefrontal cortex that impairs cognitive flexibility. This helps explain why prolonged stress degrades memory and emotional control, and why the story is not 'stress is bad' but rather that the response is protective when brief and self-limiting, and damaging when it becomes the default.",
+      "citations": [
+        {
+          "source": "Annual Review of Medicine (via PubMed Central)",
+          "title": "Stress- and Allostasis-Induced Brain Plasticity",
+          "authors": "Bruce S. McEwen, Peter J. Gianaros",
+          "year": "2011",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4251716/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "stress",
+        "cortisol",
+        "HPA-axis",
+        "allostatic-load",
+        "brain"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-005"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-008",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Flow: The Neuroscience of Being 'In the Zone'",
+      "hook": "Total absorption where effort disappears and time bends—and science is still pinning down how the brain does it.",
+      "summary": "Flow, first described by Mihaly Csikszentmihalyi, is a state of deep, rewarding absorption in a task where control feels effortless and self-consciousness fades. The best-known trigger is a balance between challenge and skill, but researchers now emphasize other ingredients too—autonomy, clear feedback, self-efficacy, and intrinsic motivation. On the neuroscience side the picture is genuinely unsettled: studies implicate reward circuits, attention systems, the default mode network, dopamine, and arousal-regulating pathways, but findings are inconsistent and the field lacks standardized methods. Flow is a vivid, real experience whose brain basis is still being mapped.",
+      "detail": "It is worth being honest about the state of the evidence, because flow is often oversold. The subjective phenomenon is robust and well-characterized: people across sports, music, and work report the same cluster of features—merged action and awareness, a sense of control, loss of self-consciousness, and altered time perception. But translating that into a clean neural account has proven hard. A 2024 methodological review argues that the field's heavy reliance on the challenge-skill manipulation alone is a weakness, since 'challenge' is not one thing—it varies in speed, feedback, and goal structure. Proposed mechanisms span reward and attention networks, the default mode network, dopamine, and the locus-coeruleus norepinephrine system, but small samples, high heterogeneity, and inconsistent measures mean no single mechanism is established. The takeaway for a curious reader: flow is a legitimate, studiable state, and the interesting frontier is methodological—getting experiments rigorous enough to say what actually happens in the brain.",
+      "citations": [
+        {
+          "source": "Communications Psychology (Nature Portfolio), open access CC-BY 4.0",
+          "title": "A framework for neurophysiological experiments on flow states",
+          "authors": "Oliver Durcan, Peter Holland, Joydeep Bhattacharya",
+          "year": "2024",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11332228/",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "flow",
+        "attention",
+        "motivation",
+        "neuroscience"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-010",
+        "psychology-k-006",
+        "psychology-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-009",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "Moral Psychology: The Emotional Dog and Its Rational Tail",
+      "hook": "We feel the verdict first, then invent the argument—moral reasoning is often the lawyer, not the judge.",
+      "summary": "Jonathan Haidt's social intuitionist model upended the assumption that moral judgments come from careful reasoning. In his account, we usually react with a fast, automatic gut intuition, and the reasoning we offer is largely a post-hoc justification built to defend a conclusion already reached. Moral Foundations Theory extends this by proposing a small set of innate 'taste buds' for morality—care, fairness, loyalty, authority, and sanctity (with liberty debated as a sixth)—on which different cultures build different moral systems. It reframes moral disagreement as people weighting different foundations rather than one side simply being irrational.",
+      "detail": "The provocative claim is about causal order. Rationalist models say reasoning produces the judgment; Haidt argues intuition produces the judgment and reasoning follows to rationalize it, which is why people often feel a scenario is wrong yet struggle to explain why ('moral dumbfounding'). The model also shifts emphasis from the lone reasoner to social and cultural influence, since much moral cognition happens in persuasion and shared norms. Moral Foundations Theory then asks which intuitions we're born ready to develop. It groups them into 'individualizing' foundations (care and fairness), which protect individuals, and 'binding' foundations (loyalty, authority, sanctity), which bind groups together—and cross-cultural work suggests people and political cultures differ systematically in how heavily they weight each. The theory is influential and also contested, particularly over how well intuition alone explains deliberate, everyday moral decisions and how it handles power and social structure.",
+      "citations": [
+        {
+          "source": "Psychological Review (American Psychological Association)",
+          "title": "The Emotional Dog and Its Rational Tail: A Social Intuitionist Approach to Moral Judgment",
+          "authors": "Jonathan Haidt",
+          "year": "2001",
+          "url": "https://doi.org/10.1037/0033-295X.108.4.814",
+          "access": "metadata-only",
+          "note": "Canonical journal record (paywalled); the foundational statement of the social intuitionist model."
+        },
+        {
+          "source": "Frontiers in Psychology, open access CC-BY",
+          "title": "Universality and Cultural Diversity in Moral Reasoning and Judgment",
+          "authors": "Frontiers in Psychology (peer-reviewed article collection)",
+          "year": "2021",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.764360/full",
+          "access": "open-access",
+          "note": "Freely readable supporting review covering individualizing vs. binding moral foundations across cultures."
+        }
+      ],
+      "tags": [
+        "moral-psychology",
+        "intuition",
+        "moral-foundations",
+        "decision-making"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-002"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "psychology-k-010",
+      "field": "psychology",
+      "type": "knowledge",
+      "title": "The Default Mode Network: What the Brain Does When It's 'Doing Nothing'",
+      "hook": "The moment you stop focusing, a specific network lights up—and it's building your inner world.",
+      "summary": "Early brain imaging revealed something odd: certain regions became more active when people rested and quieter when they focused on external tasks. Marcus Raichle named this the 'default mode' of brain function, and the regions—including medial prefrontal cortex, posterior cingulate, and medial temporal areas—are now called the default mode network. Far from idle, this network drives our rich inner life: mind-wandering, recalling personal memories, imagining the future, and thinking about ourselves and other people. Its disruption is linked to conditions ranging from depression to Alzheimer's disease.",
+      "detail": "The default mode network reframed 'rest' as anything but blank. When attention isn't pinned to the outside world, this network supports internally directed thought—what one influential review calls its adaptive role in internal mentation. It shows the highest activity precisely when self-reports indicate the most spontaneous thought, favoring an 'internal mentation' account over the idea that it merely monitors the environment. A medial temporal subsystem is especially engaged during autobiographical memory retrieval and when people mentally simulate future scenarios, suggesting the same machinery that reconstructs the past helps us prepare for what's ahead. This ties the network to memory, imagination, and social cognition—and because coherent internal thought is central to healthy mental life, abnormal default-network activity turns up across disorders including depression, where self-referential rumination is prominent, and neurodegenerative disease.",
+      "citations": [
+        {
+          "source": "The Neuroscientist (via PubMed Central)",
+          "title": "The Brain's Default Network and its Adaptive Role in Internal Mentation",
+          "authors": "Jessica R. Andrews-Hanna",
+          "year": "2012",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3553600/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "default-mode-network",
+        "mind-wandering",
+        "self",
+        "neuroscience"
+      ],
+      "relatedEntryIds": [
+        "psychology-k-008",
+        "psychology-k-006",
+        "psychology-k-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    }
+  ]
+}

@@ -1,0 +1,809 @@
+{
+  "field": "science",
+  "schemaVersion": 1,
+  "_note": "DATA UNDER TEST — curated summaries in the app's own words with verified source metadata; connection entries are attributed reflections, not proofs. Not yet scholar-reviewed.",
+  "entries": [
+    {
+      "id": "science-k-001",
+      "field": "science",
+      "type": "knowledge",
+      "title": "JWST Spots a Galaxy From the Universe's First 300 Million Years",
+      "hook": "We are now seeing starlight that left its galaxy when the cosmos was barely 2% of its present age.",
+      "summary": "The James Webb Space Telescope has confirmed JADES-GS-z14-0 as the most distant galaxy yet measured, with a redshift of about 14.3. That means its light was emitted only around 290 million years after the Big Bang and has been travelling toward us for roughly 13.5 billion years. Surprisingly, the galaxy is bright and already fairly large, suggesting that substantial galaxies assembled much faster in the early universe than most models predicted. Finding such mature systems so early is forcing astronomers to rethink how the first stars and galaxies switched on.",
+      "detail": "A galaxy's redshift tells us how much the expansion of the universe has stretched its light on the way to us; higher redshift means older and more distant. Confirming z beyond 14 requires spectroscopy, not just imaging, because a genuine ancient galaxy shows a characteristic cutoff where intervening hydrogen absorbs all light below a specific wavelength. What makes JADES-GS-z14-0 remarkable is not only its record distance but its luminosity and inferred size: producing that much starlight so soon after the Big Bang implies rapid, efficient star formation. Each such discovery narrows the gap between the cosmic 'dark ages' and the first luminous structures, and tests whether standard cosmology can explain how quickly the universe lit up.",
+      "citations": [
+        {
+          "source": "NASA Science (Webb blog)",
+          "title": "NASA's James Webb Space Telescope Finds Most Distant Known Galaxy",
+          "authors": null,
+          "year": "2024",
+          "url": "https://science.nasa.gov/blogs/webb/2024/05/30/nasas-james-webb-space-telescope-finds-most-distant-known-galaxy/",
+          "access": "free-to-read",
+          "note": "Announces JADES-GS-z14-0 at redshift 14.32, ~290 million years after the Big Bang."
+        },
+        {
+          "source": "Nature (via PubMed Central)",
+          "title": "Spectroscopic confirmation of two luminous galaxies at a redshift of 14",
+          "authors": "Carniani et al.",
+          "year": "2024",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11390484/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "astronomy",
+        "cosmology",
+        "JWST",
+        "galaxies",
+        "early-universe"
+      ],
+      "relatedEntryIds": [
+        "science-c-002",
+        "science-c-001"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-002",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Entangled Particles and the Experiments That Ruled Out 'Hidden Instructions'",
+      "hook": "Measure one entangled particle and its partner's state is fixed instantly, no matter how far apart they are, and no secret local script can explain it.",
+      "summary": "Quantum entanglement links two particles so that measuring one immediately determines properties of the other, even across large distances. Einstein and others suspected this only looked spooky because the particles might carry hidden pre-set 'instructions.' In the 1960s John Bell devised an inequality: any theory based on such local hidden variables must keep certain measurement correlations below a fixed limit. The 2022 Nobel Prize in Physics honored Alain Aspect, John Clauser, and Anton Zeilinger for experiments with entangled photons that repeatedly violated Bell's inequality, showing nature really is quantum, not secretly classical. Their work also launched the field of quantum information.",
+      "detail": "Bell's genius was to turn a philosophical debate into a measurable number. If particles carried hidden local instructions, the statistical agreement between measurements on the two particles, taken at various detector angles, could never exceed a specific bound. Quantum mechanics predicts stronger correlations that cross that bound. Clauser performed early tests in the 1970s, Aspect closed key loopholes in the 1980s by switching detector settings while photons were in flight, and Zeilinger extended the techniques to demonstrate phenomena like quantum teleportation. Crucially, entanglement does not let you send information faster than light, because each individual result still looks random; the strangeness only appears when you compare the two records afterward. These once-esoteric experiments now underpin quantum cryptography and quantum computing.",
+      "citations": [
+        {
+          "source": "The Nobel Prize (NobelPrize.org)",
+          "title": "The Nobel Prize in Physics 2022 - Press Release",
+          "authors": null,
+          "year": "2022",
+          "url": "https://www.nobelprize.org/prizes/physics/2022/press-release/",
+          "access": "free-to-read",
+          "note": "Awarded to Aspect, Clauser and Zeilinger for entangled-photon experiments violating Bell inequalities."
+        },
+        {
+          "source": "APS Physics (American Physical Society)",
+          "title": "Nobel Prize: Quantum Entanglement Unveiled",
+          "authors": null,
+          "year": "2022",
+          "url": "https://physics.aps.org/articles/v15/153",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "physics",
+        "quantum-mechanics",
+        "entanglement",
+        "Nobel-Prize",
+        "foundations"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-003",
+      "field": "science",
+      "type": "knowledge",
+      "title": "The Gold in Your Ring Was Forged by Colliding Neutron Stars",
+      "hook": "In 2017, astronomers watched two neutron stars collide and directly saw a factory that makes gold and platinum.",
+      "summary": "Ordinary stars fuse light elements up to iron, but elements heavier than that, like gold, platinum and uranium, need a more violent origin. The leading mechanism is rapid neutron capture (the r-process), which requires an environment absolutely flooded with free neutrons. In August 2017 the merger of two neutron stars, GW170817, was detected in both gravitational waves and light, and its fading glow (a 'kilonova') carried the chemical fingerprints of freshly made heavy elements. The event confirmed that such mergers are a major cosmic source of the heaviest atoms in the periodic table.",
+      "detail": "When two neutron stars spiral together, tidal forces and the collision fling out neutron-rich matter. In that dense neutron bath, atomic nuclei capture neutrons faster than they can radioactively decay, building their way up to very heavy, unstable isotopes that then decay into stable heavy elements. The radioactive decay heats the ejected cloud, producing the kilonova's characteristic thermal afterglow, which reddens over days as opaque heavy elements form. GW170817 let astronomers estimate how much heavy material one merger produces and, in follow-up analysis, even identify specific elements such as strontium in the debris. This is one of the clearest demonstrations that the atoms in everyday objects trace back to some of the most extreme events in the universe.",
+      "citations": [
+        {
+          "source": "arXiv (preprint of Nature 551, 80)",
+          "title": "Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event",
+          "authors": "Kasen, Metzger, Barnes, Quataert, Ramirez-Ruiz",
+          "year": "2017",
+          "url": "https://arxiv.org/abs/1710.05463",
+          "access": "open-access",
+          "note": null
+        },
+        {
+          "source": "Nature",
+          "title": "Identification of strontium in the merger of two neutron stars",
+          "authors": "Watson et al.",
+          "year": "2019",
+          "url": "https://www.nature.com/articles/s41586-019-1676-3",
+          "access": "metadata-only",
+          "note": "Full text paywalled; cited for the confirmed detection of an r-process element in kilonova ejecta."
+        }
+      ],
+      "tags": [
+        "astrophysics",
+        "chemistry",
+        "nucleosynthesis",
+        "neutron-stars",
+        "gravitational-waves"
+      ],
+      "relatedEntryIds": [
+        "science-c-004",
+        "science-k-004"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-004",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Why Ice Floats: Water's Backwards Density Trick",
+      "hook": "Almost every liquid gets denser as it freezes, sinking its own solid. Water does the opposite, and life depends on it.",
+      "summary": "Most substances contract and grow denser when they solidify, so their solid form sinks. Water is famously anomalous: liquid water is densest at about 4 degrees Celsius, and when it freezes the molecules lock into an open, hexagonal, hydrogen-bonded lattice that takes up more room than the liquid. That makes ice roughly 9% less dense than liquid water, so it floats. The cause is hydrogen bonding between water molecules, each of which can bond to several neighbors. This quirk lets ice form an insulating lid on ponds and lakes, so water underneath stays liquid and aquatic life survives the winter.",
+      "detail": "A water molecule is bent and polar, with a slightly negative oxygen and slightly positive hydrogens, so molecules attract one another through hydrogen bonds. In liquid water these bonds constantly break and reform, letting molecules pack fairly closely. As water cools toward 4 degrees Celsius, ordinary thermal contraction still dominates and density rises. Below that temperature, more and more molecules settle into the roomy, tetrahedral arrangement that will become ice, so the liquid actually expands again and density falls. On freezing, the fully ordered ice lattice holds molecules farther apart than the jostling liquid did. This same hydrogen-bonding network also explains water's unusually high boiling point, high heat capacity, and strong surface tension, properties that make it central to chemistry and biology.",
+      "citations": [
+        {
+          "source": "University of Wisconsin-Madison, Dept. of Atmospheric and Oceanic Sciences",
+          "title": "Water's Unique Properties (course chapter, Chapter 2)",
+          "authors": null,
+          "year": null,
+          "url": "https://www.aos.wisc.edu/~hopkins/WES/wesch02.pdf",
+          "access": "free-to-read",
+          "note": "Academic chapter explaining hydrogen bonding, the 4 C density maximum, and why ice is less dense."
+        },
+        {
+          "source": "Yale University (Water Management)",
+          "title": "Water as a Molecule",
+          "authors": null,
+          "year": null,
+          "url": "https://watermanagement.yale.edu/topics/water-science/water-as-a-molecule/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "chemistry",
+        "water",
+        "hydrogen-bonding",
+        "physical-chemistry",
+        "earth-science"
+      ],
+      "relatedEntryIds": [
+        "science-k-005",
+        "science-k-003",
+        "science-c-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-005",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Earth's Inner Core Doesn't Just Spin, It Wobbles",
+      "hook": "The solid iron ball at Earth's center appears to speed up, slow down, and even reverse relative to the surface over decades.",
+      "summary": "Earth's inner core is a solid iron-nickel sphere, about the size of the Moon, suspended in the molten outer core and largely free to rotate at its own pace. For years scientists thought it steadily 'super-rotated,' turning slightly faster than the rest of the planet. By comparing seismic waves from repeated earthquakes and old nuclear tests that pass through the core, researchers found the picture is more complex: the inner core's rotation relative to the surface changes over time and seems to oscillate on a multi-decade cycle. Around 2009 its differential rotation appears to have slowed to near zero and may have reversed direction.",
+      "detail": "Because the inner core is bathed in liquid metal and coupled to the mantle by gravity and magnetism, it can rotate at a slightly different rate than the crust we stand on. Seismologists detect this by using 'repeating' earthquakes or explosions from the same location years apart: if the core has rotated, the seismic waves that travel through it arrive with subtly different timing and waveform. Different teams reading these signals concluded the inner core has an oscillating differential rotation, with one influential 2022 study finding a roughly six-to-seven-decade cycle and a recent near-halt. These tiny shifts are of great interest because they may be linked to small changes in the length of the day and to the behavior of Earth's magnetic field, though the exact mechanisms are still debated.",
+      "citations": [
+        {
+          "source": "USC Dornsife (University of Southern California)",
+          "title": "The Earth moves far under our feet: New study shows Earth's inner core oscillates",
+          "authors": "reporting on work by Wei Wang and John Vidale",
+          "year": "2022",
+          "url": "https://dornsife.usc.edu/news/stories/earths-inner-core-oscillates/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "Science Advances (via PubMed Central)",
+          "title": "Seismological observation of Earth's oscillating inner core",
+          "authors": "Wang & Vidale",
+          "year": "2022",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9187225/",
+          "access": "open-access",
+          "note": null
+        }
+      ],
+      "tags": [
+        "earth-science",
+        "geophysics",
+        "seismology",
+        "inner-core",
+        "planetary-interior"
+      ],
+      "relatedEntryIds": [
+        "science-k-004",
+        "science-c-006",
+        "science-c-005"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": "WARN: Two specific claims in the summary are not supported by either cited source. The cited Wang & Vidale (2022, Science Advances / USC Dornsife) report a roughly 6-year oscillation inferred from 1969-1974 seismic and nuclear-test data. But the summary asserts the inner core 'seems to oscillate on a multi-decade cycle' and that 'around 2009 its differential rotation appears to have slowed to near zero and may have reversed direction.' Those claims (multi-decade cycle, ~2009 slowdown/reversal) actually come from a different, uncited study (Yang & Song, Nature Geoscience 2023). The phenomenon is real, but the summary overclaims relative to the sources it cites. Fix by either citing Yang & Song 2023 for the 2009/multi-decade claim, or rewriting the summary to match the ~6-year oscillation the cited papers actually describe."
+    },
+    {
+      "id": "science-k-006",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Tardigrades: Animals That Can Basically Switch Themselves Off",
+      "hook": "Dry a tardigrade to a lifeless husk, wait years, add water, and it walks away.",
+      "summary": "Tardigrades, the microscopic 'water bears,' can survive being dried out, frozen, boiled, irradiated, and even exposed to the vacuum of space. Their trick is cryptobiosis: when conditions turn deadly, they pull in their legs, curl into a compact 'tun,' expel almost all their body water, and drop their metabolism to a near-undetectable standstill. In this suspended state they are not quite dead and not quite alive, and they can persist for years until water returns and revives them. Studying how they protect their cells during near-total dehydration is teaching biologists new lessons about preserving biological material.",
+      "detail": "When a tardigrade dries out, losing over 95% of its water, it must stop its cell structures from collapsing or fragmenting. Research points to a toolkit of protective molecules: certain sugars and, notably, disordered 'tardigrade-specific' proteins that are thought to form a glass-like matrix cradling membranes and proteins so they don't shatter or clump. The animals also ramp up antioxidant defenses and heat-shock proteins and dial down their DNA and protein-making machinery. Because the exact mechanisms are still only partly understood, tardigrades are an active research subject, with potential applications in stabilizing vaccines, cells, and other fragile biological materials without refrigeration. Their resilience does not make them immortal, but it makes them one of the toughest animal groups known.",
+      "citations": [
+        {
+          "source": "PLOS ONE",
+          "title": "Towards Decrypting Cryptobiosis - Analyzing Anhydrobiosis in the Tardigrade Milnesium tardigradum Using Transcriptome Sequencing",
+          "authors": "Wang, Grohme, Mali, Schill, Frohme",
+          "year": "2014",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0092663",
+          "access": "open-access",
+          "note": "Creative Commons Attribution (CC BY)."
+        }
+      ],
+      "tags": [
+        "biology",
+        "extremophiles",
+        "tardigrades",
+        "cryptobiosis",
+        "cell-biology"
+      ],
+      "relatedEntryIds": [
+        "science-k-010",
+        "science-k-008",
+        "science-c-003"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-007",
+      "field": "science",
+      "type": "knowledge",
+      "title": "How Whales Walked Into the Sea",
+      "hook": "Whales evolved from small, four-legged land mammals, and fossils capture almost every step of the journey.",
+      "summary": "Whales are mammals that returned to the ocean, and their origin is one of the best-documented major transitions in the fossil record. Around 50 million years ago, a group of hoofed land mammals gave rise to Pakicetus, a dog-sized, four-legged animal that lived near shallow seas. Over the following millions of years, successive fossil species show a step-by-step shift: limbs shrinking, bodies streamlining, nostrils migrating toward a blowhole, and locomotion moving from paddling feet to a powerful tail. DNA from living animals confirms the surprising conclusion that whales' closest relatives are even-toed hoofed mammals like hippos.",
+      "detail": "The transitional sequence includes semiaquatic forms such as Ambulocetus, which could both swim and walk, and protocetids like Rodhocetus that swam by pushing with webbed feet while still retaining ankle bones characteristic of even-toed ungulates. Later came Basilosaurus and Dorudon, fully aquatic whales with tiny, useless hind limbs, evidence of legs on the way out. Anatomical clues, such as a distinctive ankle bone and a specialized ear structure, first hinted at the link to hoofed mammals, and molecular studies later confirmed it, placing whales within the artiodactyls as close kin of hippos. This convergence of fossils, anatomy, and genetics makes whale evolution a textbook example of how a lineage can radically transform its body plan.",
+      "citations": [
+        {
+          "source": "Understanding Evolution, UC Berkeley",
+          "title": "Transitional features (Lines of evidence)",
+          "authors": null,
+          "year": null,
+          "url": "https://evolution.berkeley.edu/lines-of-evidence/transitional-features/",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "Smithsonian National Museum of Natural History",
+          "title": "Evolution of Whales Animation",
+          "authors": null,
+          "year": null,
+          "url": "https://naturalhistory.si.edu/education/teaching-resources/life-science/evolution-whales-animation",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "evolution",
+        "paleontology",
+        "whales",
+        "transitional-fossils",
+        "mammals"
+      ],
+      "relatedEntryIds": [
+        "science-k-008"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-008",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Your Cells Are Powered by Domesticated Bacteria",
+      "hook": "The mitochondria that fuel every breath you take were once free-living bacteria swallowed billions of years ago.",
+      "summary": "The endosymbiotic theory holds that mitochondria, the energy-producing organelles inside your cells, descend from bacteria that were engulfed by an ancestral host cell and never digested. Instead of being destroyed, the bacterium settled in, and host and microbe became permanently interdependent. The evidence is striking: mitochondria are about the size of bacteria, have their own circular DNA and ribosomes, and divide on their own inside the cell. Genetic comparisons pin their ancestry to the alphaproteobacteria. Chloroplasts, the photosynthetic organelles in plants, arose the same way from engulfed cyanobacteria. This ancient merger is widely seen as a key event that made complex, eukaryotic life possible.",
+      "detail": "Over evolutionary time, most of the endosymbiont's genes moved to the host cell's nucleus, leaving mitochondria with only a small remnant genome, which is why they can no longer live independently. The theory, championed and marshaled with modern evidence by Lynn Margulis in the 1960s and 70s, is now strongly supported by molecular phylogenetics that place mitochondrial genes firmly among the alphaproteobacteria. Debate continues over details, such as the exact identity of the host cell (increasingly thought to be an archaeon) and whether the partnership began as a metabolic exchange rather than predation. Regardless of the specifics, the core idea, that two separate organisms fused into one, overturned the assumption that complex cellular machinery must evolve gradually from within.",
+      "citations": [
+        {
+          "source": "Philosophical Transactions of the Royal Society B (via PubMed Central)",
+          "title": "Endosymbiotic theories for eukaryote origin",
+          "authors": "Martin, Garg, Zimorski",
+          "year": "2015",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4571569/",
+          "access": "open-access",
+          "note": "Creative Commons Attribution (CC BY 4.0)."
+        }
+      ],
+      "tags": [
+        "cell-biology",
+        "evolution",
+        "genetics",
+        "mitochondria",
+        "endosymbiosis"
+      ],
+      "relatedEntryIds": [
+        "science-k-010",
+        "science-k-009",
+        "science-k-007"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-009",
+      "field": "science",
+      "type": "knowledge",
+      "title": "CRISPR Was a Bacterial Immune System Long Before It Was a Gene Editor",
+      "hook": "The famous gene-editing tool is really a hijacked microbial defense against viruses, complete with a genetic 'most wanted' list.",
+      "summary": "Long before CRISPR became a laboratory tool, it evolved as an adaptive immune system in bacteria and archaea. When a virus infects a microbe that survives, the cell can snip out a piece of the invader's DNA and file it away in a special genomic archive called a CRISPR array. If that virus attacks again, the cell transcribes the stored snippet into a guide RNA that leads a Cas protein to the matching viral sequence and cuts it, disabling the attacker. This was a genuine surprise, because scientists had assumed only complex organisms had adaptive immunity. Repurposing this natural search-and-cut machinery gave rise to CRISPR-based gene editing.",
+      "detail": "The stored viral fragments, called spacers, sit between short repeated sequences, and their order roughly records a microbe's history of infections. On re-infection, the guide RNA base-pairs with the invader's genetic material, and an associated Cas enzyme (such as Cas9) makes a targeted cut. Researchers realized that by supplying their own custom guide RNA, they could direct Cas proteins to cut almost any chosen DNA sequence, turning an immune system into a programmable editing tool, an insight recognized by the 2020 Nobel Prize in Chemistry. Understanding CRISPR's origins also matters biologically: it shapes the ongoing evolutionary arms race between microbes and their viruses, and comes in a diverse family of systems whose full variety scientists are still cataloguing.",
+      "citations": [
+        {
+          "source": "Philosophical Transactions of the Royal Society B (via PubMed Central)",
+          "title": "Origins and evolution of CRISPR-Cas systems",
+          "authors": "Koonin & Makarova",
+          "year": "2019",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6452270/",
+          "access": "open-access",
+          "note": "Creative Commons Attribution (CC BY 4.0)."
+        }
+      ],
+      "tags": [
+        "genetics",
+        "microbiology",
+        "CRISPR",
+        "immunity",
+        "biotechnology"
+      ],
+      "relatedEntryIds": [
+        "science-k-010",
+        "science-k-008"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-k-010",
+      "field": "science",
+      "type": "knowledge",
+      "title": "Octopuses Rewrite Their Own Genetic Messages on the Fly",
+      "hook": "Squid and octopuses edit the majority of their brain's RNA instructions, something humans almost never do.",
+      "summary": "Cephalopods like octopuses and squid have an unusual talent: they extensively edit their RNA, the working copies of genetic instructions, after they are transcribed from DNA. In coleoid cephalopods, a huge fraction of the RNA messages in the nervous system are recoded, changing which proteins the cells actually build, whereas in humans and most animals such recoding is vanishingly rare. This lets them fine-tune proteins in real time, for example adjusting nerve proteins in response to changes in water temperature. It may be tied to their remarkable brains and behavior, but it appears to come with an evolutionary trade-off.",
+      "detail": "The editing swaps the RNA base adenosine for one read as guanosine (A-to-I editing), which can alter the amino acid a codon specifies and therefore reshape the finished protein. Studies show squid and octopuses use this to tailor proteins such as the motor protein kinesin and various neural proteins, producing cold-adapted versions when the sea chills. The catch is that to preserve the exact DNA sequences these editing sites depend on, the surrounding genome must stay unusually unchanged, which appears to slow the ordinary accumulation of DNA mutations, the raw material of evolution. In effect, these animals may trade some long-term genomic flexibility for the ability to diversify their proteins moment to moment, an intriguing and unusual strategy concentrated in the most behaviorally complex cephalopods.",
+      "citations": [
+        {
+          "source": "University of Chicago News",
+          "title": "'Smart' cephalopods adapt by editing genetic code, but sacrifice ability to evolve",
+          "authors": null,
+          "year": null,
+          "url": "https://news.uchicago.edu/story/smart-cephalopods-adapt-editing-genetic-code-sacrifice-ability-evolve",
+          "access": "free-to-read",
+          "note": null
+        },
+        {
+          "source": "Cell (via PubMed Central)",
+          "title": "RNA recoding in cephalopods tailors microtubule motor protein function",
+          "authors": null,
+          "year": "2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10467349/",
+          "access": "free-to-read",
+          "note": null
+        }
+      ],
+      "tags": [
+        "genetics",
+        "biology",
+        "cephalopods",
+        "RNA-editing",
+        "neuroscience"
+      ],
+      "relatedEntryIds": [
+        "science-k-009",
+        "science-k-008",
+        "science-k-006"
+      ],
+      "verseRef": null,
+      "whatKnowledgeSays": null,
+      "proposedConnection": null,
+      "proposer": null,
+      "status": null,
+      "statusNote": null,
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-001",
+      "field": "science",
+      "type": "connection",
+      "title": "Q 21:30 and the Big Bang: \"joined, then We parted them\"",
+      "hook": "A verse describing the heavens and earth as once a single closed mass that was then split apart has been read as echoing the Big Bang.",
+      "summary": "Q 21:30 says the heavens and earth were once a single closed-up mass (ratq) that God tore open (fatq). Some modern writers link this to the Big Bang, in which the universe expanded from an extremely dense, hot state. The app presents the claim and its attribution without endorsing it: the reading is contested on both linguistic and scientific grounds.",
+      "detail": "The relevant words are ratqan (a sewn-together / closed whole) and fataqnahuma (We split the two open). Advocates map ratq onto the initial dense state and fatq onto the expansion. Critics point out that these words denote closing and opening in an ordinary, non-technical sense; that pre-modern exegetes typically read the verse as the sky and earth being separated so that rain and vegetation could come forth; and that Earth did not exist at the time of the Big Bang, so 'heavens and earth' being one mass does not map cleanly onto cosmology.",
+      "citations": [
+        {
+          "source": "NASA Science (Hubble)",
+          "title": "Hubble and the Big Bang",
+          "authors": "NASA Science; page editor Andrea Gianopoulos",
+          "year": "2024",
+          "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/",
+          "access": "public-domain",
+          "note": "U.S. government work; describes the Big Bang from a dense hot point ~13.8 bya and the CMB as evidence."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (peer-reviewed)",
+          "title": "The \"Scientific Miracle of the Qur'an,\" Pseudoscience, and Conspiracism",
+          "authors": "Stefano Bigliardi",
+          "year": "2017",
+          "url": "https://doi.org/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Zygon 52(1):146-171. Peer-reviewed survey and critique of the i'jaz 'ilmi genre popularized by Bucaille; full text paywalled (Wiley), cited by metadata and DOI."
+        }
+      ],
+      "tags": [
+        "cosmology",
+        "big-bang",
+        "ratq-fatq",
+        "ijaz-ilmi",
+        "creation"
+      ],
+      "relatedEntryIds": [
+        "science-c-002",
+        "science-k-001",
+        "science-c-003"
+      ],
+      "verseRef": {
+        "surah": 21,
+        "ayah": 30
+      },
+      "whatKnowledgeSays": "The prevailing scientific model holds that the observable universe began about 13.8 billion years ago from an extremely hot, dense, tiny state and has been expanding and cooling ever since. NASA describes it as starting from 'a dense, tremendously hot... extremely tiny point that rapidly surged outward in all directions,' with the cosmic microwave background counted as key supporting evidence. The model describes the origin of the cosmos as a whole; it does not treat the Earth as pre-existing and later separated from the sky.",
+      "proposedConnection": "The French physician Maurice Bucaille, in his 1976 book 'The Bible, the Qur'an and Science,' argued that Qur'anic descriptions of the heavens align with modern cosmology, and later popularizers (for example the preacher Zakir Naik) explicitly read the ratq/fatq of Q 21:30 as a reference to the Big Bang's expansion from a single dense mass. This is presented here strictly as their interpretive claim.",
+      "proposer": "Maurice Bucaille (1976), later popularized by preachers such as Zakir Naik",
+      "status": "contested",
+      "statusNote": "Contested: scholars of the 'scientific miracle' (i'jaz 'ilmi) genre argue that ratq/fatq carry only a broad 'closed vs. opened' meaning, that classical tafsir read the verse as sky-earth separation for rain/vegetation, and that Earth did not exist at the Big Bang.",
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-002",
+      "field": "science",
+      "type": "connection",
+      "title": "Q 51:47 and the expanding universe: \"and indeed We are expanding it\"",
+      "hook": "The clause 'wa-inna la-musi'un' has been translated as 'We are expanding it,' and read as anticipating the expansion of the universe.",
+      "summary": "Q 51:47 says God built the heaven 'bi-aydin' and that 'inna la-musi'un.' Some modern translators and writers render the final phrase as 'We are steadily expanding it' and link it to Hubble's discovery that the universe is expanding. The reading is contested: the underlying word classically means possessing vast power or making spacious, and critics note that no pre-1929 commentary read it as cosmic expansion.",
+      "detail": "Musi'un is an active participle from a root meaning 'to be wide/spacious' or 'to have ample means.' Classical exegetes such as al-Tabari understood the verse as God having made the sky vast and having the power to do so, or as a statement of God's abundant capacity. The 'expanding universe' rendering appears mainly in translations from the 1970s onward (e.g., some renderings by Muhammad Asad and others), after Edwin Hubble's 1929 observations, which is the core of the retrofitting objection.",
+      "citations": [
+        {
+          "source": "NASA Science (Hubble)",
+          "title": "Hubble and the Big Bang",
+          "authors": "NASA Science; page editor Andrea Gianopoulos",
+          "year": "2024",
+          "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/",
+          "access": "public-domain",
+          "note": "Documents Hubble's role in establishing expansion and the later discovery of accelerating expansion (dark energy)."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (peer-reviewed)",
+          "title": "The \"Scientific Miracle of the Qur'an,\" Pseudoscience, and Conspiracism",
+          "authors": "Stefano Bigliardi",
+          "year": "2017",
+          "url": "https://doi.org/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Zygon 52(1):146-171. Discusses the critique that i'jaz 'ilmi readings assign untenable meanings to Qur'anic vocabulary and retrofit verses to discoveries; full text paywalled, cited by DOI."
+        }
+      ],
+      "tags": [
+        "cosmology",
+        "expanding-universe",
+        "hubble",
+        "translation-history",
+        "ijaz-ilmi"
+      ],
+      "relatedEntryIds": [
+        "science-c-001",
+        "science-k-001",
+        "science-c-003"
+      ],
+      "verseRef": {
+        "surah": 51,
+        "ayah": 47
+      },
+      "whatKnowledgeSays": "In 1929 Edwin Hubble found that distant galaxies recede from us at speeds proportional to their distance, evidence that space itself is expanding. NASA notes the universe is 'not only expanding, but... that expansion is also accelerating,' a Nobel Prize-winning finding attributed to an unknown component called dark energy. Cosmic expansion is a continuous, measurable, large-scale phenomenon established by 20th-century observation.",
+      "proposedConnection": "Maurice Bucaille argued in 'The Bible, the Qur'an and Science' (1976) that 'wa-inna la-musi'un' should be read as 'We are expanding it,' presenting it as consonant with the discovery of an expanding universe. This translation-plus-interpretation is presented here as Bucaille's (and later translators') claim, not as the app's position.",
+      "proposer": "Maurice Bucaille (1976); adopted in several post-1970s translations",
+      "status": "contested",
+      "statusNote": "Contested: critics argue musi'un classically means 'possessing vast power / making spacious,' that no pre-Hubble (pre-1929) tafsir read it as ongoing cosmic expansion, and that the 'expanding' rendering looks retrofitted to match modern science.",
+      "reviewFlag": "WARN: The direct quote attributed to NASA — \"not only expanding, but... that expansion is also accelerating\" — does not appear verbatim on the cited 'Hubble and the Big Bang' page, which instead says 'the acceleration of our expanding universe' and 'the repulsive effects of dark energy.' A quotation shown in quote marks and attributed to NASA should be verbatim from the cited page. Fix: correct the quote to the page's actual wording, or cite the specific NASA dark-energy page that carries this phrasing."
+    },
+    {
+      "id": "science-c-003",
+      "field": "science",
+      "type": "connection",
+      "title": "Q 21:30 and life from water: \"We made every living thing from water\"",
+      "hook": "The same verse that mentions the parting of the heavens ends: 'and We made from water every living thing.'",
+      "summary": "Q 21:30 closes with 'wa-ja'alna mina l-ma'i kulla shay'in hayy' - 'and We made every living thing from water.' This is often cited alongside the scientific fact that all known life depends on liquid water. It is among the less linguistically strained parallels, and is presented here as a widely-discussed claim with its interpretive caveats noted.",
+      "detail": "Science agrees that water is central to life as we know it: it is the solvent in which the chemistry of cells occurs, and NASA's astrobiology strategy is literally to 'follow the water.' Two honest caveats: classical exegetes frequently read 'from water' as referring to semen/procreation or to rain rather than to biochemistry or abiogenesis; and science holds that life requires water as a medium and is built from many elements (carbon, etc.), not that organisms are composed of water alone. So the fit depends on how loosely 'made from water' is read.",
+      "citations": [
+        {
+          "source": "NASA Science (Astrobiology)",
+          "title": "Why is water so important for life?",
+          "authors": "NASA Science, Astrobiology Learning Resources",
+          "year": null,
+          "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/water-so-important-for-life/",
+          "access": "public-domain",
+          "note": "U.S. government work; states all known life needs water and that water is the solvent for life's chemistry, while noting non-water-based life cannot be excluded."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (peer-reviewed)",
+          "title": "The \"Scientific Miracle of the Qur'an,\" Pseudoscience, and Conspiracism",
+          "authors": "Stefano Bigliardi",
+          "year": "2017",
+          "url": "https://doi.org/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Zygon 52(1):146-171. Provides the scholarly caution against reading modern scientific detail into Qur'anic vocabulary; full text paywalled, cited by DOI."
+        }
+      ],
+      "tags": [
+        "biology",
+        "origin-of-life",
+        "water",
+        "astrobiology",
+        "ijaz-ilmi"
+      ],
+      "relatedEntryIds": [
+        "science-k-010",
+        "science-k-006",
+        "science-k-004"
+      ],
+      "verseRef": {
+        "surah": 21,
+        "ayah": 30
+      },
+      "whatKnowledgeSays": "Water is treated by biologists and astrobiologists as a fundamental requirement for life as we know it. NASA states that 'one attribute that is common to all living things that we know of is the need for water to survive' and that water 'allows the chemistry of life to take place' as a solvent; the search for extraterrestrial life follows the presence of liquid water. NASA also notes the caveat that other, non-water-based life forms cannot be ruled out.",
+      "proposedConnection": "Maurice Bucaille and many later writers on 'scientific miracles' cite this clause as anticipating the modern understanding that life is bound up with water. The claim, attributed to them, is that 'every living thing from water' corresponds to water's indispensability to biology; the app records this as their reading, not as a verdict.",
+      "proposer": "Maurice Bucaille (1976) and subsequent i'jaz 'ilmi writers",
+      "status": "widely-discussed",
+      "statusNote": "Widely-discussed and among the less strained parallels, but note the gap: classical tafsir often read 'from water' as semen/rain, and science says life needs water as a medium rather than being composed only of water.",
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-004",
+      "field": "science",
+      "type": "connection",
+      "title": "Iron \"Sent Down\" and the Stellar Origin of Iron",
+      "hook": "The Qur'an says iron was \"sent down\" — and astrophysics finds that Earth's iron really did arrive from the sky, forged inside dying stars.",
+      "summary": "Q 57:25 states that iron was \"sent down\" (anzala). Modern astrophysics holds that iron is forged in the cores of massive stars and scattered through space by supernova explosions, so the iron in Earth and the wider Solar System has a stellar, extraterrestrial origin. Some writers link the verse's \"descent\" wording to this picture. Others counter that anzala is used broadly across the Qur'an — for cattle, clothing, and provision — so it need not mean literal fall from space, and that the idea of \"metal from the sky\" (meteoric iron) was already familiar to ancient peoples. On that view the verse establishes no previously unknown scientific fact. The app presents the link without endorsing it.",
+      "detail": "The peer-reviewed analysis notes five historical exegetical readings of anzala here (hierarchical descent, metaphorical creation, provision of means, narrative accounts, and literal physical descent) and argues that even if the science is accepted, the case for foreknowledge fails its own third condition: that the fact be unknowable at the time of revelation.",
+      "citations": [
+        {
+          "source": "NASA Goddard Space Flight Center — Imagine the Universe",
+          "title": "Background: Dispersion of Elements",
+          "authors": null,
+          "year": null,
+          "url": "https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/background-elements.html",
+          "access": "free-to-read",
+          "note": "States that the heaviest elements like iron are formed in massive stars that end their lives in supernova explosions, which scatter those elements into interstellar space."
+        },
+        {
+          "source": "Journal of Interdisciplinary Qur'anic Studies (Shahid Beheshti University)",
+          "title": "A Critical Analysis of the \"Miracle\" of Iron's Descent (Q. 57:25): A Scientific, Exegetical, and Historical Perspective",
+          "authors": "Zohreh Akhavanmoghadam; Marziyeh Bahrami Chimeh",
+          "year": "2023",
+          "url": "https://iqs.sbu.ac.ir/article_105022.html",
+          "access": "open-access",
+          "note": "Peer-reviewed, CC BY 4.0. Examines the verb anzala, the pre-Islamic 'iron of heaven' (bia' n pet) tradition, and concludes the foreknowledge condition for a scientific 'miracle' is not met."
+        }
+      ],
+      "tags": [
+        "earth-science",
+        "astrophysics",
+        "iron",
+        "supernova",
+        "nucleosynthesis",
+        "Bucailleism"
+      ],
+      "relatedEntryIds": [
+        "science-k-003",
+        "science-k-005",
+        "science-k-004"
+      ],
+      "verseRef": {
+        "surah": 57,
+        "ayah": 25
+      },
+      "whatKnowledgeSays": "Elements up to iron are built by nuclear fusion in the cores of stars at least roughly eight times the Sun's mass. When such a star exhausts its fuel, its iron core collapses and the star detonates as a core-collapse supernova, dispersing iron and other elements into interstellar space. The gas and dust that later condensed into the Solar System — and the iron now in Earth's crust and core — was enriched by earlier generations of such stars. A star like our Sun is not hot enough to fuse iron, so Earth's iron ultimately traces back to more massive stars that died before the Sun formed.",
+      "proposedConnection": "Popularized by the French physician Maurice Bucaille (The Bible, the Qur'an and Science, 1976) and later by Harun Yahya (pen name of Adnan Oktar), the reading holds that the Qur'an's choice of anzala (\"sent down\") for iron, rather than khalaqa (\"created\"), anticipates the discovery that Earth's iron originated in stars beyond the planet.",
+      "proposer": "Maurice Bucaille",
+      "status": "contested",
+      "statusNote": "The astrophysics is sound, but a peer-reviewed Qur'anic-studies analysis argues the \"miracle\" claim fails because anzala is used broadly in the Qur'an and the notion of iron \"from heaven\" (meteoric iron) predates Islam, so no previously unknown fact is demonstrated.",
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-005",
+      "field": "science",
+      "type": "connection",
+      "title": "Mountains as \"Pegs\" and the Geology of Isostasy",
+      "hook": "The Qur'an calls mountains \"pegs\" that steady the earth. Geology shows mountains do have deep roots — but does that stop the ground from shaking?",
+      "summary": "Q 78:6-7 describes the earth as a bed and the mountains as \"pegs\" (awtād), and Q 16:15 says firm mountains were set \"lest it shake with you.\" Writers link this to isostasy: mountains have deep, low-density crustal roots that float in buoyant balance on the denser mantle, like icebergs. Critics respond that isostasy does not imply mountains prevent earthquakes — the tectonic plate collisions that build mountains are themselves a leading cause of earthquakes — and that not all mountains have deep roots. On that reading, the \"peg that stabilizes\" interpretation goes beyond what geology supports. The app presents the link without endorsing it.",
+      "detail": "Isostasy accounts for vertical balance (why thick, light crust rides high on the mantle); it says nothing about resisting seismic shaking. Most large earthquakes occur precisely in the convergent, mountain-building zones — e.g. the Himalaya-Tibet collision belt — where crust is thickened by ongoing plate collision.",
+      "citations": [
+        {
+          "source": "Geosciences LibreTexts — Oceanography 101 (MiraCosta College)",
+          "title": "3.14: Isostasy",
+          "authors": null,
+          "year": null,
+          "url": "https://geo.libretexts.org/Bookshelves/Oceanography/Oceanography_101_(Miracosta)/03%3A_Structure_of_the_Earth/3.14%3A_Isostasy",
+          "access": "open-access",
+          "note": "Defines isostasy as the lithosphere's equilibrium balance and explains that thick low-density crust beneath mountains forms deep roots that float higher on the mantle, like icebergs."
+        },
+        {
+          "source": "U.S. Geological Survey (USGS)",
+          "title": "The Science of Earthquakes",
+          "authors": null,
+          "year": null,
+          "url": "https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes",
+          "access": "free-to-read",
+          "note": "Explains earthquakes as sudden slip on faults driven by plate motion, with most earthquakes occurring along plate-boundary faults — including the convergent zones where mountains form."
+        }
+      ],
+      "tags": [
+        "earth-science",
+        "geology",
+        "isostasy",
+        "mountains",
+        "plate-tectonics",
+        "earthquakes"
+      ],
+      "relatedEntryIds": [
+        "science-k-005",
+        "science-k-004",
+        "science-c-006"
+      ],
+      "verseRef": {
+        "surah": 78,
+        "ayah": 7
+      },
+      "whatKnowledgeSays": "Under the principle of isostasy, the thick and relatively light crust beneath a mountain range extends downward as a \"root\" into the denser mantle, so the range floats in buoyant equilibrium much as an iceberg does; this is why high ranges such as the Himalayas overlie unusually thick crust. Separately, earthquakes are caused by sudden slip on faults as tectonic plates move, and most occur at plate boundaries — including the convergent boundaries where colliding crust is pushed up into mountains. Mountain-building regions therefore tend to be seismically active rather than seismically quiet.",
+      "proposedConnection": "Advanced by Maurice Bucaille and repeated by many later popularizers of the \"scientific miracles\" genre, the claim is that the Qur'an's image of mountains as awtād (\"pegs\" or \"stakes\") driven into the earth anticipates their deep isostatic roots, and that calling them a means of steadying the earth matches a stabilizing geological role.",
+      "proposer": "Maurice Bucaille",
+      "status": "criticized",
+      "statusNote": "Geologists reject the claim that mountains \"prevent\" earthquakes: the plate collisions that raise mountains are a principal cause of earthquakes (most quakes cluster at plate boundaries), and not all mountains have deep roots — so the stabilizing-\"peg\" reading is not supported by geology.",
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-006",
+      "field": "science",
+      "type": "connection",
+      "title": "The \"Barrier Between Two Seas\" and Ocean Stratification",
+      "hook": "Where a river meets the sea, fresh and salt water can stay stubbornly separate. The Qur'an speaks of a \"barrier\" between two waters that do not overrun each other.",
+      "summary": "Q 55:19-20 describes two seas that meet with a barrier (barzakh) they do not transgress, and Q 25:53 contrasts fresh and salt water separated by a \"forbidding partition.\" Writers link this to haloclines and salt wedges, where lighter fresh water layers over denser seawater in estuaries and the two can remain visibly distinct. Critics respond that this separation is a density difference, not a solid or permanent barrier: the waters do gradually mix, and how much they mix depends on tides, wind, and estuary shape. On that view, \"barrier\" loosely describes ordinary, directly observable stratification rather than a hidden scientific fact. The app presents the link without endorsing it.",
+      "detail": "NOAA classifies estuaries by how much the layers mix — from salt-wedge estuaries (sharp boundary, little mixing) through slightly stratified to vertically mixed estuaries where strong tides erase the layering entirely. The distinctness is set by salinity-driven density, and the layering is a surface-visible phenomenon known long before modern oceanography.",
+      "citations": [
+        {
+          "source": "NOAA — National Ocean Service, Estuaries Tutorial",
+          "title": "Classifying Estuaries: By Water Circulation",
+          "authors": null,
+          "year": null,
+          "url": "https://oceanservice.noaa.gov/education/tutorial_estuaries/est05_circulation.html",
+          "access": "free-to-read",
+          "note": "Explains that fresh water floats over denser seawater by density difference (not a physical barrier), and classifies estuaries from salt-wedge (little mixing) to vertically mixed (layering eliminated by tides), showing the waters do mix."
+        }
+      ],
+      "tags": [
+        "earth-science",
+        "oceanography",
+        "halocline",
+        "estuary",
+        "two-seas",
+        "stratification"
+      ],
+      "relatedEntryIds": [
+        "science-k-005",
+        "science-k-004",
+        "science-c-005"
+      ],
+      "verseRef": {
+        "surah": 55,
+        "ayah": 19
+      },
+      "whatKnowledgeSays": "When fresh river water meets salt seawater in an estuary, the lighter fresh water tends to float over the heavier salt water, forming a halocline — a zone where salinity changes sharply with depth. In salt-wedge estuaries the boundary is sharp with little mixing, while in others tidal currents and wind mix the layers partly or completely, sometimes eliminating the vertical layering altogether. The separation is driven by differences in density (salinity), and the two water bodies do exchange and mix over time rather than being held apart by any physical wall.",
+      "proposedConnection": "Cited by Maurice Bucaille and popularized by speakers including Zakir Naik, the reading holds that the Qur'an's barzakh (\"barrier\") between fresh and salt waters that \"do not transgress\" anticipates the modern description of haloclines and density-driven separation where two bodies of water meet.",
+      "proposer": "Maurice Bucaille",
+      "status": "contested",
+      "statusNote": "Oceanography confirms density-driven layering (haloclines and salt wedges), but critics note there is no solid or impermeable \"barrier\": the waters do mix, the degree of mixing varies with tides and wind, and the layering is a visible surface phenomenon rather than a newly revealed fact.",
+      "reviewFlag": null
+    },
+    {
+      "id": "science-c-007",
+      "field": "science",
+      "type": "connection",
+      "title": "The embryology verses (Q 23:12–14) and the \"scientific miracle\" argument",
+      "hook": "A famous claim says these verses describe embryo development centuries early. It is also the most heavily criticized case in the whole genre.",
+      "summary": "Q 23:12–14 describes the forming of a human being through a sequence of stages — a drop (nutfa), then a clinging/clot-like form (ʿalaqa), then a chewed-lump form (mudgha), then bones clothed with flesh. From the 1970s onward this passage became the centerpiece of the iʿjāz ʿilmī (\"scientific miracle\") movement, which argued the stages match modern embryology. The same movement drew equally strong pushback from historians of science and religion, who argue the described sequence closely tracks the much older embryology of Galen and Aristotle that circulated in Late Antiquity, and who have challenged how the supporting endorsements from Western scientists were obtained and presented. The app presents the claim and the criticism side by side and takes no position on either.",
+      "detail": "Historians of medicine note that Galen (2nd century CE), whose works were studied in Syria and Egypt in Late Antiquity, described embryonic formation in stages — seminal matter, a blood-form, a flesh stage, then fully articulated organs — and that medieval Muslim physicians such as Ibn Sina explicitly matched Galen's stages to the Qur'anic terms nutfa, ʿalaqa and mudgha, treating the agreement as unremarkable. Critics therefore see the modern claim as reading later microscopic knowledge back into terms whose classical meaning (e.g. ʿalaqa as congealed/clotted blood) was well established. The peer-reviewed literature (Bigliardi 2017; Guénon 2019) also examines how the movement gathered and framed statements from Western scientists.",
+      "citations": [
+        {
+          "source": "StatPearls (NCBI Bookshelf)",
+          "title": "Embryology, Week 1",
+          "authors": "Khan YS, Ackerman KM",
+          "year": "2023",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK554562/",
+          "access": "free-to-read",
+          "note": "Authoritative overview of fertilization, cleavage, morula, blastocyst and implantation; basis for the mainstream-science summary."
+        },
+        {
+          "source": "Zygon: Journal of Religion and Science (Wiley)",
+          "title": "The \"Scientific Miracle of the Qur'ān,\" Pseudoscience, and Conspiracism",
+          "authors": "Bigliardi S",
+          "year": "2017",
+          "url": "https://doi.org/10.1111/zygo.12321",
+          "access": "metadata-only",
+          "note": "Peer-reviewed analysis of the iʿjāz ʿilmī trend and criticism of it (Zygon 52(1):146–171). Paywalled; cited by metadata and DOI."
+        },
+        {
+          "source": "Journal of Qur'anic Studies (Edinburgh University Press)",
+          "title": "ʿAbd al-Majīd al-Zindānī's iʿjāz ʿilmī Approach: Embryonic Development in Q. 23:12–14 as a Scientific Miracle",
+          "authors": "Guénon M",
+          "year": "2019",
+          "url": "https://doi.org/10.3366/jqs.2019.0398",
+          "access": "metadata-only",
+          "note": "Peer-reviewed study of how al-Zindani constructed and disseminated the embryology-miracle model (JQS 21(3):32–56). Paywalled; cited by metadata and DOI."
+        }
+      ],
+      "tags": [
+        "embryology",
+        "iʿjāz ʿilmī",
+        "Bucaille",
+        "Keith Moore",
+        "al-Zindani",
+        "Galen",
+        "concordism"
+      ],
+      "relatedEntryIds": [],
+      "verseRef": {
+        "surah": 23,
+        "ayah": 12
+      },
+      "whatKnowledgeSays": "Modern embryology describes early human development as a continuous process rather than a series of sharply separated substances. In week one a sperm and oocyte fuse into a single-celled zygote, which divides repeatedly (cleavage) into a morula and then a fluid-filled blastocyst of roughly 50–150 cells; this blastocyst implants in the uterine lining about six to ten days after fertilization. Organ formation follows through gastrulation and organogenesis over the embryonic period (weeks 3–8). Notably, bone and muscle tissue arise together from the same mesodermal layer, so there is no stage in which a skeleton is formed first and only afterward wrapped in muscle.",
+      "proposedConnection": "The French physician Maurice Bucaille argued in his 1976 book 'The Bible, the Qur'an and Science' that the Qur'an's descriptions of human development anticipate modern findings. The argument was amplified when the Canadian anatomist Keith L. Moore, after joining an embryology committee at King Abdulaziz University, co-produced a special \"with Islamic Additions\" edition of his textbook alongside the cleric ʿAbd al-Majīd al-Zindānī; al-Zindānī built and popularized a detailed model mapping nutfa, ʿalaqa and mudgha onto microscopic embryonic stages, including reading ʿalaqa as \"leech-like.\" This is presented as their claim, not the app's.",
+      "proposer": "Maurice Bucaille (1976); Keith L. Moore and ʿAbd al-Majīd al-Zindānī (1980s)",
+      "status": "criticized",
+      "statusNote": "Scholars argue the staged sequence restates pre-existing Galenic/Aristotelian embryology available in Muhammad's era, that the \"leech-like\" reading of ʿalaqa is a modern retrofit not found in classical exegesis, and that the sequential bones-then-flesh order conflicts with modern developmental biology.",
+      "reviewFlag": null
+    }
+  ]
+}
