@@ -23,6 +23,7 @@ import {
 import { useReadDb } from '../state/DatabaseProvider';
 import { useAppNavigation } from '../navigation/types';
 import { useTheme } from '../theme/ThemeProvider';
+import { PALETTE_ORDER, PALETTES } from '../theme/tokens';
 import { haptics } from '../utils/haptics';
 
 export function SettingsScreen() {
@@ -51,6 +52,41 @@ export function SettingsScreen() {
         <SectionHeader icon="contrast-outline" text="APPEARANCE" />
         <Card surface="surface" style={{ gap: theme.spacing.base }}>
           <Field label="Theme">
+            <View style={{ gap: theme.spacing.xs }}>
+              {PALETTE_ORDER.map((id) => {
+                const p = PALETTES[id];
+                const selected = settings.themePalette === id;
+                return (
+                  <PressableScale
+                    key={id}
+                    haptic="selection"
+                    activeScale={0.99}
+                    onPress={() => update({ themePalette: id })}
+                    style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.sm, paddingVertical: 6 }}
+                  >
+                    <Icon
+                      name={selected ? 'radio-button-on' : 'radio-button-off'}
+                      size={20}
+                      tone={selected ? 'accent' : 'tertiary'}
+                    />
+                    <View style={{ flex: 1 }}>
+                      <AppText variant="callout">{p.label}</AppText>
+                      <AppText variant="caption" tone="tertiary">
+                        {p.description}
+                      </AppText>
+                    </View>
+                    {/* Palette preview dots (light + dark primary) */}
+                    <View style={{ flexDirection: 'row', gap: 4 }}>
+                      <View style={{ width: 14, height: 14, borderRadius: 7, backgroundColor: p.light.primary, borderWidth: 1, borderColor: theme.colors.border }} />
+                      <View style={{ width: 14, height: 14, borderRadius: 7, backgroundColor: p.dark.background, borderWidth: 1, borderColor: theme.colors.border }} />
+                    </View>
+                  </PressableScale>
+                );
+              })}
+            </View>
+          </Field>
+          <Divider />
+          <Field label="Mode">
             <SegmentedControl<ThemeMode>
               options={[
                 { label: 'System', value: 'system' },

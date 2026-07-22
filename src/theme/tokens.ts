@@ -14,6 +14,16 @@ import { Platform, TextStyle, ViewStyle } from 'react-native';
 
 export type ColorScheme = 'light' | 'dark';
 
+/**
+ * Visual theme palettes. Each palette provides a light and a dark variant and
+ * composes with the user's light/dark mode. Adding a theme = add an entry to
+ * PALETTES below (and a label in SettingsScreen) — nothing else changes.
+ */
+export type ThemePaletteId = 'bayan' | 'water' | 'forest';
+
+/** Extra motion personality a palette can opt into. */
+export type MotionProfile = 'none' | 'float';
+
 /** Keys for user highlight colours. Stored in the DB; resolved per-theme. */
 export type HighlightColorKey = 'amber' | 'green' | 'sky' | 'rose' | 'violet';
 
@@ -143,6 +153,170 @@ export const darkColors: ThemeColors = {
   },
 };
 
+/* ------------------------------------------------------------------ *
+ * Theme palettes — "Clear Water" and "Forest" reuse the base parchment
+ * palettes' highlight swatches and override the surfaces/accents. Palette
+ * overrides are partial: anything not overridden inherits the base scheme.
+ * ------------------------------------------------------------------ */
+
+const waterLight: ThemeColors = {
+  ...lightColors,
+  background: '#EAF4F5',
+  backgroundElevated: '#F2FAFA',
+  surface: '#FBFEFE',
+  surfaceAlt: '#DEEDEF',
+  surfaceSunken: '#D2E5E8',
+  border: '#C9E0E3',
+  borderStrong: '#A6CBD2',
+  divider: '#DCEBED',
+
+  textPrimary: '#0F2327',
+  textSecondary: '#3F626B',
+  textTertiary: '#6E939B',
+
+  primary: '#0E7490',
+  primaryDeep: '#155E75',
+  primarySoft: '#D2ECF2',
+  primaryText: '#0B6076',
+
+  gold: '#B9915B',
+  goldSoft: '#EFE9DB',
+  goldText: '#8E6B33',
+
+  overlay: 'rgba(15, 35, 39, 0.45)',
+  scrim: 'rgba(15, 35, 39, 0.28)',
+  focusRing: 'rgba(14, 116, 144, 0.4)',
+};
+
+const waterDark: ThemeColors = {
+  ...darkColors,
+  background: '#07161A',
+  backgroundElevated: '#0B1E23',
+  surface: '#102830',
+  surfaceAlt: '#153039',
+  surfaceSunken: '#040F12',
+  border: '#1E3A42',
+  borderStrong: '#2C505A',
+  divider: '#163138',
+
+  textPrimary: '#E2F1F2',
+  textSecondary: '#9BBCC2',
+  textTertiary: '#678A92',
+  textOnPrimary: '#032226',
+
+  primary: '#37B6C4',
+  primaryDeep: '#1E8C99',
+  primarySoft: '#0E2E33',
+  primaryText: '#63D3DE',
+
+  gold: '#CBB479',
+  goldSoft: '#232D2C',
+  goldText: '#DCC488',
+
+  overlay: 'rgba(0, 8, 10, 0.62)',
+  scrim: 'rgba(0, 8, 10, 0.5)',
+  focusRing: 'rgba(55, 182, 196, 0.5)',
+};
+
+const forestLight: ThemeColors = {
+  ...lightColors,
+  background: '#EFF5EA',
+  backgroundElevated: '#F6FAF1',
+  surface: '#FCFEF9',
+  surfaceAlt: '#E2EDD8',
+  surfaceSunken: '#D7E5CB',
+  border: '#D2E2C4',
+  borderStrong: '#B3CD9E',
+  divider: '#E0EBD3',
+
+  textPrimary: '#18220F',
+  textSecondary: '#4C6238',
+  textTertiary: '#7C9464',
+
+  primary: '#2F7D3B',
+  primaryDeep: '#225E2B',
+  primarySoft: '#DBEDD8',
+  primaryText: '#2A6E34',
+
+  gold: '#B98A3A',
+  goldSoft: '#F0E8CF',
+  goldText: '#8C6A25',
+
+  overlay: 'rgba(24, 34, 15, 0.45)',
+  scrim: 'rgba(24, 34, 15, 0.28)',
+  focusRing: 'rgba(47, 125, 59, 0.4)',
+};
+
+const forestDark: ThemeColors = {
+  ...darkColors,
+  background: '#0B120A',
+  backgroundElevated: '#101A0E',
+  surface: '#152113',
+  surfaceAlt: '#1B2A18',
+  surfaceSunken: '#070D06',
+  border: '#263A22',
+  borderStrong: '#36512F',
+  divider: '#1F3019',
+
+  textPrimary: '#E8F1DF',
+  textSecondary: '#AFC49B',
+  textTertiary: '#7C9268',
+  textOnPrimary: '#04240E',
+
+  primary: '#54B96A',
+  primaryDeep: '#37934F',
+  primarySoft: '#16301B',
+  primaryText: '#7BD48B',
+
+  gold: '#D2B45E',
+  goldSoft: '#2A2913',
+  goldText: '#DFC26E',
+
+  overlay: 'rgba(2, 8, 2, 0.62)',
+  scrim: 'rgba(2, 8, 2, 0.5)',
+  focusRing: 'rgba(84, 185, 106, 0.5)',
+};
+
+export interface ThemePalette {
+  id: ThemePaletteId;
+  /** Shown in Settings. */
+  label: string;
+  description: string;
+  light: ThemeColors;
+  dark: ThemeColors;
+  motionProfile: MotionProfile;
+}
+
+/** Palette registry — add new themes here. */
+export const PALETTES: Record<ThemePaletteId, ThemePalette> = {
+  bayan: {
+    id: 'bayan',
+    label: 'Bayān',
+    description: 'Warm parchment and manuscript gold — the classic look.',
+    light: lightColors,
+    dark: darkColors,
+    motionProfile: 'none',
+  },
+  water: {
+    id: 'water',
+    label: 'Clear Water',
+    description: 'Cool aqua surfaces; verses drift gently as you scroll.',
+    light: waterLight,
+    dark: waterDark,
+    motionProfile: 'float',
+  },
+  forest: {
+    id: 'forest',
+    label: 'Forest',
+    description: 'Deep greens and garden light.',
+    light: forestLight,
+    dark: forestDark,
+    motionProfile: 'none',
+  },
+};
+
+export const PALETTE_ORDER: ThemePaletteId[] = ['bayan', 'water', 'forest'];
+
 export const HIGHLIGHT_ORDER: HighlightColorKey[] = ['amber', 'green', 'sky', 'rose', 'violet'];
 
 /** 4/8-based spacing scale. */
@@ -268,6 +442,9 @@ export type Elevations = ReturnType<typeof makeElevation>;
 
 export interface Theme {
   scheme: ColorScheme;
+  paletteId: ThemePaletteId;
+  /** Palette-declared motion personality (water → 'float'). */
+  motionProfile: MotionProfile;
   colors: ThemeColors;
   spacing: typeof spacing;
   radii: typeof radii;
@@ -278,10 +455,13 @@ export interface Theme {
   elevation: Elevations;
 }
 
-export function buildTheme(scheme: ColorScheme): Theme {
+export function buildTheme(scheme: ColorScheme, paletteId: ThemePaletteId = 'bayan'): Theme {
+  const palette = PALETTES[paletteId] ?? PALETTES.bayan;
   return {
     scheme,
-    colors: scheme === 'light' ? lightColors : darkColors,
+    paletteId: palette.id,
+    motionProfile: palette.motionProfile,
+    colors: scheme === 'light' ? palette.light : palette.dark,
     spacing,
     radii,
     fonts,

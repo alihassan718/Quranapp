@@ -12,6 +12,7 @@ import { AppText } from '../components/ui/Text';
 import {
   RootSearchHit,
   TranslationSearchHit,
+  getSurahsWithData,
   searchRoots,
   searchTranslations,
 } from '../data/database';
@@ -30,6 +31,11 @@ export function SearchScreen() {
   const [verseRef, setVerseRef] = useState<{ surah: number; ayah: number } | null>(null);
   const [roots, setRoots] = useState<RootSearchHit[]>([]);
   const [hits, setHits] = useState<TranslationSearchHit[]>([]);
+  const [bundledCount, setBundledCount] = useState(114);
+
+  useEffect(() => {
+    (async () => setBundledCount((await getSurahsWithData(db)).size))();
+  }, [db]);
 
   useEffect(() => {
     const q = query.trim();
@@ -188,7 +194,16 @@ export function SearchScreen() {
         ) : null}
 
         {nothing ? (
-          <EmptyState icon="cloud-outline" title="No matches" subtitle="Only Surah Al-Fātiḥah is bundled in this sample build, so search results are limited to it." />
+          <EmptyState
+            icon="cloud-outline"
+            title={query.trim().length < 2 && !isArabic(query) ? 'Keep typing…' : 'No matches'}
+            subtitle={
+              query.trim().length < 2 && !isArabic(query)
+                ? 'English search needs at least two letters. You can also type an Arabic root, or a verse reference like 2:255.'
+                : `Nothing found for “${query.trim()}”. Try a different spelling, an Arabic root, or a verse reference like 2:255.` +
+                  (bundledCount < 114 ? ` Note: only ${bundledCount} of 114 surahs are bundled in this build.` : '')
+            }
+          />
         ) : null}
       </ScrollView>
     </View>

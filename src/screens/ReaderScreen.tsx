@@ -1,6 +1,13 @@
 import { RouteProp, useRoute } from '@react-navigation/native';
-import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { ActivityIndicator, FlatList, View } from 'react-native';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import {
+  ActivityIndicator,
+  FlatList,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
+  View,
+} from 'react-native';
+import { useSharedValue } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ArabicText } from '../components/ArabicText';
@@ -13,6 +20,8 @@ import { BottomSheet } from '../components/ui/BottomSheet';
 import { Chip } from '../components/ui/Chip';
 import { Divider } from '../components/ui/Divider';
 import { EmptyState } from '../components/ui/EmptyState';
+import { Icon } from '../components/ui/Icon';
+import { PressableScale } from '../components/ui/PressableScale';
 import { AppText } from '../components/ui/Text';
 import { getAyahsWithWords, getSurah, getTranslationsForSurah } from '../data/database';
 import { AyahWithWords, Surah, Word } from '../domain/models';
@@ -36,6 +45,14 @@ export function ReaderScreen() {
   const [surah, setSurah] = useState<Surah | null>(null);
   const [ayahs, setAyahs] = useState<AyahWithWords[]>([]);
   const [loading, setLoading] = useState(true);
+  /**
+   * When the Reader is opened AT a specific ayah (Root Explorer, search,
+   * comparison back-links), the list WINDOW starts at that ayah so it renders
+   * instantly — no scroll-to-index churn through hundreds of unmeasured rows.
+   * "Show earlier verses" prepends the rest; maintainVisibleContentPosition
+   * keeps the current verse pinned while it does.
+   */
+  const [startIndex, setStartIndex] = useState(0);
   const [inlineTr, setInlineTr] = useState<{ translatorName: string | null; verses: Map<number, string> } | null>(
     null,
   );
@@ -58,6 +75,8 @@ export function ReaderScreen() {
       if (!alive) return;
       setSurah(meta);
       setAyahs(data);
+      const idx = targetAyah ? data.findIndex((a) => a.ayah === targetAyah) : -1;
+      setStartIndex(idx > 0 ? idx : 0);
       setLoading(false);
     })();
     return () => {
@@ -86,27 +105,35 @@ export function ReaderScreen() {
     navigation.setOptions({ title: surah?.nameTransliteration ?? `Surah ${surahNum}` });
   }, [navigation, surah, surahNum]);
 
-  // Scroll to a requested ayah once data is present. Rows have variable,
-  // unmeasured heights, so a distant scrollToIndex can no-op (web) or fail
-  // (native): approach by estimated offset first — which makes the list
-  // render/measure that range — then land exactly on the index.
-  useEffect(() => {
-    if (loading || !targetAyah || !ayahs.length) return;
-    const index = ayahs.findIndex((a) => a.ayah === targetAyah);
-    if (index <= 0) return;
-    const timers: ReturnType<typeof setTimeout>[] = [];
-    timers.push(
-      setTimeout(() => {
-        listRef.current?.scrollToOffset({ offset: index * 300, animated: false });
-        timers.push(
-          setTimeout(() => {
-            listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0.1 });
-          }, 400),
-        );
-      }, 350),
-    );
-    return () => timers.forEach(clearTimeout);
-  }, [loading, targetAyah, ayahs]);
+  /** The rows actually mounted: the full surah, or the window from startIndex. */
+  const visibleAyahs = useMemo(
+    () => (startIndex > 0 ? ayahs.slice(startIndex) : ayahs),
+    [ayahs, startIndex],
+  );
+
+  /* ---- "Floating on water" buoyancy (Clear Water theme only) ----
+   * Scroll velocity feeds a normalized drift value; each ayah card chases it
+   * with its own spring (staggered amplitude), so verses lag and settle like
+   * things floating on water. Runs on the UI thread; zero re-renders. */
+  const drift = useSharedValue(0);
+  const floatEnabled = theme.motionProfile === 'float';
+  const scrollSample = useRef({ y: 0, t: 0 });
+  const onListScroll = useCallback(
+    (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+      if (!floatEnabled) return;
+      const y = e.nativeEvent.contentOffset.y;
+      const t = Date.now();
+      const last = scrollSample.current;
+      const dt = Math.max(8, t - last.t);
+      const v = (y - last.y) / dt; // px per ms
+      scrollSample.current = { y, t };
+      drift.value = Math.max(-1, Math.min(1, v / 1.5));
+    },
+    [floatEnabled, drift],
+  );
+  const settleDrift = useCallback(() => {
+    drift.value = 0;
+  }, [drift]);
 
   const viewPairs = useRef([
     {
@@ -142,7 +169,7 @@ export function ReaderScreen() {
       ) : (
         <FlatList
           ref={listRef}
-          data={ayahs}
+          data={visibleAyahs}
           extraData={inlineTr}
           keyExtractor={(a) => String(a.ayah)}
           viewabilityConfigCallbackPairs={viewPairs.current}
@@ -150,14 +177,39 @@ export function ReaderScreen() {
           contentContainerStyle={{ paddingBottom: insets.bottom + theme.spacing.huge }}
           initialNumToRender={8}
           windowSize={11}
-          onScrollToIndexFailed={({ index, averageItemLength }) => {
-            // Rows have variable heights, so a far-away index isn't measured
-            // yet: jump near it by estimated offset first, then land exactly.
-            listRef.current?.scrollToOffset({ offset: averageItemLength * index, animated: false });
-            setTimeout(() => listRef.current?.scrollToIndex({ index, animated: false, viewPosition: 0.1 }), 300);
-          }}
+          maintainVisibleContentPosition={{ minIndexForVisible: 0 }}
+          onScroll={onListScroll}
+          onScrollEndDrag={settleDrift}
+          onMomentumScrollEnd={settleDrift}
+          scrollEventThrottle={16}
           ListHeaderComponent={
-            surah ? (
+            startIndex > 0 ? (
+              <PressableScale
+                haptic="selection"
+                activeScale={0.98}
+                onPress={() => setStartIndex(0)}
+                style={{ paddingHorizontal: theme.spacing.lg, paddingVertical: theme.spacing.base }}
+              >
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: theme.spacing.sm,
+                    paddingVertical: theme.spacing.md,
+                    borderRadius: theme.radii.lg,
+                    borderWidth: 1,
+                    borderColor: theme.colors.border,
+                    backgroundColor: theme.colors.surface,
+                  }}
+                >
+                  <Icon name="chevron-up" size={16} tone="accent" />
+                  <AppText variant="label" tone="secondary">
+                    Show earlier verses (1–{ayahs[startIndex - 1]?.ayah ?? startIndex})
+                  </AppText>
+                </View>
+              </PressableScale>
+            ) : surah ? (
               <View style={{ alignItems: 'center', paddingTop: theme.spacing.base, paddingHorizontal: theme.spacing.lg }}>
                 <ArabicText text={surah.nameArabic} size={34} scaled={false} color={theme.colors.primary} />
                 <AppText variant="h3" style={{ marginTop: 4 }}>
@@ -179,12 +231,15 @@ export function ReaderScreen() {
               </View>
             ) : null
           }
-          renderItem={({ item }) => (
+          renderItem={({ item, index }) => (
             <>
               <AyahView
                 ayah={item}
                 translation={inlineTr?.verses.get(item.ayah) ?? null}
                 translatorName={inlineTr?.translatorName ?? null}
+                drift={drift}
+                floatEnabled={floatEnabled}
+                floatIndex={index}
                 onWordPress={onWordPress}
                 onHighlight={() => setHighlightAyah(item.ayah)}
                 onNote={() => setNoteAyah(item.ayah)}

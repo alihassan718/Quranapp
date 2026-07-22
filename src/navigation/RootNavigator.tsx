@@ -14,6 +14,8 @@ import { CreditsScreen } from '../screens/CreditsScreen';
 import { HomeScreen } from '../screens/HomeScreen';
 import { NotesScreen } from '../screens/NotesScreen';
 import { ReaderScreen } from '../screens/ReaderScreen';
+import { ResearchScreen } from '../screens/ResearchScreen';
+import { ResearchTopicScreen } from '../screens/ResearchTopicScreen';
 import { RootExplorerScreen } from '../screens/RootExplorerScreen';
 import { SearchScreen } from '../screens/SearchScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
@@ -27,6 +29,7 @@ type TabName = keyof TabParamList;
 const TAB_ICONS: Record<TabName, { on: keyof typeof Ionicons.glyphMap; off: keyof typeof Ionicons.glyphMap }> = {
   Home: { on: 'book', off: 'book-outline' },
   Search: { on: 'search', off: 'search-outline' },
+  Research: { on: 'telescope', off: 'telescope-outline' },
   Notes: { on: 'bookmarks', off: 'bookmarks-outline' },
   Settings: { on: 'settings', off: 'settings-outline' },
 };
@@ -53,6 +56,7 @@ function Tabs() {
     >
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Search" component={SearchScreen} />
+      <Tab.Screen name="Research" component={ResearchScreen} />
       <Tab.Screen name="Notes" component={NotesScreen} options={{ title: 'Library' }} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
@@ -90,6 +94,7 @@ export function RootNavigator() {
         <Stack.Screen name="Reader" component={ReaderScreen} options={{ title: 'Reader' }} />
         <Stack.Screen name="RootExplorer" component={RootExplorerScreen} options={{ title: 'Root Explorer' }} />
         <Stack.Screen name="Comparison" component={ComparisonScreen} options={{ title: 'Comparison' }} />
+        <Stack.Screen name="ResearchTopic" component={ResearchTopicScreen} options={{ title: 'Research' }} />
         <Stack.Screen name="Credits" component={CreditsScreen} options={{ title: 'Credits' }} />
       </Stack.Navigator>
     </NavigationContainer>

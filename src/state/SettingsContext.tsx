@@ -9,7 +9,7 @@ import React, {
   useState,
 } from 'react';
 
-import { ColorScheme } from '../theme/tokens';
+import { ColorScheme, ThemePaletteId } from '../theme/tokens';
 
 export type ThemeMode = 'system' | 'light' | 'dark';
 export type ArabicFont = 'amiri' | 'scheherazade';
@@ -22,6 +22,8 @@ export type DefinitionLang = 'en' | 'ar';
  */
 export interface AppSettings {
   themeMode: ThemeMode;
+  /** Visual theme palette (composes with themeMode's light/dark). */
+  themePalette: ThemePaletteId;
   arabicFont: ArabicFont;
   /** Multiplier applied to the base Qur'an verse size (0.8–1.7). */
   arabicFontScale: number;
@@ -43,6 +45,7 @@ export interface AppSettings {
 
 export const DEFAULT_SETTINGS: AppSettings = {
   themeMode: 'system',
+  themePalette: 'bayan',
   arabicFont: 'amiri',
   arabicFontScale: 1,
   translationFontScale: 1,

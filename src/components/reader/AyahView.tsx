@@ -1,6 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import Animated, { FadeIn } from 'react-native-reanimated';
+import Animated, {
+  FadeIn,
+  SharedValue,
+  useAnimatedStyle,
+  withSpring,
+} from 'react-native-reanimated';
 
 import { AyahWithWords, Word } from '../../domain/models';
 import { useAnnotations } from '../../state/AnnotationsContext';
@@ -21,6 +26,10 @@ interface AyahViewProps {
   translation?: string | null;
   /** Attribution label for the inline translation — always shown with it. */
   translatorName?: string | null;
+  /** Normalized scroll-velocity drift for the water theme's buoyancy. */
+  drift?: SharedValue<number>;
+  floatEnabled?: boolean;
+  floatIndex?: number;
   onWordPress: (word: Word) => void;
   onHighlight: () => void;
   onNote: () => void;
@@ -34,6 +43,9 @@ export const AyahView = React.memo(function AyahView({
   ayah,
   translation,
   translatorName,
+  drift,
+  floatEnabled,
+  floatIndex,
   onWordPress,
   onHighlight,
   onNote,
@@ -44,13 +56,26 @@ export const AyahView = React.memo(function AyahView({
   const { settings } = useSettings();
   const { getAyahHighlight, getWordHighlight, getNote, isBookmarked, toggleBookmark } = useAnnotations();
 
+  // Water-theme buoyancy: chase the list's scroll drift with a soft spring.
+  // Amplitude staggers across rows (6/8/10 px) so cards bob independently,
+  // like things floating. Inactive themes get a static transform (no cost).
+  const floatStyle = useAnimatedStyle(() => {
+    if (!floatEnabled || !drift) return { transform: [{ translateY: 0 }] };
+    const amp = 6 + ((floatIndex ?? 0) % 3) * 2;
+    return {
+      transform: [
+        { translateY: withSpring(-drift.value * amp, { damping: 13, stiffness: 90, mass: 0.9 }) },
+      ],
+    };
+  }, [floatEnabled, floatIndex]);
+
   const ayahHl = getAyahHighlight(ayah.surah, ayah.ayah);
   const note = getNote(ayah.surah, ayah.ayah);
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
   const hlSwatch = ayahHl ? theme.colors.highlights[ayahHl.color] : null;
 
   return (
-    <View style={{ paddingHorizontal: theme.spacing.lg, paddingVertical: theme.spacing.md }}>
+    <Animated.View style={[{ paddingHorizontal: theme.spacing.lg, paddingVertical: theme.spacing.md }, floatStyle]}>
       <View
         style={{
           borderRadius: theme.radii.lg,
@@ -168,7 +193,7 @@ export const AyahView = React.memo(function AyahView({
           </View>
         </PressableScale>
       ) : null}
-    </View>
+    </Animated.View>
   );
 });
 

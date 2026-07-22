@@ -15,8 +15,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const { settings } = useSettings();
 
   const theme = useMemo(
-    () => buildTheme(resolveScheme(settings.themeMode, system)),
-    [settings.themeMode, system],
+    () => buildTheme(resolveScheme(settings.themeMode, system), settings.themePalette),
+    [settings.themeMode, settings.themePalette, system],
   );
 
   return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>;
