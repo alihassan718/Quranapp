@@ -31,9 +31,12 @@ space. Strictly Qur'an-study + research; NO hadith/prayer-times/qibla/athkar/aud
 
 ## Current release — v1.3.0 (versionCode 5), all APKs in release/
 
-Debug-signed, same cert across versions → each installs as an update. HEAD ≈ `c2dfe84`.
+Debug-signed, same cert across versions → each installs as an update.
 - v1.0.0/1.0.1 scaffold+bugfixes · v1.1.0 full Qur'an text+translations · v1.2.0 morphology+lexicon ·
   **v1.3.0 = Research feature (reading experience + personal Board).** ← latest, `release/bayan-v1.3.0.apk`
+- ⚠ **v1.3.0's APK crashes on opening My Board** (user-reported; root cause = world-sized SVGs, see
+  gotchas). **Fix is committed on `main` but NOT yet in any APK** — next build (v1.4.0 / versionCode 6,
+  only when the user asks) ships it. Web-verified; device re-test of board gestures still pending.
 
 ## Data pipeline (importers: idempotent, deterministic, run with plain `node` — Node 24, no tsx)
 
@@ -69,6 +72,14 @@ Shared root-key convention (both importers): hamza/alef-normalized, space-separa
   worklet + runOnJS for the DB write); tap→action bar (Open/Connect/Note/Unpin); labeled SVG connection
   curves; notes on nodes+edges. ⚠ **Board touch gestures are DEVICE-ONLY — web preview cannot drive
   RNGH multitouch. Verify drag/pinch/connect on the APK.**
+- **Board rendering architecture (post-crash-fix, 2026-07-22):** the v1.3.0 APK hard-crashed on opening
+  the Board (two 4000dp-square SVGs; Android SvgView rasterizes a view-sized bitmap → OOM, see gotchas).
+  Now: edge curves live in ONE **screen-sized** fixed `Svg`; each `EdgePath` worklet converts world→screen
+  (`screen = t + WORLD_C·(1−s) + s·world` — mirrors RN's center-anchored view transform; verified exact
+  vs a real engine at s=1.35). Dot grid = tiny PNG tile (`DOT_TILE`) via `Image resizeMode="repeat"`
+  (CSS background-repeat branch on web). Node layer is `pointerEvents="box-none"` so empty-canvas taps
+  fall through to the edge hit-paths below. Verified on web: pin→connect→label→save, edge/node registration
+  pixel-exact, edge tap→action bar. Device re-test pending (drag/pinch feel + Android grid tiling).
 - Credits has a "Research sources" section; DATA-UNDER-TEST notice covers the tab.
 
 ## Other features already shipped
@@ -105,6 +116,14 @@ Shared root-key convention (both importers): hamza/alef-normalized, space-separa
 - **RNGH multitouch (drag/pinch/tap-select) can't be driven by the web preview** — device-only. Board
   gesture code: worklet handlers touch only shared values; JS work via `runOnJS`; pan/pinch start values
   are shared values, NOT React refs (a ref read inside a worklet is a bug).
+- **Android SvgView rasterizes itself into a view-sized ARGB_8888 bitmap on every draw**
+  (`SvgView.drawOutput → Bitmap.createBitmap(widthPx, heightPx)`), EVEN WITH ZERO CHILDREN. A 4000dp Svg
+  at 3× density ≈ 576 MB → instant OOM abort ("app keeps stopping"); web is unaffected (DOM SVG) so it
+  can't reproduce. NEVER lay out an Svg bigger than the screen — this crashed the v1.3.0 Board.
+- **RNGH gesture callbacks built with `Gesture.*` are not reliably rebound when React re-renders** —
+  a callback that closes over state goes stale inside the gesture (bit us: connect-mode tap ignored
+  `connectFrom`). Keep gesture callbacks identity-stable and read changing state via a ref
+  (`connectFromRef` pattern in `ResearchBoardScreen`).
 - Web preview: `.claude/launch.json` runs `expo start --web` on port 8082. Screenshots time out; use
   read_page / get_page_text / javascript_tool. `useAnimatedKeyboard not available on web` warning is expected.
 - Typecheck: app = `npx tsc --noEmit` (scripts/ excluded); importers = `npx tsc -p scripts --noEmit`.
@@ -126,5 +145,5 @@ Shared root-key convention (both importers): hamza/alef-normalized, space-separa
 
 ## State of the working tree
 
-On `main`, clean, everything committed + pushed (HEAD ≈ c2dfe84). `research` branch also on remote.
-Persistent memory ([[bayan-quranapp]], [[android-build-env]]) is current and auto-loads.
+On `main`, clean, everything committed + pushed (latest work: Board crash fix, 2026-07-22). `research`
+branch also on remote. Persistent memory ([[bayan-quranapp]], [[android-build-env]]) is current and auto-loads.
