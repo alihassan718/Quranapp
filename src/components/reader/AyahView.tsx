@@ -7,8 +7,10 @@ import Animated, {
   withSpring,
 } from 'react-native-reanimated';
 
+import { addBoardNode } from '../../data/userStore';
 import { AyahWithWords, Word } from '../../domain/models';
 import { useAnnotations } from '../../state/AnnotationsContext';
+import { useUserDb } from '../../state/DatabaseProvider';
 import { useSettings } from '../../state/SettingsContext';
 import { useTheme } from '../../theme/ThemeProvider';
 import { ayahMarker, hasArabicLetters } from '../../utils/arabic';
@@ -54,6 +56,8 @@ export const AyahView = React.memo(function AyahView({
 }: AyahViewProps) {
   const theme = useTheme();
   const { settings } = useSettings();
+  const userDb = useUserDb();
+  const [justPinned, setJustPinned] = React.useState(false);
   const { getAyahHighlight, getWordHighlight, getNote, isBookmarked, toggleBookmark } = useAnnotations();
 
   // Water-theme buoyancy: chase the list's scroll drift with a soft spring.
@@ -167,6 +171,17 @@ export const AyahView = React.memo(function AyahView({
             onPress={() => {
               haptics.light();
               toggleBookmark(ayah.surah, ayah.ayah);
+            }}
+          />
+          <ActionButton
+            icon={justPinned ? 'checkmark' : 'pin-outline'}
+            active={justPinned}
+            onPress={async () => {
+              // Pin this ayah onto the Research board (idempotent).
+              await addBoardNode(userDb, 'ayah', `${ayah.surah}:${ayah.ayah}`);
+              haptics.success();
+              setJustPinned(true);
+              setTimeout(() => setJustPinned(false), 1600);
             }}
           />
           <ActionButton icon="layers-outline" onPress={onCompare} />

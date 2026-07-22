@@ -14,8 +14,9 @@ import { CreditsScreen } from '../screens/CreditsScreen';
 import { HomeScreen } from '../screens/HomeScreen';
 import { NotesScreen } from '../screens/NotesScreen';
 import { ReaderScreen } from '../screens/ReaderScreen';
+import { ResearchBoardScreen } from '../screens/ResearchBoardScreen';
+import { ResearchEntryScreen } from '../screens/ResearchEntryScreen';
 import { ResearchScreen } from '../screens/ResearchScreen';
-import { ResearchTopicScreen } from '../screens/ResearchTopicScreen';
 import { RootExplorerScreen } from '../screens/RootExplorerScreen';
 import { SearchScreen } from '../screens/SearchScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
@@ -94,7 +95,8 @@ export function RootNavigator() {
         <Stack.Screen name="Reader" component={ReaderScreen} options={{ title: 'Reader' }} />
         <Stack.Screen name="RootExplorer" component={RootExplorerScreen} options={{ title: 'Root Explorer' }} />
         <Stack.Screen name="Comparison" component={ComparisonScreen} options={{ title: 'Comparison' }} />
-        <Stack.Screen name="ResearchTopic" component={ResearchTopicScreen} options={{ title: 'Research' }} />
+        <Stack.Screen name="ResearchEntry" component={ResearchEntryScreen} options={{ title: 'Research' }} />
+        <Stack.Screen name="ResearchBoard" component={ResearchBoardScreen} options={{ title: 'My Board' }} />
         <Stack.Screen name="Credits" component={CreditsScreen} options={{ title: 'Credits' }} />
       </Stack.Navigator>
     </NavigationContainer>

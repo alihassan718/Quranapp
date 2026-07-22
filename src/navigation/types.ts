@@ -6,7 +6,8 @@ export type RootStackParamList = {
   Reader: { surah: number; ayah?: number };
   RootExplorer: { root: string; rootTranslit?: string | null };
   Comparison: { surah: number; ayah: number };
-  ResearchTopic: { topicId: string };
+  ResearchEntry: { entryId: string };
+  ResearchBoard: undefined;
   Credits: undefined;
 };
 

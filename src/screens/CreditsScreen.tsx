@@ -8,6 +8,7 @@ import { Divider } from '../components/ui/Divider';
 import { Icon } from '../components/ui/Icon';
 import { PressableScale } from '../components/ui/PressableScale';
 import { AppText } from '../components/ui/Text';
+import { getResearchSources } from '../data/researchStore';
 import { LicenseStatus } from '../domain/models';
 import { useTheme } from '../theme/ThemeProvider';
 
@@ -150,6 +151,36 @@ export function CreditsScreen() {
           statusLabel="SIL OFL 1.1"
           lines={['Latin serif used for the interface. Bundled under the SIL Open Font License 1.1.']}
         />
+
+        <SectionHeader text="RESEARCH SOURCES" />
+        <Card surface="surface" elevation="none" style={{ gap: theme.spacing.sm, marginBottom: theme.spacing.sm }}>
+          <AppText variant="caption" tone="secondary">
+            The Research tab contains curated summaries written for this app, citing verbatim metadata only
+            (title, authors, year, link). Connection entries are attributed reflections — never presented as
+            proofs. Cited sources across all bundled entries:
+          </AppText>
+          <Divider />
+          {getResearchSources().map((s) => (
+            <View key={s.source} style={{ flexDirection: 'row', alignItems: 'center', gap: theme.spacing.sm }}>
+              <AppText variant="caption" tone="tertiary" style={{ flex: 1 }}>
+                {s.source}
+              </AppText>
+              <Chip
+                label={
+                  s.access === 'public-domain'
+                    ? 'Public domain'
+                    : s.access === 'open-access'
+                      ? 'Open access'
+                      : s.access === 'metadata-only'
+                        ? 'Metadata only'
+                        : 'Free to read'
+                }
+                small
+                outline
+              />
+            </View>
+          ))}
+        </Card>
 
         <View
           style={{

@@ -37,6 +37,27 @@ CREATE TABLE IF NOT EXISTS last_read (
   id INTEGER PRIMARY KEY CHECK (id = 1),
   surah INTEGER NOT NULL, ayah INTEGER NOT NULL, updatedAt INTEGER NOT NULL
 );
+
+-- Research board: the user's own canvas of pinned nodes + drawn connections.
+CREATE TABLE IF NOT EXISTS board_nodes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  type TEXT NOT NULL,            -- 'entry' | 'ayah'
+  refId TEXT NOT NULL,           -- research entry id, or 'surah:ayah'
+  x REAL NOT NULL, y REAL NOT NULL,
+  note TEXT,
+  createdAt INTEGER NOT NULL,
+  UNIQUE(type, refId)
+);
+
+CREATE TABLE IF NOT EXISTS board_edges (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  fromId INTEGER NOT NULL,
+  toId INTEGER NOT NULL,
+  label TEXT,
+  note TEXT,
+  createdAt INTEGER NOT NULL,
+  UNIQUE(fromId, toId)
+);
 `;
 
 export async function openUserDatabase(): Promise<SQLite.SQLiteDatabase> {
@@ -220,4 +241,124 @@ export async function setLastRead(
      ON CONFLICT(id) DO UPDATE SET surah = excluded.surah, ayah = excluded.ayah, updatedAt = excluded.updatedAt`,
     [surah, ayah, Date.now()],
   );
+}
+
+/* --------------------------- Research board --------------------------- */
+
+export type BoardNodeType = 'entry' | 'ayah';
+
+export interface BoardNode {
+  id: number;
+  type: BoardNodeType;
+  /** Research entry id, or "surah:ayah" for pinned verses. */
+  refId: string;
+  x: number;
+  y: number;
+  note: string | null;
+  createdAt: number;
+}
+
+export interface BoardEdge {
+  id: number;
+  fromId: number;
+  toId: number;
+  label: string | null;
+  note: string | null;
+  createdAt: number;
+}
+
+export async function getBoardNodes(db: SQLite.SQLiteDatabase): Promise<BoardNode[]> {
+  return db.getAllAsync<BoardNode>(`SELECT * FROM board_nodes ORDER BY createdAt ASC`);
+}
+
+export async function getBoardEdges(db: SQLite.SQLiteDatabase): Promise<BoardEdge[]> {
+  return db.getAllAsync<BoardEdge>(`SELECT * FROM board_edges ORDER BY createdAt ASC`);
+}
+
+/**
+ * Pin something onto the board. If it is already pinned, returns the existing
+ * node (pinning is idempotent). New nodes are placed on a loose grid so they
+ * never stack exactly on top of each other.
+ */
+export async function addBoardNode(
+  db: SQLite.SQLiteDatabase,
+  type: BoardNodeType,
+  refId: string,
+): Promise<{ node: BoardNode; existed: boolean }> {
+  const existing = await db.getFirstAsync<BoardNode>(
+    `SELECT * FROM board_nodes WHERE type = ? AND refId = ?`,
+    [type, refId],
+  );
+  if (existing) return { node: existing, existed: true };
+  const { c } = (await db.getFirstAsync<{ c: number }>(`SELECT COUNT(*) as c FROM board_nodes`)) ?? { c: 0 };
+  const x = 40 + (c % 3) * 190 + ((c * 37) % 23);
+  const y = 60 + Math.floor(c / 3) * 150 + ((c * 53) % 19);
+  const res = await db.runAsync(
+    `INSERT INTO board_nodes (type, refId, x, y, note, createdAt) VALUES (?, ?, ?, ?, NULL, ?)`,
+    [type, refId, x, y, Date.now()],
+  );
+  const node = await db.getFirstAsync<BoardNode>(`SELECT * FROM board_nodes WHERE id = ?`, [
+    res.lastInsertRowId,
+  ]);
+  return { node: node!, existed: false };
+}
+
+export async function moveBoardNode(
+  db: SQLite.SQLiteDatabase,
+  id: number,
+  x: number,
+  y: number,
+): Promise<void> {
+  await db.runAsync(`UPDATE board_nodes SET x = ?, y = ? WHERE id = ?`, [x, y, id]);
+}
+
+export async function setBoardNodeNote(
+  db: SQLite.SQLiteDatabase,
+  id: number,
+  note: string,
+): Promise<void> {
+  await db.runAsync(`UPDATE board_nodes SET note = ? WHERE id = ?`, [note.trim() || null, id]);
+}
+
+/** Removing a node also removes every connection attached to it. */
+export async function removeBoardNode(db: SQLite.SQLiteDatabase, id: number): Promise<void> {
+  await db.runAsync(`DELETE FROM board_edges WHERE fromId = ? OR toId = ?`, [id, id]);
+  await db.runAsync(`DELETE FROM board_nodes WHERE id = ?`, [id]);
+}
+
+/** Draw a connection between two nodes (one edge per pair, either direction). */
+export async function addBoardEdge(
+  db: SQLite.SQLiteDatabase,
+  fromId: number,
+  toId: number,
+  label: string | null,
+): Promise<BoardEdge | null> {
+  if (fromId === toId) return null;
+  const existing = await db.getFirstAsync<BoardEdge>(
+    `SELECT * FROM board_edges WHERE (fromId = ? AND toId = ?) OR (fromId = ? AND toId = ?)`,
+    [fromId, toId, toId, fromId],
+  );
+  if (existing) return existing;
+  const res = await db.runAsync(
+    `INSERT INTO board_edges (fromId, toId, label, note, createdAt) VALUES (?, ?, ?, NULL, ?)`,
+    [fromId, toId, label?.trim() || null, Date.now()],
+  );
+  return db.getFirstAsync<BoardEdge>(`SELECT * FROM board_edges WHERE id = ?`, [res.lastInsertRowId]);
+}
+
+export async function updateBoardEdge(
+  db: SQLite.SQLiteDatabase,
+  id: number,
+  patch: { label?: string | null; note?: string | null },
+): Promise<void> {
+  if (patch.label !== undefined) {
+    await db.runAsync(`UPDATE board_edges SET label = ? WHERE id = ?`, [patch.label?.trim() || null, id]);
+  }
+  if (patch.note !== undefined) {
+    await db.runAsync(`UPDATE board_edges SET note = ? WHERE id = ?`, [patch.note?.trim() || null, id]);
+  }
+}
+
+export async function removeBoardEdge(db: SQLite.SQLiteDatabase, id: number): Promise<void> {
+  await db.runAsync(`DELETE FROM board_edges WHERE id = ?`, [id]);
 }
