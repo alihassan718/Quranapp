@@ -192,7 +192,7 @@
       "type": "knowledge",
       "title": "How Vaccines Work: A Rehearsal for the Immune System",
       "hook": "A vaccine teaches your immune system the enemy's face before the real fight begins.",
-      "summary": "Vaccines expose the immune system to a harmless fragment or a weakened form of a pathogen, called an antigen, so the body can mount a response without getting sick. In doing so, B cells produce antibodies against that specific antigen, and, crucially, the body also creates long-lived memory cells. If the real pathogen shows up later, those memory cells trigger a much faster and stronger response that often stops the infection before it can take hold. Some vaccines require several doses spaced apart to build durable memory and high-quality, long-lasting protection.",
+      "summary": "A vaccine shows the immune system a harmless piece of a germ, or a weakened or inactivated form of it, so the body can learn to recognize that germ without anyone having to get sick first. The immune system 'remembers' what it has seen, so if the real germ turns up later it is recognized and attacked far faster — often stopping the infection before it can take hold. Some vaccines are given as several doses spaced over time to build strong, lasting protection.",
       "detail": null,
       "citations": [
         {
@@ -231,7 +231,7 @@
       "proposer": null,
       "status": null,
       "statusNote": null,
-      "reviewFlag": null
+      "reviewFlag": "Summary reworded to match the cited MedlinePlus lay pages, which describe immune \"memory\" but not the cell-level mechanism (antigens, B cells, antibodies, memory lymphocytes). To restore that detail, add a public-domain source that covers it (e.g. a CDC/NIAID \"how vaccines work\" page) — CDC blocks automated fetch, so verify by hand."
     },
     {
       "id": "medicine-k-006",

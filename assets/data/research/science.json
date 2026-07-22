@@ -458,7 +458,7 @@
       "citations": [
         {
           "source": "NASA Science (Hubble)",
-          "title": "Hubble and the Big Bang",
+          "title": "Hubble Big Bang",
           "authors": "NASA Science; page editor Andrea Gianopoulos",
           "year": "2024",
           "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/",
@@ -500,15 +500,6 @@
           "url": "https://en.wikipedia.org/wiki/Abdul_Majeed_al-Zindani",
           "access": "free-to-read",
           "note": "Verbatim: al-Zindani 'approached the Saudi government's largest charity, the Muslim World League, in 1984 to establish a Commission on Scientific Signs in the Quran and Sunnah.'"
-        },
-        {
-          "source": "Zygon: Journal of Religion and Science (Wiley), peer-reviewed",
-          "title": "The 'Scientific Miracle of the Qur'ān,' Pseudoscience, and Conspiracism (Stefano Bigliardi)",
-          "authors": "Stefano Bigliardi",
-          "year": "2017",
-          "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/zygo.12321",
-          "access": "metadata-only",
-          "note": "Peer-reviewed history/critique of i'jaz 'ilmi. Cited for provenance of the movement; full text not accessed live (publisher access wall), so treated as metadata-only."
         }
       ],
       "tags": [
@@ -545,7 +536,7 @@
       "citations": [
         {
           "source": "NASA Science (science.nasa.gov)",
-          "title": "The Hubble Constant and the Big Bang (science behind the discoveries)",
+          "title": "Hubble Big Bang",
           "authors": null,
           "year": null,
           "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-big-bang/",
@@ -623,7 +614,7 @@
       "citations": [
         {
           "source": "NASA Science (Astrobiology)",
-          "title": "Why is water so important for life?",
+          "title": "Why is water so important for life as we know it?",
           "authors": "NASA Science, Astrobiology Learning Resources",
           "year": null,
           "url": "https://science.nasa.gov/astrobiology/learning-resources/alp/water-so-important-for-life/",
@@ -758,7 +749,7 @@
       "proposer": "The broad Qur'an-science concordism was launched by Maurice Bucaille's 1976 book 'La Bible, le Coran et la science' (The Bible, the Qur'an and Science), which argues the Qur'an anticipates modern science. However, the SPECIFIC modern reading of Q57:25 — that 'sent down' encodes iron's extraterrestrial/supernova origin, reinforced by numerology (surah 57 vs an iron isotope mass, verse 26-with-basmala vs iron's 26 protons) — was chiefly popularized by Harun Yahya (pen name of Adnan Oktar) in his 'Miracles of the Qur'an' material and by debater Zakir Naik; it is a staple of the organized iʿjāz ʿilmī (scientific-miracle) movement. Bucaille himself did not originate the supernova argument, so the supernova claim should be attributed to Harun Yahya/Naik, not to Bucaille.",
       "status": "contested",
       "statusNote": "The astrophysics is sound, but a peer-reviewed Qur'anic-studies analysis argues the \"miracle\" claim fails because anzala is used broadly in the Qur'an and the notion of iron \"from heaven\" (meteoric iron) predates Islam, so no previously unknown fact is demonstrated.",
-      "reviewFlag": null
+      "reviewFlag": "CITE: Core-collapse mechanism, the ~8-solar-mass threshold, and \"the Sun cannot fuse iron\" are standard astrophysics but not on the cited NASA Goddard page — add a source or soften."
     },
     {
       "id": "science-c-005",

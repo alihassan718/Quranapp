@@ -385,9 +385,9 @@
         },
         {
           "source": "Celebratio Mathematica (Wolfgang Haken collection)",
-          "title": "The Four-Color Solution",
+          "title": "The solution of the four-color-map problem",
           "authors": "Kenneth Appel and Wolfgang Haken",
-          "year": null,
+          "year": "1977",
           "url": "https://celebratio.org/Haken_W/article/794/",
           "access": "free-to-read",
           "note": "First-person account by the two provers. States verbatim: 'A considerable part of this material, including the reduction of 1,482 configurations, was used in the final proof' and 'We had used 1,200 hours of time on three different computers.' Authoritative because it is the mathematicians' own words, hosted on a scholarly (AMS-affiliated) publication and free to read."
